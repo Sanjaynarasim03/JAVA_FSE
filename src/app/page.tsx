@@ -51,7 +51,7 @@ export default function Home() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-              🤖 INTELLiINVEST
+              INTELLiINVEST
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto font-medium leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
               AI-powered portfolio recommendations for the Indian stock market with 

@@ -198,19 +198,6 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
           <p className="text-gray-700">{portfolio.notes}</p>
         </div>
         
-        <div className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg mb-4">
-          <h4 className="font-medium text-blue-800 mb-2">📊 Methodology:</h4>
-          <p className="text-sm text-blue-700 mb-2">
-            This portfolio is generated using a multi-factor scoring algorithm that analyzes:
-          </p>
-          <ul className="text-sm text-blue-700 space-y-1 list-disc list-inside">
-            <li><strong>Fundamental Analysis:</strong> PE ratios, dividend yields, market capitalization</li>
-            <li><strong>Risk Metrics:</strong> Beta (volatility), sector diversification</li>
-            <li><strong>Momentum Indicators:</strong> Recent price trends and sector performance</li>
-            <li><strong>Duration Adjustment:</strong> Returns compounded for your investment horizon</li>
-          </ul>
-        </div>
-        
         <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
           <h4 className="font-medium text-yellow-800 mb-2">⚠️ Important Risk Factors:</h4>
           <ul className="text-sm text-yellow-700 space-y-1">
@@ -218,7 +205,7 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
             <li>• <strong>Economic Factors:</strong> Interest rates, inflation, and GDP growth affect returns</li>
             <li>• <strong>Company-Specific Risks:</strong> Individual stocks may underperform due to business challenges</li>
             <li>• <strong>Projections vs Reality:</strong> Expected returns are estimates; actual returns may vary significantly</li>
-            <li>• <strong>Diversification:</strong> {portfolio.allocations.length < 4 && 'Consider adding more stocks for better risk management'}</li>
+            {/* <li>• <strong>Diversification:</strong> {portfolio.allocations.length < 4 && 'Consider adding more stocks for better risk management'}</li> */}
           </ul>
         </div>
         
