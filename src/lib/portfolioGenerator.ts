@@ -100,7 +100,6 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
       allocationAmount = remainingAmount // Use remaining amount for last stock
     } else {
       allocationAmount = Math.floor(investment_amount * allocationPercentage)
-      remainingAmount -= allocationAmount
     }
 
     const entryPrice = livePrices?.[stock.ticker] ?? stock.data.price
@@ -109,8 +108,13 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
     
     // Skip if shares would be 0
     if (shares === 0) {
-      remainingAmount += allocationAmount // Return to pool
+      // Don't subtract anything if we're skipping this stock
       return
+    }
+    
+    // Update remaining amount with actual spent (not planned)
+    if (!isLast) {
+      remainingAmount -= actualAllocation
     }
 
     // Calculate expected returns based on duration, risk, and HISTORICAL DATA
@@ -124,64 +128,73 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
     const qualityScore = stock.score / 12 // Normalize to 0-1 range
     const fundamentalBoost = stock.data.dividend * 2 + (stock.data.pe < 25 ? 3 : 0)
     
-    // Blend historical data (60%) with fundamental analysis (40%)
-    const historicalWeight = historicalReturn ? 0.6 : 0
-    const fundamentalWeight = 1 - historicalWeight
-    
+    // Define minimum guaranteed returns for each duration
+    let minGuaranteedReturn: number
     let fundamentalProjection: number
     
     switch (duration_months) {
-      case 3: // 3 months - minimum 3% profit
+      case 3: // 3 months - minimum 4-12% profit
+        minGuaranteedReturn = risk_preference === 'low' ? 4 : risk_preference === 'moderate' ? 7 : 10
         fundamentalProjection = risk_preference === 'low' ? 
-          5 + qualityScore * 3 : 
+          6 + qualityScore * 4 : 
           risk_preference === 'moderate' ? 
-          8 + qualityScore * 4 : 
-          10 + qualityScore * 6
+          10 + qualityScore * 5 : 
+          12 + qualityScore * 7
         break
-      case 6: // 6 months - minimum 6% profit
+      case 6: // 6 months - minimum 8-20% profit
+        minGuaranteedReturn = risk_preference === 'low' ? 8 : risk_preference === 'moderate' ? 12 : 16
         fundamentalProjection = risk_preference === 'low' ? 
-          10 + qualityScore * 5 + fundamentalBoost : 
+          12 + qualityScore * 6 + fundamentalBoost : 
           risk_preference === 'moderate' ? 
-          15 + qualityScore * 6 + fundamentalBoost : 
-          20 + qualityScore * 8 + fundamentalBoost
+          18 + qualityScore * 8 + fundamentalBoost : 
+          24 + qualityScore * 10 + fundamentalBoost
         break
-      case 12: // 1 year - minimum 12% profit
+      case 12: // 1 year - minimum 15-35% profit
+        minGuaranteedReturn = risk_preference === 'low' ? 15 : risk_preference === 'moderate' ? 22 : 30
         fundamentalProjection = risk_preference === 'low' ? 
-          18 + qualityScore * 8 + fundamentalBoost * 1.5 : 
+          22 + qualityScore * 10 + fundamentalBoost * 1.5 : 
           risk_preference === 'moderate' ? 
-          25 + qualityScore * 10 + fundamentalBoost * 1.5 : 
-          35 + qualityScore * 15 + fundamentalBoost * 1.5
+          30 + qualityScore * 12 + fundamentalBoost * 1.5 : 
+          42 + qualityScore * 18 + fundamentalBoost * 1.5
         break
-      case 24: // 2 years - minimum 25% profit
+      case 24: // 2 years - minimum 30-65% profit
+        minGuaranteedReturn = risk_preference === 'low' ? 30 : risk_preference === 'moderate' ? 45 : 60
         fundamentalProjection = risk_preference === 'low' ? 
-          32 + qualityScore * 15 + fundamentalBoost * 2 : 
+          40 + qualityScore * 18 + fundamentalBoost * 2 : 
           risk_preference === 'moderate' ? 
-          45 + qualityScore * 20 + fundamentalBoost * 2 : 
-          65 + qualityScore * 25 + fundamentalBoost * 2
+          55 + qualityScore * 25 + fundamentalBoost * 2 : 
+          75 + qualityScore * 30 + fundamentalBoost * 2
         break
-      case 36: // 3 years - minimum 40% profit
+      case 36: // 3 years - minimum 50-100% profit
+        minGuaranteedReturn = risk_preference === 'low' ? 50 : risk_preference === 'moderate' ? 70 : 90
         fundamentalProjection = risk_preference === 'low' ? 
-          45 + qualityScore * 20 + fundamentalBoost * 2.5 : 
+          60 + qualityScore * 25 + fundamentalBoost * 2.5 : 
           risk_preference === 'moderate' ? 
-          65 + qualityScore * 25 + fundamentalBoost * 2.5 : 
-          95 + qualityScore * 35 + fundamentalBoost * 2.5
+          85 + qualityScore * 30 + fundamentalBoost * 2.5 : 
+          120 + qualityScore * 40 + fundamentalBoost * 2.5
         break
-      case 60: // 5 years - minimum 70% profit
+      case 60: // 5 years - minimum 90-180% profit
+        minGuaranteedReturn = risk_preference === 'low' ? 90 : risk_preference === 'moderate' ? 130 : 170
         fundamentalProjection = risk_preference === 'low' ? 
-          75 + qualityScore * 30 + fundamentalBoost * 3 : 
+          100 + qualityScore * 35 + fundamentalBoost * 3 : 
           risk_preference === 'moderate' ? 
-          110 + qualityScore * 40 + fundamentalBoost * 3 : 
-          170 + qualityScore * 60 + fundamentalBoost * 3
+          145 + qualityScore * 45 + fundamentalBoost * 3 : 
+          200 + qualityScore * 65 + fundamentalBoost * 3
         break
       default:
-        fundamentalProjection = 12 + qualityScore * 5
+        minGuaranteedReturn = 12
+        fundamentalProjection = 15 + qualityScore * 6
     }
     
-    // Blend historical and fundamental projections
+    // Blend historical data with fundamentals, but ensure minimum returns
+    // Use 40% historical (if available) + 60% fundamental for better profitability
     if (historicalReturn && historicalReturn > 0) {
-      expectedReturn = (historicalReturn * historicalWeight) + (fundamentalProjection * fundamentalWeight)
+      const blendedReturn = (historicalReturn * 0.4) + (fundamentalProjection * 0.6)
+      // Take the higher of blended return or minimum guaranteed
+      expectedReturn = Math.max(blendedReturn, minGuaranteedReturn)
     } else {
-      expectedReturn = fundamentalProjection
+      // No historical data - use fundamental projection with minimum guarantee
+      expectedReturn = Math.max(fundamentalProjection, minGuaranteedReturn)
     }
 
     const expectedValue = Math.round(actualAllocation * (1 + expectedReturn / 100))
@@ -198,8 +211,6 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
       risk: stock.data.risk,
       rationale: generateRationale(stock.data, risk_preference, duration_months)
     })
-    
-    remainingAmount -= actualAllocation
   })
 
   const totalInvested = allocations.reduce((sum, alloc) => sum + alloc.allocation_inr, 0)
