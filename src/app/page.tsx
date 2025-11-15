@@ -10,26 +10,29 @@ import type { InvestmentParams, PortfolioAllocation } from '../types/portfolio'
 export default function Home() {
   const [portfolio, setPortfolio] = useState<PortfolioAllocation | null>(null)
   const [loading, setLoading] = useState(false)
+  const [usingLiveData, setUsingLiveData] = useState(false)
 
   const handleGeneratePortfolio = async (params: InvestmentParams) => {
     setLoading(true)
+    setUsingLiveData(false)
     try {
       let livePrices: Record<string, number> | undefined = undefined
 
-      // Use live data if enabled via env
-      if (process.env.NEXT_PUBLIC_USE_LIVE_DATA === 'true') {
-        try {
-          const tickers = ALL_TICKERS
-          const qs = encodeURIComponent(tickers.join(','))
-          const resp = await fetch(`/api/quotes?tickers=${qs}`, { cache: 'no-store' })
-          if (resp.ok) {
-            const data = await resp.json()
-            livePrices = data?.prices
+      // Always try to fetch live data from Yahoo Finance
+      try {
+        const tickers = ALL_TICKERS
+        const qs = encodeURIComponent(tickers.join(','))
+        const resp = await fetch(`/api/quotes?tickers=${qs}`, { cache: 'no-store' })
+        if (resp.ok) {
+          const data = await resp.json()
+          livePrices = data?.prices
+          if (livePrices && Object.keys(livePrices).length > 0) {
+            setUsingLiveData(true)
+            console.log('✅ Using live Yahoo Finance prices')
           }
-        } catch (e) {
-          // silently fallback to static data
-          console.warn('Live quote fetch failed, using static prices')
         }
+      } catch (e) {
+        console.warn('⚠️ Live quote fetch failed, using fallback prices')
       }
 
       const result = generatePortfolio(params, livePrices)
@@ -47,12 +50,18 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4 drop-shadow-sm">
-            AI Financial Advisor
+            🤖 INTELLiINVEST
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed">
-            Get data-driven portfolio recommendations for the Indian stock market with 
-            risk-adjusted returns tailored to your investment goals
+            AI-powered portfolio recommendations for the Indian stock market with 
+            real-time data and risk-adjusted projections
           </p>
+          {usingLiveData && (
+            <div className="mt-4 inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold">
+              <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+              Live Market Data Active
+            </div>
+          )}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -88,19 +97,46 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Disclaimer */}
-        <div className="mt-12 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
-          <div className="flex">
-            <div className="flex-shrink-0">
-              <svg className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-              </svg>
+        {/* Comprehensive Disclaimer */}
+        <div className="mt-12 space-y-4">
+          <div className="p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <h3 className="text-sm font-bold text-yellow-800 mb-2">⚠️ Investment Risk Disclaimer</h3>
+                <p className="text-sm text-yellow-700 mb-2">
+                  <strong>This is an AI-based simulation tool for educational purposes only.</strong> It is NOT financial advice, investment recommendation, or a solicitation to buy/sell securities.
+                </p>
+                <ul className="text-sm text-yellow-700 space-y-1 list-disc list-inside">
+                  <li><strong>Projections are estimates</strong> - Expected returns are algorithmic projections based on historical patterns and fundamentals, not guaranteed future performance</li>
+                  <li><strong>Market risk exists</strong> - Stock prices can fall as well as rise. You may lose some or all of your invested capital</li>
+                  <li><strong>Past performance ≠ future results</strong> - Historical returns do not guarantee similar future outcomes</li>
+                  <li><strong>Not SEBI registered</strong> - This tool is not registered with SEBI or any regulatory authority</li>
+                  <li><strong>Consult professionals</strong> - Always consult a qualified, registered financial advisor before making investment decisions</li>
+                </ul>
+              </div>
             </div>
-            <div className="ml-3">
-              <p className="text-sm text-yellow-700">
-                <strong>Disclaimer:</strong> This is an AI-based simulation and not financial advice. 
-                Please consult with a qualified financial advisor before making investment decisions.
-              </p>
+          </div>
+          
+          <div className="p-6 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <h3 className="text-sm font-bold text-blue-800 mb-2">ℹ️ How This Works</h3>
+                <p className="text-sm text-blue-700">
+                  Our algorithm analyzes stocks using multiple factors including PE ratios, dividend yields, beta (volatility), 
+                  market capitalization, and sector trends. {usingLiveData ? 'Live prices are fetched from Yahoo Finance.' : 'Using cached price data.'} 
+                  Returns are projected using historical patterns and fundamental analysis, then adjusted for your risk preference and investment horizon.
+                </p>
+              </div>
             </div>
           </div>
         </div>

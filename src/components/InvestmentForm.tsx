@@ -10,7 +10,7 @@ interface InvestmentFormProps {
 
 export default function InvestmentForm({ onSubmit, loading }: InvestmentFormProps) {
   const [formData, setFormData] = useState<InvestmentParams>({
-    investment_amount: 100000,
+    investment_amount: 10000,
     duration_months: 12,
     risk_preference: 'moderate',
     mode: 'auto',
@@ -51,17 +51,17 @@ export default function InvestmentForm({ onSubmit, loading }: InvestmentFormProp
             <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">₹</span>
             <input
               type="number"
-              min="10000"
+              min="2000"
               max="10000000"
               step="1000"
               value={formData.investment_amount}
               onChange={handleAmountChange}
               className="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              placeholder="100000"
+              placeholder="10000"
               required
             />
           </div>
-          <p className="text-xs text-gray-500 mt-1">Minimum: ₹10,000 | Maximum: ₹1,00,00,000</p>
+          <p className="text-xs text-gray-500 mt-1">Minimum: ₹2,000 | Maximum: ₹1,00,00,000</p>
         </div>
 
         {/* Duration */}

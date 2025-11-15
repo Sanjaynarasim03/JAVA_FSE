@@ -68,9 +68,14 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
       <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-gray-900 tracking-tight">Portfolio Recommendation</h2>
-          <span className={`px-3 py-1 rounded-full text-sm font-semibold ${getConfidenceColor(portfolio.confidence)}`}>
-            {portfolio.confidence} Confidence
-          </span>
+          <div className="flex flex-col items-end gap-2">
+            <span className={`px-3 py-1 rounded-full text-sm font-semibold ${getConfidenceColor(portfolio.confidence)}`}>
+              {portfolio.confidence} Confidence
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700">
+              📊 AI-Generated Projection
+            </span>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
@@ -105,6 +110,12 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
             <strong className="text-gray-900 font-bold">Summary:</strong> {portfolio.risk_preference.charAt(0).toUpperCase() + portfolio.risk_preference.slice(1)} risk portfolio 
             with {portfolio.allocations.length} stock{portfolio.allocations.length > 1 ? 's' : ''} targeting 
             <span className="font-bold text-blue-700 bg-blue-100 px-2 py-1 rounded ml-1 mr-1">{portfolio.expected_growth_pct}%</span> growth over {formatDurationLong(portfolio.duration_months)}.
+          </p>
+          <p className="text-xs text-gray-600 mt-2 flex items-center">
+            <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+            </svg>
+            Projections based on 60% historical performance + 40% fundamental analysis
           </p>
         </div>
       </div>
@@ -183,17 +194,42 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
       {/* Notes & Recommendations */}
       <div className="bg-white rounded-xl shadow-lg p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Portfolio Notes & Recommendations</h3>
-        <div className="bg-gray-50 p-4 rounded-lg">
+        <div className="bg-gray-50 p-4 rounded-lg mb-4">
           <p className="text-gray-700">{portfolio.notes}</p>
         </div>
         
+        <div className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg mb-4">
+          <h4 className="font-medium text-blue-800 mb-2">📊 Methodology:</h4>
+          <p className="text-sm text-blue-700 mb-2">
+            This portfolio is generated using a multi-factor scoring algorithm that analyzes:
+          </p>
+          <ul className="text-sm text-blue-700 space-y-1 list-disc list-inside">
+            <li><strong>Fundamental Analysis:</strong> PE ratios, dividend yields, market capitalization</li>
+            <li><strong>Risk Metrics:</strong> Beta (volatility), sector diversification</li>
+            <li><strong>Momentum Indicators:</strong> Recent price trends and sector performance</li>
+            <li><strong>Duration Adjustment:</strong> Returns compounded for your investment horizon</li>
+          </ul>
+        </div>
+        
         <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
-          <h4 className="font-medium text-yellow-800 mb-2">Next Steps:</h4>
+          <h4 className="font-medium text-yellow-800 mb-2">⚠️ Important Risk Factors:</h4>
           <ul className="text-sm text-yellow-700 space-y-1">
-            <li>• Consider setting stop-loss at 10-15% below entry price</li>
-            <li>• Monitor quarterly results and sector performance</li>
-            {portfolio.allocations.length < 4 && <li>• Consider adding more stocks for better diversification</li>}
-            <li>• Review portfolio allocation monthly</li>
+            <li>• <strong>Market Volatility:</strong> Stock prices can fluctuate significantly in the short term</li>
+            <li>• <strong>Economic Factors:</strong> Interest rates, inflation, and GDP growth affect returns</li>
+            <li>• <strong>Company-Specific Risks:</strong> Individual stocks may underperform due to business challenges</li>
+            <li>• <strong>Projections vs Reality:</strong> Expected returns are estimates; actual returns may vary significantly</li>
+            <li>• <strong>Diversification:</strong> {portfolio.allocations.length < 4 && 'Consider adding more stocks for better risk management'}</li>
+          </ul>
+        </div>
+        
+        <div className="mt-4 p-4 bg-green-50 border-l-4 border-green-400 rounded-r-lg">
+          <h4 className="font-medium text-green-800 mb-2">✅ Next Steps:</h4>
+          <ul className="text-sm text-green-700 space-y-1">
+            <li>• <strong>Due Diligence:</strong> Research each recommended company independently</li>
+            <li>• <strong>Stop Loss:</strong> Consider setting stop-loss at 10-15% below entry price</li>
+            <li>• <strong>Monitor Quarterly:</strong> Review earnings reports and sector performance</li>
+            <li>• <strong>Rebalance:</strong> Review portfolio allocation {portfolio.duration_months >= 24 ? 'every 6 months' : 'quarterly'}</li>
+            <li>• <strong>Professional Advice:</strong> Consult a SEBI-registered advisor before investing</li>
           </ul>
         </div>
       </div>

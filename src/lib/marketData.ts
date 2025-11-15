@@ -121,6 +121,56 @@ export const MARKET_DATA: MarketData = {
     beta: 1.2,
     dividend: 1.8,
     risk: 'Moderate'
+  },
+  'ITC.NS': {
+    company: 'ITC Limited',
+    price: 470,
+    sector: 'FMCG',
+    marketCap: 'Large',
+    pe: 24.5,
+    beta: 0.7,
+    dividend: 3.2,
+    risk: 'Low'
+  },
+  'WIPRO.NS': {
+    company: 'Wipro Limited',
+    price: 560,
+    sector: 'IT',
+    marketCap: 'Large',
+    pe: 21.8,
+    beta: 0.8,
+    dividend: 1.5,
+    risk: 'Low'
+  },
+  'SBIN.NS': {
+    company: 'State Bank of India',
+    price: 820,
+    sector: 'Banking',
+    marketCap: 'Large',
+    pe: 14.5,
+    beta: 1.1,
+    dividend: 2.0,
+    risk: 'Moderate'
+  },
+  'BHARTIARTL.NS': {
+    company: 'Bharti Airtel',
+    price: 1590,
+    sector: 'Telecom',
+    marketCap: 'Large',
+    pe: 38.2,
+    beta: 0.9,
+    dividend: 0.8,
+    risk: 'Moderate'
+  },
+  'AXISBANK.NS': {
+    company: 'Axis Bank',
+    price: 1150,
+    sector: 'Banking',
+    marketCap: 'Large',
+    pe: 17.8,
+    beta: 1.3,
+    dividend: 1.2,
+    risk: 'Moderate'
   }
 }
 

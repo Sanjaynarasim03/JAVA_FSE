@@ -1,4 +1,5 @@
 import { MARKET_DATA, SECTOR_ALLOCATIONS } from './marketData'
+import { getHistoricalReturn, HISTORICAL_RETURNS } from './historicalReturns'
 import type { InvestmentParams, PortfolioAllocation, StockAllocation } from '../types/portfolio'
 
 // Optional live price map can be provided to override static prices
@@ -70,9 +71,29 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
   let remainingAmount = investment_amount
   const totalScore = selectedStocks.reduce((sum, stock) => sum + stock.score, 0)
 
-  selectedStocks.forEach((stock, index) => {
-    const isLast = index === selectedStocks.length - 1
-    const allocationPercentage = stock.score / totalScore
+  // For low investment amounts, filter stocks by price affordability
+  const entryPrices = selectedStocks.map(stock => livePrices?.[stock.ticker] ?? stock.data.price)
+  const maxAffordablePrice = investment_amount * 0.8 // Allow up to 80% for one stock
+  
+  // Filter affordable stocks for low investment amounts
+  const affordableStocks = investment_amount < 50000 
+    ? selectedStocks.filter((stock, idx) => entryPrices[idx] <= maxAffordablePrice)
+    : selectedStocks
+  
+  // If no affordable stocks, use the cheapest one
+  const stocksToAllocate = affordableStocks.length > 0 
+    ? affordableStocks.slice(0, Math.min(affordableStocks.length, numStocks))
+    : [selectedStocks.sort((a, b) => {
+        const priceA = livePrices?.[a.ticker] ?? a.data.price
+        const priceB = livePrices?.[b.ticker] ?? b.data.price
+        return priceA - priceB
+      })[0]]
+
+  const adjustedTotalScore = stocksToAllocate.reduce((sum, stock) => sum + stock.score, 0)
+
+  stocksToAllocate.forEach((stock, index) => {
+    const isLast = index === stocksToAllocate.length - 1
+    const allocationPercentage = stock.score / adjustedTotalScore
     
     let allocationAmount: number
     if (isLast) {
@@ -82,59 +103,85 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
       remainingAmount -= allocationAmount
     }
 
-  const entryPrice = livePrices?.[stock.ticker] ?? stock.data.price
-  const shares = Math.floor(allocationAmount / entryPrice)
-  const actualAllocation = shares * entryPrice
+    const entryPrice = livePrices?.[stock.ticker] ?? stock.data.price
+    const shares = Math.floor(allocationAmount / entryPrice)
+    const actualAllocation = shares * entryPrice
+    
+    // Skip if shares would be 0
+    if (shares === 0) {
+      remainingAmount += allocationAmount // Return to pool
+      return
+    }
 
-    // Calculate expected returns based on duration and risk
+    // Calculate expected returns based on duration, risk, and HISTORICAL DATA
+    // Use deterministic profitable returns based on stock fundamentals + historical performance
     let expectedReturn: number
-    const baseMultiplier = duration_months / 12 // Annualized calculation
+    
+    // Get historical return as baseline
+    const historicalReturn = getHistoricalReturn(stock.ticker, duration_months)
+    
+    // Base return from stock quality (PE, dividend, beta)
+    const qualityScore = stock.score / 12 // Normalize to 0-1 range
+    const fundamentalBoost = stock.data.dividend * 2 + (stock.data.pe < 25 ? 3 : 0)
+    
+    // Blend historical data (60%) with fundamental analysis (40%)
+    const historicalWeight = historicalReturn ? 0.6 : 0
+    const fundamentalWeight = 1 - historicalWeight
+    
+    let fundamentalProjection: number
     
     switch (duration_months) {
-      case 3: // 3 months
-        expectedReturn = risk_preference === 'low' ? 
-          4 + Math.random() * 3 : 
+      case 3: // 3 months - minimum 3% profit
+        fundamentalProjection = risk_preference === 'low' ? 
+          5 + qualityScore * 3 : 
           risk_preference === 'moderate' ? 
-          6 + Math.random() * 4 : 
-          8 + Math.random() * 7
+          8 + qualityScore * 4 : 
+          10 + qualityScore * 6
         break
-      case 6: // 6 months  
-        expectedReturn = risk_preference === 'low' ? 
-          8 + Math.random() * 5 : 
+      case 6: // 6 months - minimum 6% profit
+        fundamentalProjection = risk_preference === 'low' ? 
+          10 + qualityScore * 5 + fundamentalBoost : 
           risk_preference === 'moderate' ? 
-          12 + Math.random() * 6 : 
-          15 + Math.random() * 10
+          15 + qualityScore * 6 + fundamentalBoost : 
+          20 + qualityScore * 8 + fundamentalBoost
         break
-      case 12: // 1 year
-        expectedReturn = risk_preference === 'low' ? 
-          15 + Math.random() * 8 : 
+      case 12: // 1 year - minimum 12% profit
+        fundamentalProjection = risk_preference === 'low' ? 
+          18 + qualityScore * 8 + fundamentalBoost * 1.5 : 
           risk_preference === 'moderate' ? 
-          20 + Math.random() * 12 : 
-          28 + Math.random() * 18
+          25 + qualityScore * 10 + fundamentalBoost * 1.5 : 
+          35 + qualityScore * 15 + fundamentalBoost * 1.5
         break
-      case 24: // 2 years
-        expectedReturn = risk_preference === 'low' ? 
-          25 + Math.random() * 15 : 
+      case 24: // 2 years - minimum 25% profit
+        fundamentalProjection = risk_preference === 'low' ? 
+          32 + qualityScore * 15 + fundamentalBoost * 2 : 
           risk_preference === 'moderate' ? 
-          35 + Math.random() * 20 : 
-          50 + Math.random() * 30
+          45 + qualityScore * 20 + fundamentalBoost * 2 : 
+          65 + qualityScore * 25 + fundamentalBoost * 2
         break
-      case 36: // 3 years
-        expectedReturn = risk_preference === 'low' ? 
-          35 + Math.random() * 20 : 
+      case 36: // 3 years - minimum 40% profit
+        fundamentalProjection = risk_preference === 'low' ? 
+          45 + qualityScore * 20 + fundamentalBoost * 2.5 : 
           risk_preference === 'moderate' ? 
-          50 + Math.random() * 25 : 
-          75 + Math.random() * 40
+          65 + qualityScore * 25 + fundamentalBoost * 2.5 : 
+          95 + qualityScore * 35 + fundamentalBoost * 2.5
         break
-      case 60: // 5 years
-        expectedReturn = risk_preference === 'low' ? 
-          55 + Math.random() * 30 : 
+      case 60: // 5 years - minimum 70% profit
+        fundamentalProjection = risk_preference === 'low' ? 
+          75 + qualityScore * 30 + fundamentalBoost * 3 : 
           risk_preference === 'moderate' ? 
-          85 + Math.random() * 40 : 
-          130 + Math.random() * 70
+          110 + qualityScore * 40 + fundamentalBoost * 3 : 
+          170 + qualityScore * 60 + fundamentalBoost * 3
         break
       default:
-        expectedReturn = 10 + Math.random() * 5
+        fundamentalProjection = 12 + qualityScore * 5
+    }
+    
+    // Blend historical and fundamental projections
+    if (historicalReturn && historicalReturn > 0) {
+      expectedReturn = (historicalReturn * historicalWeight) + (fundamentalProjection * fundamentalWeight)
+    } else {
+      expectedReturn = fundamentalProjection
     }
 
     const expectedValue = Math.round(actualAllocation * (1 + expectedReturn / 100))
@@ -145,12 +192,14 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
       ticker: stock.ticker,
       allocation_inr: actualAllocation,
       shares,
-  entry_price_inr: entryPrice,
+      entry_price_inr: entryPrice,
       expected_return_pct: Math.round(expectedReturn * 100) / 100,
       expected_value_inr: expectedValue,
       risk: stock.data.risk,
       rationale: generateRationale(stock.data, risk_preference, duration_months)
     })
+    
+    remainingAmount -= actualAllocation
   })
 
   const totalInvested = allocations.reduce((sum, alloc) => sum + alloc.allocation_inr, 0)
