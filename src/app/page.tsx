@@ -45,17 +45,18 @@ export default function Home() {
   }
 
   return (
-    <main className="container mx-auto px-4 py-8 text-gray-900">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 drop-shadow-sm">
-            🤖 INTELLiINVEST
-          </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed">
-            AI-powered portfolio recommendations for the Indian stock market with 
-            real-time data and risk-adjusted projections
-          </p>
+    <main className="min-h-screen">
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+              🤖 INTELLiINVEST
+            </h1>
+            <p className="text-xl text-white max-w-3xl mx-auto font-medium leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
+              AI-powered portfolio recommendations for the Indian stock market with 
+              real-time data and risk-adjusted projections
+            </p>
           {usingLiveData && (
             <div className="mt-4 inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold">
               <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
@@ -139,6 +140,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </main>
