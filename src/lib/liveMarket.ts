@@ -1,4 +1,6 @@
-import { MARKET_DATA } from './marketData'
+import { MARKET_DATA, ALL_TICKERS } from './marketData'
+
+const REQUEST_DELAY_MS = 150
 
 export type PriceMap = Record<string, number>
 
@@ -11,7 +13,7 @@ const cache: { prices: PriceMap; timestamp: number } = {
 const CACHE_TTL_MS = 60_000 // 1 minute
 
 export function getAllTickers(): string[] {
-  return Object.keys(MARKET_DATA)
+  return ALL_TICKERS
 }
 
 export async function fetchQuotes(tickers: string[]): Promise<PriceMap> {
@@ -29,7 +31,8 @@ export async function fetchQuotes(tickers: string[]): Promise<PriceMap> {
   // Dynamic import to prevent yahoo-finance2 from being bundled with Deno test deps
   let yahooFinance: any
   try {
-    yahooFinance = await import('yahoo-finance2').then(mod => mod.default)
+    const YahooFinance = (await import('yahoo-finance2')).default
+    yahooFinance = new YahooFinance({ suppressNotices: ['yahooSurvey'] })
   } catch (error) {
     // If import fails, use fallback prices only
     for (const t of tickers) {
@@ -41,20 +44,20 @@ export async function fetchQuotes(tickers: string[]): Promise<PriceMap> {
   }
 
   // Fetch in parallel but guard per-ticker errors
-  await Promise.all(
-    tickers.map(async (ticker) => {
-      try {
-        const quote = await yahooFinance.quote(ticker)
-        // Prefer regularMarketPrice, fallback to previousClose
-        const price = quote?.regularMarketPrice ?? quote?.previousClose
-        if (typeof price === 'number' && !Number.isNaN(price)) {
-          results[ticker] = price
-        }
-      } catch (err) {
-        // Ignore errors for individual tickers; fallback will be used
+  for (const ticker of tickers) {
+    try {
+      const quote = await yahooFinance.quote(ticker)
+      const price = quote?.regularMarketPrice ?? quote?.previousClose
+      if (typeof price === 'number' && !Number.isNaN(price)) {
+        results[ticker] = price
       }
-    })
-  )
+    } catch (err) {
+      // Ignore errors for individual tickers; fallback will be used
+    }
+
+    // Gentle throttle to avoid rate limits
+    await new Promise(resolve => setTimeout(resolve, REQUEST_DELAY_MS))
+  }
 
   // Fill any missing prices with mock data fallback
   for (const t of tickers) {

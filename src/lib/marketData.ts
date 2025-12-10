@@ -1,7 +1,9 @@
 import type { MarketData } from '../types/portfolio'
+import generatedMarketData from '../data/market-data.json'
+import universeRaw from '../data/market-universe.json'
 
-// Mock market data for demonstration
-export const MARKET_DATA: MarketData = {
+// Legacy fallback data. The generated dataset supplies the full NSE coverage.
+const LEGACY_MARKET_DATA: MarketData = {
   'TCS.NS': {
     company: 'Tata Consultancy Services',
     price: 3890,
@@ -171,31 +173,116 @@ export const MARKET_DATA: MarketData = {
     beta: 1.3,
     dividend: 1.2,
     risk: 'Moderate'
+  },
+  'SETFNIFTY.NS': {
+    company: 'Nippon India ETF Nifty 50',
+    price: 230,
+    sector: 'Index ETF',
+    marketCap: 'Large',
+    pe: 0,
+    beta: 1.0,
+    dividend: 1.1,
+    risk: 'Low'
+  },
+  'TATAGOLD.NS': {
+    company: 'Tata Gold Exchange Traded Fund',
+    price: 58,
+    sector: 'Commodities',
+    marketCap: 'Mid',
+    pe: 0,
+    beta: 0.4,
+    dividend: 0.0,
+    risk: 'Low'
   }
 }
 
+const GENERATED_MARKET_DATA = generatedMarketData as MarketData
+
+export interface TickerMetadata {
+  ticker: string
+  company: string
+  sector: string
+  industry: string
+  marketCapValue: number | null
+  isin: string | null
+}
+
+const RAW_UNIVERSE = universeRaw as TickerMetadata[]
+
+export const MARKET_UNIVERSE: TickerMetadata[] = RAW_UNIVERSE.map((entry) => ({
+  ...entry,
+  ticker: entry.ticker.toUpperCase(),
+  marketCapValue: entry.marketCapValue ?? null,
+  isin: entry.isin ?? null
+}))
+
+export const MARKET_DATA: MarketData = {
+  ...LEGACY_MARKET_DATA,
+  ...GENERATED_MARKET_DATA
+}
+
+const PRIORITY_TICKERS = [
+  'TECHM.NS',
+  'SBIN.NS',
+  'SETFNIFTY.NS',
+  'TATAGOLD.NS',
+  'ITC.NS',
+  'BPCL.NS',
+  'WIPRO.NS',
+  'COFORGE.NS',
+  'HDFCBANK.NS',
+  'HCLTECH.NS'
+]
+
+export const TOP_LIQUID_TICKERS: string[] = MARKET_UNIVERSE
+  .filter((entry) => typeof entry.marketCapValue === 'number')
+  .sort((a, b) => (b.marketCapValue ?? 0) - (a.marketCapValue ?? 0))
+  .slice(0, 120)
+  .map((entry) => entry.ticker)
+
+const BASE_TICKER_POOL = TOP_LIQUID_TICKERS.length > 0
+  ? TOP_LIQUID_TICKERS
+  : Object.keys(MARKET_DATA)
+
+export const DEFAULT_TICKER_POOL: string[] = Array.from(new Set([
+  ...PRIORITY_TICKERS,
+  ...BASE_TICKER_POOL
+]))
+
 export const SECTOR_ALLOCATIONS = {
   low: {
-    'IT': 0.25,
-    'Banking': 0.25,
-    'FMCG': 0.20,
-    'Pharma': 0.15,
-    'Energy': 0.15
+    'Banking': 0.18,
+    'Financial Services': 0.12,
+    'Technology': 0.14,
+    'FMCG': 0.16,
+    'Healthcare': 0.12,
+    'Energy & Utilities': 0.10,
+    'Consumer & Media': 0.08,
+    'Industrials': 0.05,
+    'Metals & Mining': 0.05
   },
   moderate: {
-    'IT': 0.20,
-    'Banking': 0.25,
-    'Auto': 0.15,
-    'FMCG': 0.15,
-    'Energy': 0.10,
-    'NBFC': 0.15
+    'Banking': 0.13,
+    'Financial Services': 0.11,
+    'Technology': 0.14,
+    'Industrials': 0.13,
+    'Automotive': 0.10,
+    'FMCG': 0.09,
+    'Healthcare': 0.10,
+    'Energy & Utilities': 0.08,
+    'Consumer & Media': 0.07,
+    'Metals & Mining': 0.05
   },
   high: {
-    'Banking': 0.15,
-    'Auto': 0.20,
-    'NBFC': 0.20,
-    'Infrastructure': 0.25,
-    'Energy': 0.20
+    'Banking': 0.12,
+    'Financial Services': 0.10,
+    'Technology': 0.13,
+    'Industrials': 0.16,
+    'Automotive': 0.14,
+    'Energy & Utilities': 0.10,
+    'Metals & Mining': 0.10,
+    'Consumer & Media': 0.08,
+    'Real Estate & Infrastructure': 0.07
   }
 }
 

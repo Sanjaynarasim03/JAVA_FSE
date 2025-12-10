@@ -123,7 +123,8 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="p-6 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
+          {/* How This Works Info Section - Explains the algorithm methodology */}
+          {/* <div className="p-6 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
             <div className="flex">
               <div className="flex-shrink-0">
                 <svg className="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
@@ -139,7 +140,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         </div>
       </div>

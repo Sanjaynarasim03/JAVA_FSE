@@ -1,16 +1,53 @@
-import { MARKET_DATA, SECTOR_ALLOCATIONS } from './marketData'
+import { DEFAULT_TICKER_POOL, MARKET_DATA, SECTOR_ALLOCATIONS } from './marketData'
 import { getHistoricalReturn, HISTORICAL_RETURNS } from './historicalReturns'
 import type { InvestmentParams, PortfolioAllocation, StockAllocation } from '../types/portfolio'
+
+type MarketEntry = (typeof MARKET_DATA)[string]
+
+interface ScoredStock {
+  ticker: string
+  data: MarketEntry
+  score: number
+  rankScore: number
+  bucket: string
+}
+
+function toSectorBucket(rawSector?: string): string {
+  const value = rawSector?.toLowerCase() ?? ''
+
+  if (value.includes('bank')) return 'Banking'
+  if (value.includes('nbfc')) return 'Financial Services'
+  if (value.includes('financial')) return 'Financial Services'
+  if (value.includes('insurance')) return 'Financial Services'
+  if (value.includes('energy') || value.includes('oil') || value.includes('gas') || value.includes('utility') || value.includes('power')) return 'Energy & Utilities'
+  if (value === 'it' || value.includes('information technology') || value.includes('technology') || value.includes('software') || value.includes('it services')) return 'Technology'
+  if (value.includes('fmcg') || value.includes('consumer defensive') || value.includes('staple')) return 'FMCG'
+  if (value.includes('consumer discretionary') || value.includes('retail') || value.includes('services') || value.includes('media') || value.includes('entertainment')) return 'Consumer & Media'
+  if (value.includes('auto') || value.includes('automobile') || value.includes('vehicle') || value.includes('transport') || value.includes('logistics')) return 'Automotive'
+  if (value.includes('health') || value.includes('pharma') || value.includes('biotech') || value.includes('medical')) return 'Healthcare'
+  if (value.includes('chemical')) return 'Chemicals'
+  if (value.includes('industrial') || value.includes('capital goods') || value.includes('engineering') || value.includes('manufact')) return 'Industrials'
+  if (value.includes('metal') || value.includes('mining') || value.includes('steel')) return 'Metals & Mining'
+  if (value.includes('real estate') || value.includes('property') || value.includes('infra') || value.includes('construction')) return 'Real Estate & Infrastructure'
+  if (value.includes('telecom') || value.includes('communication')) return 'Telecom'
+
+  return 'Diversified'
+}
 
 // Optional live price map can be provided to override static prices
 export type LivePriceMap = Record<string, number>
 export function generatePortfolio(params: InvestmentParams, livePrices?: LivePriceMap): PortfolioAllocation {
   const { investment_amount, duration_months, risk_preference, mode, preferred_tickers } = params
 
+  const normalizedPreferred = preferred_tickers?.map((ticker) => ticker.toUpperCase()) ?? []
+  const universeSet = new Set(
+    normalizedPreferred.length > 0 ? normalizedPreferred : DEFAULT_TICKER_POOL
+  )
+
   // Filter stocks based on risk preference
   let availableStocks = Object.entries(MARKET_DATA).filter(([ticker, stockData]) => {
-    if (preferred_tickers && preferred_tickers.length > 0) {
-      return preferred_tickers.includes(ticker)
+    if (!universeSet.has(ticker)) {
+      return false
     }
     
     // Filter by risk preference
@@ -23,6 +60,10 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
     }
   })
 
+  if (availableStocks.length === 0) {
+    availableStocks = Object.entries(MARKET_DATA).filter(([ticker]) => DEFAULT_TICKER_POOL.includes(ticker))
+  }
+
   // Determine number of stocks based on mode
   let numStocks: number
   if (mode === 'single') {
@@ -33,38 +74,132 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
     numStocks = risk_preference === 'high' ? 3 : risk_preference === 'moderate' ? 4 : 3
   }
 
-  // Select top stocks based on scoring algorithm
-  const scoredStocks = availableStocks.map(([ticker, stockData]) => {
-    let score = 0
-    
+  const sectorWeights = (SECTOR_ALLOCATIONS[risk_preference] ?? {}) as Record<string, number>
+
+  const scoredStocks: ScoredStock[] = availableStocks.map(([ticker, stockData]) => {
+    let baseScore = 0
+
     // PE ratio scoring (lower is better)
-    if (stockData.pe < 20) score += 3
-    else if (stockData.pe < 30) score += 2
-    else score += 1
+    if (stockData.pe < 20) baseScore += 3
+    else if (stockData.pe < 30) baseScore += 2
+    else baseScore += 1
 
     // Dividend yield scoring
-    if (stockData.dividend > 2) score += 3
-    else if (stockData.dividend > 1) score += 2
-    else score += 1
+    if (stockData.dividend > 2) baseScore += 3
+    else if (stockData.dividend > 1) baseScore += 2
+    else baseScore += 1
 
     // Beta scoring based on risk preference
-    if (risk_preference === 'low' && stockData.beta < 1.0) score += 3
-    else if (risk_preference === 'moderate' && stockData.beta <= 1.2) score += 2
-    else if (risk_preference === 'high' && stockData.beta > 1.2) score += 3
-    else score += 1
+    if (risk_preference === 'low' && stockData.beta < 1.0) baseScore += 3
+    else if (risk_preference === 'moderate' && stockData.beta <= 1.2) baseScore += 2
+    else if (risk_preference === 'high' && stockData.beta > 1.2) baseScore += 3
+    else baseScore += 1
 
     // Market cap preference (favor large cap for lower risk)
     if (stockData.marketCap === 'Large') {
-      score += risk_preference === 'low' ? 3 : risk_preference === 'moderate' ? 2 : 1
+      baseScore += risk_preference === 'low' ? 3 : risk_preference === 'moderate' ? 2 : 1
     }
 
-    return { ticker, data: stockData, score }
+    const bucket = toSectorBucket(stockData.sector)
+    const sectorBias = sectorWeights[bucket] ?? 0.05
+    const rankScore = baseScore * (1 + sectorBias)
+
+    return { ticker, data: stockData, score: baseScore, rankScore, bucket }
   })
 
-  // Sort by score and select top stocks
-  const selectedStocks = scoredStocks
-    .sort((a, b) => b.score - a.score)
-    .slice(0, numStocks)
+  const sortedStocks = scoredStocks.sort((a, b) => b.rankScore - a.rankScore)
+
+  const availableByBucket = new Map<string, number>()
+  sortedStocks.forEach((stock) => {
+    availableByBucket.set(stock.bucket, (availableByBucket.get(stock.bucket) ?? 0) + 1)
+  })
+
+  const bucketTargets = new Map<string, number>()
+  let allocated = 0
+  const weightedBuckets = Object.entries(sectorWeights).sort((a, b) => b[1] - a[1])
+
+  for (const [bucket, weight] of weightedBuckets) {
+    if (allocated >= numStocks) break
+    const available = availableByBucket.get(bucket) ?? 0
+    if (available === 0) continue
+
+    let target = Math.floor(numStocks * weight)
+    if (target === 0 && numStocks - allocated > 0) {
+      target = 1
+    }
+
+    target = Math.min(target, available, numStocks - allocated)
+    if (target <= 0) continue
+
+    bucketTargets.set(bucket, target)
+    allocated += target
+  }
+
+  let remainder = numStocks - allocated
+
+  if (remainder > 0 && weightedBuckets.length > 0) {
+    for (const [bucket] of weightedBuckets) {
+      if (remainder === 0) break
+      const available = availableByBucket.get(bucket) ?? 0
+      const current = bucketTargets.get(bucket) ?? 0
+      if (available > current) {
+        bucketTargets.set(bucket, current + 1)
+        remainder -= 1
+      }
+    }
+  }
+
+  if (remainder > 0) {
+    const fallbackBuckets = Array.from(availableByBucket.entries()).sort((a, b) => b[1] - a[1])
+    for (const [bucket, available] of fallbackBuckets) {
+      if (remainder === 0) break
+      const current = bucketTargets.get(bucket) ?? 0
+      if (available > current) {
+        const add = Math.min(available - current, remainder)
+        bucketTargets.set(bucket, current + add)
+        remainder -= add
+      }
+    }
+  }
+
+  const plannedTotal = Array.from(bucketTargets.values()).reduce((sum, value) => sum + value, 0)
+  let fallbackSlots = Math.max(0, numStocks - plannedTotal)
+
+  const selectedStocks: ScoredStock[] = []
+  const usedTickers = new Set<string>()
+  const bucketUsage = new Map<string, number>()
+
+  const selectStock = (stock: ScoredStock) => {
+    selectedStocks.push(stock)
+    usedTickers.add(stock.ticker)
+    bucketUsage.set(stock.bucket, (bucketUsage.get(stock.bucket) ?? 0) + 1)
+  }
+
+  for (const stock of sortedStocks) {
+    if (selectedStocks.length >= numStocks) break
+    if (usedTickers.has(stock.ticker)) continue
+
+    const target = bucketTargets.get(stock.bucket) ?? 0
+    const used = bucketUsage.get(stock.bucket) ?? 0
+
+    if (target > 0 && used < target) {
+      selectStock(stock)
+      continue
+    }
+
+    if (fallbackSlots > 0) {
+      selectStock(stock)
+      fallbackSlots -= 1
+    }
+  }
+
+  if (selectedStocks.length < numStocks) {
+    for (const stock of sortedStocks) {
+      if (selectedStocks.length >= numStocks) break
+      if (usedTickers.has(stock.ticker)) continue
+      selectStock(stock)
+    }
+  }
 
   // Calculate allocations
   const allocations: StockAllocation[] = []

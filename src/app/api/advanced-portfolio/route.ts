@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { generateAdvancedPortfolio, AdvancedInvestmentParams } from '@/lib/advancedPortfolioGenerator'
 import { fetchQuotes } from '@/lib/liveMarket'
+import { TOP_LIQUID_TICKERS } from '@/lib/marketData'
 
 /**
  * POST /api/advanced-portfolio
@@ -28,13 +29,9 @@ export async function POST(request: NextRequest) {
     if (!livePrices || Object.keys(livePrices).length === 0) {
       try {
         // Get common Indian stock tickers
-        const commonTickers = [
-          'TCS.NS', 'RELIANCE.NS', 'INFY.NS', 'HDFCBANK.NS', 
-          'ITC.NS', 'WIPRO.NS', 'LT.NS', 'HINDUNILVR.NS',
-          'BHARTIARTL.NS', 'SBIN.NS'
-        ]
-        
-        livePrices = await fetchQuotes(commonTickers)
+        const tickersToFetch = TOP_LIQUID_TICKERS.slice(0, 20)
+
+        livePrices = await fetchQuotes(tickersToFetch)
       } catch (error) {
         console.warn('Failed to fetch live prices, using fallback data:', error)
         // Will use fallback prices from MARKET_DATA

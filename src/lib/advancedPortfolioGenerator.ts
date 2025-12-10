@@ -5,7 +5,7 @@
  * Ensemble modeling, risk metrics, backtesting, and production-grade portfolio allocation
  */
 
-import { MARKET_DATA } from './marketData'
+import { DEFAULT_TICKER_POOL, MARKET_DATA } from './marketData'
 
 // ============================================================================
 // TYPE DEFINITIONS
@@ -144,7 +144,7 @@ export function generateAdvancedPortfolio(
   const ensembleWeights = getEnsembleWeights(risk_preference)
 
   // Get available tickers pool
-  let tickerPool = Object.keys(MARKET_DATA)
+  let tickerPool = DEFAULT_TICKER_POOL
   
   if (preferred_tickers && preferred_tickers.length > 0) {
     // Validate preferred tickers

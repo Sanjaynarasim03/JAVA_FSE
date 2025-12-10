@@ -1,0 +1,5012 @@
+{
+  "360ONE.NS": {
+    "company": "360 One Wam Limited",
+    "price": 1101.2,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 39.84,
+    "beta": 1,
+    "dividend": 1.07,
+    "risk": "Moderate"
+  },
+  "3MINDIA.NS": {
+    "company": "3M India Limited",
+    "price": 34575,
+    "sector": "Conglomerate",
+    "marketCap": "Mid",
+    "pe": 70.36,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AADHARHFC.NS": {
+    "company": "Aadhar Housing Finance Ltd.",
+    "price": 483,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 21.57,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AARTIIND.NS": {
+    "company": "Aarti Industries Limited",
+    "price": 352.35,
+    "sector": "Chemicals",
+    "marketCap": "Small",
+    "pe": 44.1,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AAVAS.NS": {
+    "company": "Aavas Financiers Limited",
+    "price": 1540.1,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 20.41,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ABB.NS": {
+    "company": "ABB India Limited",
+    "price": 5157,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 61.92,
+    "beta": 1,
+    "dividend": 0.85,
+    "risk": "Moderate"
+  },
+  "ABBOTINDIA.NS": {
+    "company": "Abbott India Limited",
+    "price": 27810,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 39.22,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ABCAPITAL.NS": {
+    "company": "Aditya Birla Capital Limited",
+    "price": 361.8,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 29.15,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ABFRL.NS": {
+    "company": "Aditya Birla Fashion and Retail Limited",
+    "price": 75.72,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 39.85,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ABLBL.NS": {
+    "company": "Aditya Birla Lifestyle Brands Ltd.",
+    "price": 130.28,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ABREL.NS": {
+    "company": "Aditya Birla Real Estate Limited",
+    "price": 1652.7,
+    "sector": "Forest Materials",
+    "marketCap": "Mid",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ABSLAMC.NS": {
+    "company": "Aditya Birla Sun Life AMC Limited",
+    "price": 727,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 21.66,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ACC.NS": {
+    "company": "ACC Limited",
+    "price": 1781.6,
+    "sector": "Materials",
+    "marketCap": "Mid",
+    "pe": 10.05,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ACE.NS": {
+    "company": "Action Construction Equipment Limited",
+    "price": 926.5,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 26.38,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ACMESOLAR.NS": {
+    "company": "ACME Solar Holdings Ltd.",
+    "price": 216.86,
+    "sector": "Energy",
+    "marketCap": "Small",
+    "pe": 27.28,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ADANIENSOL.NS": {
+    "company": "Adani Energy Solutions Limited",
+    "price": 989.25,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 52.37,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ADANIENT.NS": {
+    "company": "Adani Enterprises Limited",
+    "price": 2227.7,
+    "sector": "Metals",
+    "marketCap": "Large",
+    "pe": 34.38,
+    "beta": 1,
+    "dividend": 0.06,
+    "risk": "Moderate"
+  },
+  "ADANIGREEN.NS": {
+    "company": "Adani Green Energy Limited",
+    "price": 996.5,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 83.67,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ADANIPORTS.NS": {
+    "company": "Adani Ports and Special Economic Zone Limited",
+    "price": 1504.7,
+    "sector": "Services",
+    "marketCap": "Large",
+    "pe": 27.17,
+    "beta": 1,
+    "dividend": 0.47,
+    "risk": "Moderate"
+  },
+  "ADANIPOWER.NS": {
+    "company": "Adani Power Limited",
+    "price": 141.35,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 23.13,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AEGISLOG.NS": {
+    "company": "Aegis Logistics Ltd.",
+    "price": 740.7,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 36.22,
+    "beta": 1,
+    "dividend": 1.06,
+    "risk": "Moderate"
+  },
+  "AEGISVOPAK.NS": {
+    "company": "Aegis Vopak Terminals Ltd.",
+    "price": 243.45,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 194.76,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AFCONS.NS": {
+    "company": "Afcons Infrastructure Ltd.",
+    "price": 395.6,
+    "sector": "Infrastructure",
+    "marketCap": "Small",
+    "pe": 28.92,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AFFLE.NS": {
+    "company": "Affle 3i Limited",
+    "price": 1640.2,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 54.89,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AGARWALEYE.NS": {
+    "company": "Dr. Agarwal's Health Care Ltd.",
+    "price": 496.45,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 136.39,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AIAENG.NS": {
+    "company": "AIA Engineering Limited",
+    "price": 3710,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 30.69,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AIIL.NS": {
+    "company": "Authum Investment & Infrastructure Limited",
+    "price": 2525.1,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 10.69,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AJANTPHARM.NS": {
+    "company": "Ajanta Pharma Limited",
+    "price": 2650,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 34.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AKUMS.NS": {
+    "company": "Akums Drugs and Pharmaceuticals Ltd.",
+    "price": 420.3,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 20.18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AKZOINDIA.NS": {
+    "company": "Akzo Nobel India Limited",
+    "price": 3527,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 8.07,
+    "beta": 1,
+    "dividend": 0.84,
+    "risk": "Moderate"
+  },
+  "ALKEM.NS": {
+    "company": "Alkem Laboratories Limited",
+    "price": 5617,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 28.44,
+    "beta": 1,
+    "dividend": 0.14,
+    "risk": "Moderate"
+  },
+  "ALKYLAMINE.NS": {
+    "company": "Alkyl Amines Chemicals Limited",
+    "price": 1603.8,
+    "sector": "Chemicals",
+    "marketCap": "Small",
+    "pe": 45.14,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ALOKINDS.NS": {
+    "company": "Alok Industries Limited",
+    "price": 16.13,
+    "sector": "Textiles",
+    "marketCap": "Small",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AMBER.NS": {
+    "company": "Amber Enterprises India Limited",
+    "price": 6568.5,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 101.1,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AMBUJACEM.NS": {
+    "company": "Ambuja Cements Limited",
+    "price": 532.65,
+    "sector": "Materials",
+    "marketCap": "Large",
+    "pe": 23.21,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ANANDRATHI.NS": {
+    "company": "Anand Rathi Wealth Limited",
+    "price": 2867.6,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 69.2,
+    "beta": 1,
+    "dividend": 0.27,
+    "risk": "Moderate"
+  },
+  "ANANTRAJ.NS": {
+    "company": "Anant Raj Limited",
+    "price": 509.4,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 35.45,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ANGELONE.NS": {
+    "company": "Angel One Limited",
+    "price": 2481.7,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 29.64,
+    "beta": 1,
+    "dividend": 1.46,
+    "risk": "Moderate"
+  },
+  "APARINDS.NS": {
+    "company": "APAR Industries Limited",
+    "price": 8634,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 36.89,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "APLAPOLLO.NS": {
+    "company": "APL Apollo Tubes Limited",
+    "price": 1731.2,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 45.9,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "APLLTD.NS": {
+    "company": "Alembic Pharmaceuticals Limited",
+    "price": 885.85,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 27.43,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "APOLLOHOSP.NS": {
+    "company": "Apollo Hospitals Enterprise Limited",
+    "price": 7024.5,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 60.31,
+    "beta": 1,
+    "dividend": 0.14,
+    "risk": "Moderate"
+  },
+  "APOLLOTYRE.NS": {
+    "company": "Apollo Tyres Limited",
+    "price": 520.1,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 41.57,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "APTUS.NS": {
+    "company": "Aptus Value Housing Finance India Limited",
+    "price": 288.15,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 17.1,
+    "beta": 1,
+    "dividend": 1.56,
+    "risk": "Moderate"
+  },
+  "ARE&M.NS": {
+    "company": "Amara Raja Energy & Mobility Limited",
+    "price": 950,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 19.28,
+    "beta": 1,
+    "dividend": 1.13,
+    "risk": "Moderate"
+  },
+  "ASAHIINDIA.NS": {
+    "company": "Asahi India Glass Limited",
+    "price": 1003.2,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 80.06,
+    "beta": 1,
+    "dividend": 0.2,
+    "risk": "Moderate"
+  },
+  "ASHOKLEY.NS": {
+    "company": "Ashok Leyland Limited",
+    "price": 158.24,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 28.61,
+    "beta": 1,
+    "dividend": 1.96,
+    "risk": "Moderate"
+  },
+  "ASIANPAINT.NS": {
+    "company": "Asian Paints Limited",
+    "price": 2805.5,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 68.98,
+    "beta": 1,
+    "dividend": 0.9,
+    "risk": "Moderate"
+  },
+  "ASTERDM.NS": {
+    "company": "Aster DM Healthcare Limited",
+    "price": 630,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 96.33,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ASTRAL.NS": {
+    "company": "Astral Limited",
+    "price": 1394.4,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 73.51,
+    "beta": 1,
+    "dividend": 0.26,
+    "risk": "Moderate"
+  },
+  "ASTRAZEN.NS": {
+    "company": "AstraZeneca Pharma India Limited",
+    "price": 9051.5,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 114.07,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ATGL.NS": {
+    "company": "Adani Total Gas Limited",
+    "price": 585.35,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 102.87,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ATHERENERG.NS": {
+    "company": "Ather Energy Limited",
+    "price": 647.05,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ATUL.NS": {
+    "company": "Atul Ltd",
+    "price": 5874,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 31.89,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AUBANK.NS": {
+    "company": "AU Small Finance Bank Limited",
+    "price": 998.8,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 34.31,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AUROPHARMA.NS": {
+    "company": "Aurobindo Pharma Limited",
+    "price": 1175.6,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 19.95,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AWL.NS": {
+    "company": "AWL Agri Business Limited",
+    "price": 247.05,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 29.52,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "AXISBANK.NS": {
+    "company": "Axis Bank Limited",
+    "price": 1278.6,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 15.31,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BAJAJ-AUTO.NS": {
+    "company": "Bajaj Auto Limited",
+    "price": 8972,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 30.12,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BAJAJFINSV.NS": {
+    "company": "Bajaj Finserv Ltd.",
+    "price": 2078.5,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 34.66,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BAJAJHFL.NS": {
+    "company": "Bajaj Housing Finance Ltd.",
+    "price": 96.2,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 33.99,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BAJAJHLDNG.NS": {
+    "company": "Bajaj Holdings & Investment Limited",
+    "price": 11005,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 14.37,
+    "beta": 1,
+    "dividend": 0.84,
+    "risk": "Moderate"
+  },
+  "BAJFINANCE.NS": {
+    "company": "Bajaj Finance Limited",
+    "price": 1011.6,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 34.35,
+    "beta": 1,
+    "dividend": 0.43,
+    "risk": "Moderate"
+  },
+  "BALKRISIND.NS": {
+    "company": "Balkrishna Industries Limited",
+    "price": 2320.4,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 32.57,
+    "beta": 1,
+    "dividend": 0.69,
+    "risk": "Moderate"
+  },
+  "BALRAMCHIN.NS": {
+    "company": "Balrampur Chini Mills Limited",
+    "price": 444.85,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 22.25,
+    "beta": 1,
+    "dividend": 0.84,
+    "risk": "Moderate"
+  },
+  "BANDHANBNK.NS": {
+    "company": "Bandhan Bank Limited",
+    "price": 140.85,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 18.48,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BANKBARODA.NS": {
+    "company": "Bank of Baroda Limited",
+    "price": 286.6,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 7.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BANKINDIA.NS": {
+    "company": "Bank of India Limited",
+    "price": 139.29,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 6.58,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BASF.NS": {
+    "company": "BASF India Limited",
+    "price": 3994.8,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 46.14,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BATAINDIA.NS": {
+    "company": "Bata India Limited",
+    "price": 985.2,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 74.35,
+    "beta": 1,
+    "dividend": 0.91,
+    "risk": "Moderate"
+  },
+  "BAYERCROP.NS": {
+    "company": "Bayer CropScience Limited",
+    "price": 4400.8,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 32.53,
+    "beta": 1,
+    "dividend": 2.85,
+    "risk": "Moderate"
+  },
+  "BBTC.NS": {
+    "company": "The Bombay Burmah Trading Corporation Limited",
+    "price": 1892.1,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 11.69,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BDL.NS": {
+    "company": "Bharat Dynamics Limited",
+    "price": 1395,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 78.15,
+    "beta": 1,
+    "dividend": 0.05,
+    "risk": "Moderate"
+  },
+  "BEL.NS": {
+    "company": "Bharat Electronics Limited",
+    "price": 387.25,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 49.84,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BEML.NS": {
+    "company": "BEML Limited",
+    "price": 1670,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 46.95,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BERGEPAINT.NS": {
+    "company": "Berger Paints India Limited",
+    "price": 547.55,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 59.13,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BHARATFORG.NS": {
+    "company": "Bharat Forge Limited",
+    "price": 1385,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 61.17,
+    "beta": 1,
+    "dividend": 0.43,
+    "risk": "Moderate"
+  },
+  "BHARTIARTL.NS": {
+    "company": "Bharti Airtel Limited",
+    "price": 2073.9,
+    "sector": "Telecom",
+    "marketCap": "Large",
+    "pe": 32.24,
+    "beta": 1,
+    "dividend": 0.77,
+    "risk": "Moderate"
+  },
+  "BHARTIHEXA.NS": {
+    "company": "Bharti Hexacom Ltd.",
+    "price": 1669.5,
+    "sector": "Telecom",
+    "marketCap": "Large",
+    "pe": 54.24,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BHEL.NS": {
+    "company": "Bharat Heavy Electricals Limited",
+    "price": 275.3,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 170.99,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BIKAJI.NS": {
+    "company": "Bikaji Foods International Limited",
+    "price": 723,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 84.76,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BIOCON.NS": {
+    "company": "Biocon Limited",
+    "price": 380.8,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 95.92,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BLS.NS": {
+    "company": "BLS International Services Limited",
+    "price": 318.75,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 21.82,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BLUEDART.NS": {
+    "company": "Blue Dart Express Limited",
+    "price": 5390.5,
+    "sector": "Services",
+    "marketCap": "Small",
+    "pe": 47.96,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BLUEJET.NS": {
+    "company": "Blue Jet Healthcare Limited",
+    "price": 543.65,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 26.77,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BLUESTARCO.NS": {
+    "company": "Blue Star Limited",
+    "price": 1730,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 65.18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BOSCHLTD.NS": {
+    "company": "Bosch Limited",
+    "price": 36575,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 40.27,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BPCL.NS": {
+    "company": "Bharat Petroleum Corporation Limited",
+    "price": 354.45,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 7.13,
+    "beta": 1,
+    "dividend": 3.52,
+    "risk": "Moderate"
+  },
+  "BRIGADE.NS": {
+    "company": "Brigade Enterprises Limited",
+    "price": 882.5,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 26.72,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BRITANNIA.NS": {
+    "company": "Britannia Industries Limited",
+    "price": 5833.5,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 60.78,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BSE.NS": {
+    "company": "BSE Limited",
+    "price": 2650.6,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 60.72,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "BSOFT.NS": {
+    "company": "Birlasoft Limited",
+    "price": 424.15,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 25.66,
+    "beta": 1,
+    "dividend": 1.51,
+    "risk": "Moderate"
+  },
+  "CAMPUS.NS": {
+    "company": "Campus Activewear Limited",
+    "price": 268.65,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 66.33,
+    "beta": 1,
+    "dividend": 0.37,
+    "risk": "Moderate"
+  },
+  "CAMS.NS": {
+    "company": "Computer Age Management Services Limited",
+    "price": 740.2,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 39.6,
+    "beta": 1,
+    "dividend": 1.64,
+    "risk": "Moderate"
+  },
+  "CANBK.NS": {
+    "company": "Canara Bank",
+    "price": 145.98,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 6.19,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CANFINHOME.NS": {
+    "company": "Can Fin Homes Limited",
+    "price": 910,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 13.15,
+    "beta": 1,
+    "dividend": 1.32,
+    "risk": "Moderate"
+  },
+  "CAPLIPOINT.NS": {
+    "company": "Caplin Point Laboratories Limited",
+    "price": 1953.5,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 25.32,
+    "beta": 1,
+    "dividend": 0.16,
+    "risk": "Moderate"
+  },
+  "CARBORUNIV.NS": {
+    "company": "Carborundum Universal Limited",
+    "price": 852.9,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 79.05,
+    "beta": 1,
+    "dividend": 0.29,
+    "risk": "Moderate"
+  },
+  "CASTROLIND.NS": {
+    "company": "Castrol India Limited",
+    "price": 186.5,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 18.9,
+    "beta": 1,
+    "dividend": 4.5,
+    "risk": "Moderate"
+  },
+  "CCL.NS": {
+    "company": "CCL Products (India) Limited",
+    "price": 967.7,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 38.16,
+    "beta": 1,
+    "dividend": 0.51,
+    "risk": "Moderate"
+  },
+  "CDSL.NS": {
+    "company": "Central Depository Services (India) Limited",
+    "price": 1487.8,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 65.72,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CEATLTD.NS": {
+    "company": "CEAT Limited",
+    "price": 3811.6,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 31.17,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CENTRALBK.NS": {
+    "company": "Central Bank of India",
+    "price": 36.29,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 7.03,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CENTURYPLY.NS": {
+    "company": "Century Plyboards (India) Limited",
+    "price": 827.75,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 79.44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CERA.NS": {
+    "company": "Cera Sanitaryware Limited",
+    "price": 5361,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 29.5,
+    "beta": 1,
+    "dividend": 1.23,
+    "risk": "Moderate"
+  },
+  "CESC.NS": {
+    "company": "CESC Limited",
+    "price": 167.82,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 15.35,
+    "beta": 1,
+    "dividend": 3.61,
+    "risk": "Moderate"
+  },
+  "CGCL.NS": {
+    "company": "Capri Global Capital Limited",
+    "price": 180.1,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 21.96,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CGPOWER.NS": {
+    "company": "CG Power and Industrial Solutions Limited",
+    "price": 669,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 96.4,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CHALET.NS": {
+    "company": "Chalet Hotels Limited",
+    "price": 890.2,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 33.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CHAMBLFERT.NS": {
+    "company": "Chambal Fertilisers and Chemicals Limited",
+    "price": 428.4,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 9.22,
+    "beta": 1,
+    "dividend": 2.38,
+    "risk": "Moderate"
+  },
+  "CHENNPETRO.NS": {
+    "company": "Chennai Petroleum Corporation Limited",
+    "price": 943.4,
+    "sector": "Energy",
+    "marketCap": "Small",
+    "pe": 12,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CHOICEIN.NS": {
+    "company": "Choice International Limited",
+    "price": 736.1,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 80.1,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CHOLAFIN.NS": {
+    "company": "Cholamandalam Investment and Finance Company Limited",
+    "price": 1747.2,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 31.75,
+    "beta": 1,
+    "dividend": 0.12,
+    "risk": "Moderate"
+  },
+  "CHOLAHLDNG.NS": {
+    "company": "Cholamandalam Financial Holdings Limited",
+    "price": 1931.1,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 16.27,
+    "beta": 1,
+    "dividend": 0.07,
+    "risk": "Moderate"
+  },
+  "CIPLA.NS": {
+    "company": "Cipla Limited",
+    "price": 1490.8,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 22.13,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CLEAN.NS": {
+    "company": "Clean Science and Technology Limited",
+    "price": 895,
+    "sector": "Chemicals",
+    "marketCap": "Small",
+    "pe": 35.87,
+    "beta": 1,
+    "dividend": 0.45,
+    "risk": "Moderate"
+  },
+  "COALINDIA.NS": {
+    "company": "Coal India Limited",
+    "price": 381.45,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 7.53,
+    "beta": 1,
+    "dividend": 2.83,
+    "risk": "Moderate"
+  },
+  "COCHINSHIP.NS": {
+    "company": "Cochin Shipyard Limited",
+    "price": 1611.3,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 55.7,
+    "beta": 1,
+    "dividend": 0.6,
+    "risk": "Moderate"
+  },
+  "COFORGE.NS": {
+    "company": "Coforge Limited",
+    "price": 1839.6,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 56.71,
+    "beta": 1,
+    "dividend": 0.83,
+    "risk": "Moderate"
+  },
+  "COHANCE.NS": {
+    "company": "Cohance Lifesciences Ltd.",
+    "price": 526.3,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 65.14,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "COLPAL.NS": {
+    "company": "Colgate-Palmolive (India) Limited",
+    "price": 2139.7,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 43.94,
+    "beta": 1,
+    "dividend": 2.36,
+    "risk": "Moderate"
+  },
+  "CONCOR.NS": {
+    "company": "Container Corporation of India Limited",
+    "price": 505.15,
+    "sector": "Services",
+    "marketCap": "Mid",
+    "pe": 29.34,
+    "beta": 1,
+    "dividend": 1.82,
+    "risk": "Moderate"
+  },
+  "CONCORDBIO.NS": {
+    "company": "Concord Biotech Limited",
+    "price": 1394.2,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 45.21,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "COROMANDEL.NS": {
+    "company": "Coromandel International Limited",
+    "price": 2302.8,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 28.28,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CRAFTSMAN.NS": {
+    "company": "Craftsman Automation Limited",
+    "price": 7044.5,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 70.34,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CREDITACC.NS": {
+    "company": "CreditAccess Grameen Limited",
+    "price": 1286.6,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 153.35,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CRISIL.NS": {
+    "company": "CRISIL Limited",
+    "price": 4352.2,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 42.53,
+    "beta": 1,
+    "dividend": 1.34,
+    "risk": "Moderate"
+  },
+  "CROMPTON.NS": {
+    "company": "Crompton Greaves Consumer Electricals Limited",
+    "price": 252,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 34.38,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CUB.NS": {
+    "company": "City Union Bank Limited",
+    "price": 266.95,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 16.48,
+    "beta": 1,
+    "dividend": 0.76,
+    "risk": "Moderate"
+  },
+  "CUMMINSIND.NS": {
+    "company": "Cummins India Limited",
+    "price": 4544.3,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 54.38,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "CYIENT.NS": {
+    "company": "Cyient Limited",
+    "price": 1141.8,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 22.09,
+    "beta": 1,
+    "dividend": 2.65,
+    "risk": "Moderate"
+  },
+  "DABUR.NS": {
+    "company": "Dabur India Limited",
+    "price": 502.3,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 49.25,
+    "beta": 1,
+    "dividend": 1.59,
+    "risk": "Moderate"
+  },
+  "DALBHARAT.NS": {
+    "company": "Dalmia Bharat Limited",
+    "price": 1945.1,
+    "sector": "Materials",
+    "marketCap": "Mid",
+    "pe": 32.38,
+    "beta": 1,
+    "dividend": 0.46,
+    "risk": "Moderate"
+  },
+  "DATAPATTNS.NS": {
+    "company": "Data Patterns (India) Limited",
+    "price": 2547.6,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 60.99,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DBREALTY.NS": {
+    "company": "Valor Estate Limited",
+    "price": 120.51,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 1721.57,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DCMSHRIRAM.NS": {
+    "company": "DCM Shriram Limited",
+    "price": 1208.9,
+    "sector": "Conglomerate",
+    "marketCap": "Mid",
+    "pe": 26.48,
+    "beta": 1,
+    "dividend": 0.87,
+    "risk": "Moderate"
+  },
+  "DEEPAKFERT.NS": {
+    "company": "Deepak Fertilisers And Petrochemicals Corporation Limited",
+    "price": 1225.6,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 15.72,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DEEPAKNTR.NS": {
+    "company": "Deepak Nitrite Limited",
+    "price": 1527.6,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 39.26,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DELHIVERY.NS": {
+    "company": "Delhivery Limited",
+    "price": 403.25,
+    "sector": "Services",
+    "marketCap": "Mid",
+    "pe": 221.57,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DEVYANI.NS": {
+    "company": "Devyani International Limited",
+    "price": 134.92,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 2698.4,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DIVISLAB.NS": {
+    "company": "Divi's Laboratories Limited",
+    "price": 6386.5,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 68.04,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DIXON.NS": {
+    "company": "Dixon Technologies (India) Limited",
+    "price": 12759,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 49.62,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DLF.NS": {
+    "company": "DLF Limited",
+    "price": 684.85,
+    "sector": "Real Estate",
+    "marketCap": "Large",
+    "pe": 39.66,
+    "beta": 1,
+    "dividend": 0.87,
+    "risk": "Moderate"
+  },
+  "DMART.NS": {
+    "company": "Avenue Supermarts Limited",
+    "price": 3824,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 91.29,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DOMS.NS": {
+    "company": "DOMS Industries Limited",
+    "price": 2528.2,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 73.09,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "DRREDDY.NS": {
+    "company": "Dr. Reddy's Laboratories Limited",
+    "price": 1251.5,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 17.81,
+    "beta": 1,
+    "dividend": 0.64,
+    "risk": "Moderate"
+  },
+  "ECLERX.NS": {
+    "company": "eClerx Services Limited",
+    "price": 4448.3,
+    "sector": "Services",
+    "marketCap": "Mid",
+    "pe": 34.74,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "EICHERMOT.NS": {
+    "company": "Eicher Motors Limited",
+    "price": 7245.5,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 38.96,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "EIDPARRY.NS": {
+    "company": "E.I.D.- Parry (India) Limited",
+    "price": 1034.1,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 16,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "EIHOTEL.NS": {
+    "company": "EIH Limited",
+    "price": 381.2,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 35.83,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ELECON.NS": {
+    "company": "Elecon Engineering Company Limited",
+    "price": 475,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 20.6,
+    "beta": 1,
+    "dividend": 0.42,
+    "risk": "Moderate"
+  },
+  "ELGIEQUIP.NS": {
+    "company": "Elgi Equipments Limited",
+    "price": 486.55,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 39.49,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "EMAMILTD.NS": {
+    "company": "Emami Limited",
+    "price": 526.55,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 30.47,
+    "beta": 1,
+    "dividend": 1.54,
+    "risk": "Moderate"
+  },
+  "EMCURE.NS": {
+    "company": "Emcure Pharmaceuticals Ltd.",
+    "price": 1403.4,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 33.5,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ENDURANCE.NS": {
+    "company": "Endurance Technologies Limited",
+    "price": 2586.4,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 41.22,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ENGINERSIN.NS": {
+    "company": "Engineers India Limited",
+    "price": 192.89,
+    "sector": "Infrastructure",
+    "marketCap": "Small",
+    "pe": 20.16,
+    "beta": 1,
+    "dividend": 1.01,
+    "risk": "Moderate"
+  },
+  "ENRIN.NS": {
+    "company": "Siemens Energy India Limited",
+    "price": 3018,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 97.42,
+    "beta": 1,
+    "dividend": 0.13,
+    "risk": "Moderate"
+  },
+  "ERIS.NS": {
+    "company": "Eris Lifesciences Limited",
+    "price": 1615.3,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 53.12,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ESCORTS.NS": {
+    "company": "Escorts Kubota Limited",
+    "price": 3650.8,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 32.26,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ETERNAL.NS": {
+    "company": "Eternal Limited",
+    "price": 285.05,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 1425.25,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "EXIDEIND.NS": {
+    "company": "Exide Industries Limited",
+    "price": 371.8,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 40.06,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FACT.NS": {
+    "company": "The Fertilisers and Chemicals Travancore Limited",
+    "price": 813,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 504.97,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FEDERALBNK.NS": {
+    "company": "The Federal Bank Limited",
+    "price": 259.7,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 16.26,
+    "beta": 1,
+    "dividend": 0.46,
+    "risk": "Moderate"
+  },
+  "FINCABLES.NS": {
+    "company": "Finolex Cables Limited",
+    "price": 738,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 16.98,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FINPIPE.NS": {
+    "company": "Finolex Industries Limited",
+    "price": 164.44,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 21.19,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FIRSTCRY.NS": {
+    "company": "Brainbees Solutions Ltd.",
+    "price": 284.3,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FIVESTAR.NS": {
+    "company": "Five-Star Business Finance Limited",
+    "price": 565.5,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 15.03,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FLUOROCHEM.NS": {
+    "company": "Gujarat Fluorochemicals Limited",
+    "price": 3447.2,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 55.65,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FORCEMOT.NS": {
+    "company": "Force Motors Limited",
+    "price": 16924,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 20.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FORTIS.NS": {
+    "company": "Fortis Healthcare Limited",
+    "price": 852.5,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 63.52,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "FSL.NS": {
+    "company": "Firstsource Solutions Limited",
+    "price": 337.5,
+    "sector": "Services",
+    "marketCap": "Mid",
+    "pe": 35.64,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GAIL.NS": {
+    "company": "GAIL (India) Limited",
+    "price": 168.35,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 10.15,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GESHIP.NS": {
+    "company": "The Great Eastern Shipping Company Limited",
+    "price": 1082.8,
+    "sector": "Services",
+    "marketCap": "Mid",
+    "pe": 7.58,
+    "beta": 1,
+    "dividend": 2.59,
+    "risk": "Moderate"
+  },
+  "GICRE.NS": {
+    "company": "General Insurance Corporation of India",
+    "price": 380.15,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 6.96,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GILLETTE.NS": {
+    "company": "Gillette India Limited",
+    "price": 8192.5,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 50.09,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GLAND.NS": {
+    "company": "Gland Pharma Limited",
+    "price": 1710.2,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 35.64,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GLAXO.NS": {
+    "company": "GlaxoSmithKline Pharmaceuticals Limited",
+    "price": 2593.1,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 45.89,
+    "beta": 1,
+    "dividend": 1.64,
+    "risk": "Moderate"
+  },
+  "GLENMARK.NS": {
+    "company": "Glenmark Pharmaceuticals Limited",
+    "price": 1949.1,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 54.41,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GMDCLTD.NS": {
+    "company": "Gujarat Mineral Development Corporation Limited",
+    "price": 487.55,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 15.44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GMRAIRPORT.NS": {
+    "company": "GMR Airports Limited",
+    "price": 98.85,
+    "sector": "Services",
+    "marketCap": "Large",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GODFRYPHLP.NS": {
+    "company": "Godfrey Phillips India Limited",
+    "price": 2855,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 34.94,
+    "beta": 1,
+    "dividend": 1.33,
+    "risk": "Moderate"
+  },
+  "GODIGIT.NS": {
+    "company": "Go Digit General Insurance Ltd.",
+    "price": 341.55,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 64.69,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GODREJAGRO.NS": {
+    "company": "Godrej Agrovet Limited",
+    "price": 596,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 26.35,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GODREJCP.NS": {
+    "company": "Godrej Consumer Products Limited",
+    "price": 1133.6,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 63.54,
+    "beta": 1,
+    "dividend": 1.77,
+    "risk": "Moderate"
+  },
+  "GODREJIND.NS": {
+    "company": "Godrej Industries Limited",
+    "price": 1030.6,
+    "sector": "Conglomerate",
+    "marketCap": "Mid",
+    "pe": 36.05,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GODREJPROP.NS": {
+    "company": "Godrej Properties Limited",
+    "price": 2010.6,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 38.93,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GPIL.NS": {
+    "company": "Godawari Power & Ispat Limited",
+    "price": 234,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 19.47,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GRANULES.NS": {
+    "company": "Granules India Limited",
+    "price": 557.65,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 26.38,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GRAPHITE.NS": {
+    "company": "Graphite India Limited",
+    "price": 544.65,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 44.24,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GRASIM.NS": {
+    "company": "Grasim Industries Limited",
+    "price": 2746.3,
+    "sector": "Materials",
+    "marketCap": "Large",
+    "pe": 43.09,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GRAVITA.NS": {
+    "company": "Gravita India Limited",
+    "price": 1796.5,
+    "sector": "Metals",
+    "marketCap": "Small",
+    "pe": 35.52,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GRSE.NS": {
+    "company": "Garden Reach Shipbuilders & Engineers Limited",
+    "price": 2391.8,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 44.4,
+    "beta": 1,
+    "dividend": 0.44,
+    "risk": "Moderate"
+  },
+  "GSPL.NS": {
+    "company": "Gujarat State Petronet Limited",
+    "price": 283.65,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 15.55,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GUJGASLTD.NS": {
+    "company": "Gujarat Gas Limited",
+    "price": 395.05,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 24.36,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "GVT&D.NS": {
+    "company": "GE Vernova T&D India Ltd",
+    "price": 2905.9,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 80.74,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HAL.NS": {
+    "company": "Hindustan Aeronautics Limited",
+    "price": 4292.5,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 33.9,
+    "beta": 1,
+    "dividend": 0.35,
+    "risk": "Moderate"
+  },
+  "HAPPSTMNDS.NS": {
+    "company": "Happiest Minds Technologies Limited",
+    "price": 492.35,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 37.96,
+    "beta": 1,
+    "dividend": 1.27,
+    "risk": "Moderate"
+  },
+  "HAVELLS.NS": {
+    "company": "Havells India Limited",
+    "price": 1403.9,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 60.33,
+    "beta": 1,
+    "dividend": 0.42,
+    "risk": "Moderate"
+  },
+  "HBLENGINE.NS": {
+    "company": "HBL Engineering Ltd.",
+    "price": 804.55,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 34.83,
+    "beta": 1,
+    "dividend": 0.12,
+    "risk": "Moderate"
+  },
+  "HCLTECH.NS": {
+    "company": "HCL Technologies Limited",
+    "price": 1664.6,
+    "sector": "IT",
+    "marketCap": "Large",
+    "pe": 26.59,
+    "beta": 1,
+    "dividend": 0.04,
+    "risk": "Moderate"
+  },
+  "HDFCAMC.NS": {
+    "company": "HDFC Asset Management Company Limited",
+    "price": 2605.3,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 40.76,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HDFCBANK.NS": {
+    "company": "HDFC Bank Limited",
+    "price": 988.2,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 22.59,
+    "beta": 1,
+    "dividend": 1.1,
+    "risk": "Moderate"
+  },
+  "HDFCLIFE.NS": {
+    "company": "HDFC Life Insurance Company Limited",
+    "price": 769.7,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 87.87,
+    "beta": 1,
+    "dividend": 0.28,
+    "risk": "Moderate"
+  },
+  "HEG.NS": {
+    "company": "HEG Limited",
+    "price": 545.2,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 40.75,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HEROMOTOCO.NS": {
+    "company": "Hero MotoCorp Limited",
+    "price": 5928.5,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 22.44,
+    "beta": 1,
+    "dividend": 1.08,
+    "risk": "Moderate"
+  },
+  "HEXT.NS": {
+    "company": "Hexaware Technologies Limited",
+    "price": 745.8,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 32.94,
+    "beta": 1,
+    "dividend": 0.95,
+    "risk": "Moderate"
+  },
+  "HFCL.NS": {
+    "company": "HFCL Limited",
+    "price": 66.25,
+    "sector": "Telecom",
+    "marketCap": "Small",
+    "pe": 301.14,
+    "beta": 1,
+    "dividend": 0.15,
+    "risk": "Moderate"
+  },
+  "HINDALCO.NS": {
+    "company": "Hindalco Industries Limited",
+    "price": 823.65,
+    "sector": "Metals",
+    "marketCap": "Large",
+    "pe": 10.31,
+    "beta": 1,
+    "dividend": 0.62,
+    "risk": "Moderate"
+  },
+  "HINDCOPPER.NS": {
+    "company": "Hindustan Copper Limited",
+    "price": 362,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 61.56,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HINDPETRO.NS": {
+    "company": "Hindustan Petroleum Corporation Limited",
+    "price": 450.05,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 6.87,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HINDUNILVR.NS": {
+    "company": "Hindustan Unilever Limited",
+    "price": 2300,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 49.68,
+    "beta": 1,
+    "dividend": 1.86,
+    "risk": "Moderate"
+  },
+  "HINDZINC.NS": {
+    "company": "Hindustan Zinc Limited",
+    "price": 514,
+    "sector": "Metals",
+    "marketCap": "Large",
+    "pe": 20.56,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HOMEFIRST.NS": {
+    "company": "Home First Finance Company India Limited",
+    "price": 1185.5,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 25.56,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HONASA.NS": {
+    "company": "Honasa Consumer Limited",
+    "price": 258.55,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 64.48,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HONAUT.NS": {
+    "company": "Honeywell Automation India Limited",
+    "price": 34265,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 58.8,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HSCL.NS": {
+    "company": "Himadri Speciality Chemical Limited",
+    "price": 466.8,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 35.47,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "HUDCO.NS": {
+    "company": "Housing and Urban Development Corporation Limited",
+    "price": 211.59,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 15.12,
+    "beta": 1,
+    "dividend": 1.99,
+    "risk": "Moderate"
+  },
+  "HYUNDAI.NS": {
+    "company": "Hyundai Motor India Ltd.",
+    "price": 2315.5,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 32.87,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ICICIBANK.NS": {
+    "company": "ICICI Bank Limited",
+    "price": 1359,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 18.42,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ICICIGI.NS": {
+    "company": "ICICI Lombard General Insurance Company Limited",
+    "price": 1933.6,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 34.49,
+    "beta": 1,
+    "dividend": 0.69,
+    "risk": "Moderate"
+  },
+  "ICICIPRULI.NS": {
+    "company": "ICICI Prudential Life Insurance Company Limited",
+    "price": 643.3,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 71.32,
+    "beta": 1,
+    "dividend": 0.14,
+    "risk": "Moderate"
+  },
+  "IDBI.NS": {
+    "company": "IDBI Bank Limited",
+    "price": 94.75,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 10.97,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IDEA.NS": {
+    "company": "Vodafone Idea Limited",
+    "price": 10.76,
+    "sector": "Telecom",
+    "marketCap": "Large",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IDFCFIRSTB.NS": {
+    "company": "IDFC First Bank Limited",
+    "price": 80.59,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 44.04,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IEX.NS": {
+    "company": "Indian Energy Exchange Limited",
+    "price": 140.05,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 26.57,
+    "beta": 1,
+    "dividend": 1.06,
+    "risk": "Moderate"
+  },
+  "IFCI.NS": {
+    "company": "IFCI Limited",
+    "price": 48.27,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 33.76,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IGIL.NS": {
+    "company": "International Gemmological Institute (India) Limited",
+    "price": 318.65,
+    "sector": "Services",
+    "marketCap": "Small",
+    "pe": 26.96,
+    "beta": 1,
+    "dividend": 1.52,
+    "risk": "Moderate"
+  },
+  "IGL.NS": {
+    "company": "Indraprastha Gas Limited",
+    "price": 185.06,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 16.25,
+    "beta": 1,
+    "dividend": 0.82,
+    "risk": "Moderate"
+  },
+  "IIFL.NS": {
+    "company": "IIFL Finance Limited",
+    "price": 565.65,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 28.38,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IKS.NS": {
+    "company": "Inventurus Knowledge Solutions Ltd.",
+    "price": 1580,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 43.47,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INDGN.NS": {
+    "company": "Indegene Ltd.",
+    "price": 530.1,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 28.62,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INDHOTEL.NS": {
+    "company": "The Indian Hotels Company Limited",
+    "price": 724.6,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 61.2,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INDIACEM.NS": {
+    "company": "The India Cements Limited",
+    "price": 411.3,
+    "sector": "Materials",
+    "marketCap": "Mid",
+    "pe": 395.48,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INDIAMART.NS": {
+    "company": "IndiaMART InterMESH Limited",
+    "price": 2237,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 25.06,
+    "beta": 1,
+    "dividend": 1.33,
+    "risk": "Moderate"
+  },
+  "INDIANB.NS": {
+    "company": "Indian Bank",
+    "price": 783.9,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 9.36,
+    "beta": 1,
+    "dividend": 2.05,
+    "risk": "Moderate"
+  },
+  "INDIGO.NS": {
+    "company": "InterGlobe Aviation Limited",
+    "price": 4823,
+    "sector": "Services",
+    "marketCap": "Large",
+    "pe": 36.51,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INDUSINDBK.NS": {
+    "company": "IndusInd Bank Limited",
+    "price": 835.7,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 8.65,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INDUSTOWER.NS": {
+    "company": "Indus Towers Limited",
+    "price": 405.25,
+    "sector": "Telecom",
+    "marketCap": "Large",
+    "pe": 11.44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INFY.NS": {
+    "company": "Infosys Limited",
+    "price": 1586,
+    "sector": "IT",
+    "marketCap": "Large",
+    "pe": 22.33,
+    "beta": 1,
+    "dividend": 0.03,
+    "risk": "Moderate"
+  },
+  "INOXINDIA.NS": {
+    "company": "INOX India Limited",
+    "price": 1154.3,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 42.8,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INOXWIND.NS": {
+    "company": "Inox Wind Limited",
+    "price": 120.36,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 32.44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "INTELLECT.NS": {
+    "company": "Intellect Design Arena Limited",
+    "price": 1023.6,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 36.03,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IOB.NS": {
+    "company": "Indian Overseas Bank",
+    "price": 36.89,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 16.25,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IOC.NS": {
+    "company": "Indian Oil Corporation Limited",
+    "price": 163.2,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 9.04,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IPCALAB.NS": {
+    "company": "Ipca Laboratories Limited",
+    "price": 1469,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 44.75,
+    "beta": 1,
+    "dividend": 0.14,
+    "risk": "Moderate"
+  },
+  "IRB.NS": {
+    "company": "IRB Infrastructure Developers Limited",
+    "price": 42.03,
+    "sector": "Infrastructure",
+    "marketCap": "Mid",
+    "pe": 3.86,
+    "beta": 1,
+    "dividend": 0.58,
+    "risk": "Moderate"
+  },
+  "IRCON.NS": {
+    "company": "Ircon International Limited",
+    "price": 150.26,
+    "sector": "Infrastructure",
+    "marketCap": "Small",
+    "pe": 23.55,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IRCTC.NS": {
+    "company": "Indian Railway Catering & Tourism Corporation Limited",
+    "price": 668.55,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 38.98,
+    "beta": 1,
+    "dividend": 1.34,
+    "risk": "Moderate"
+  },
+  "IREDA.NS": {
+    "company": "Indian Renewable Energy Development Agency Limited",
+    "price": 133.42,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 21.04,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "IRFC.NS": {
+    "company": "Indian Railway Finance Corporation Limited",
+    "price": 112.43,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 21.46,
+    "beta": 1,
+    "dividend": 1.63,
+    "risk": "Moderate"
+  },
+  "ITC.NS": {
+    "company": "ITC Limited",
+    "price": 403.05,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 25,
+    "beta": 1,
+    "dividend": 1.96,
+    "risk": "Moderate"
+  },
+  "ITCHOTELS.NS": {
+    "company": "ITC Hotels Ltd.",
+    "price": 195.03,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 55.09,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ITI.NS": {
+    "company": "ITI Limited",
+    "price": 301.85,
+    "sector": "Telecom",
+    "marketCap": "Mid",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "J&KBANK.NS": {
+    "company": "Jammu and Kashmir Bank Limited",
+    "price": 100.94,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 5.32,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JBCHEPHARM.NS": {
+    "company": "J. B. Chemicals & Pharmaceuticals Limited",
+    "price": 1814.4,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 40.08,
+    "beta": 1,
+    "dividend": 0.39,
+    "risk": "Moderate"
+  },
+  "JBMA.NS": {
+    "company": "JBM Auto Limited",
+    "price": 561.05,
+    "sector": "Auto",
+    "marketCap": "Small",
+    "pe": 63.83,
+    "beta": 1,
+    "dividend": 0.15,
+    "risk": "Moderate"
+  },
+  "JINDALSAW.NS": {
+    "company": "Jindal Saw Limited",
+    "price": 161.93,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 7.52,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JINDALSTEL.NS": {
+    "company": "Jindal Steel Limited",
+    "price": 1007,
+    "sector": "Metals",
+    "marketCap": "Large",
+    "pe": 37.32,
+    "beta": 1,
+    "dividend": 0.2,
+    "risk": "Moderate"
+  },
+  "JIOFIN.NS": {
+    "company": "Jio Financial Services Limited",
+    "price": 291,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 115.48,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JKCEMENT.NS": {
+    "company": "J.K. Cement Limited",
+    "price": 5490,
+    "sector": "Materials",
+    "marketCap": "Mid",
+    "pe": 41.01,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JKTYRE.NS": {
+    "company": "JK Tyre & Industries Limited",
+    "price": 448.9,
+    "sector": "Auto",
+    "marketCap": "Small",
+    "pe": 22.96,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JMFINANCIL.NS": {
+    "company": "JM Financial Limited",
+    "price": 140.42,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 11.84,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JPPOWER.NS": {
+    "company": "Jaiprakash Power Ventures Limited",
+    "price": 18.39,
+    "sector": "Energy",
+    "marketCap": "Small",
+    "pe": 22.99,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JSL.NS": {
+    "company": "Jindal Stainless Limited",
+    "price": 785.1,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 23.41,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JSWENERGY.NS": {
+    "company": "JSW Energy Limited",
+    "price": 454.25,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 39.19,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JSWINFRA.NS": {
+    "company": "JSW Infrastructure Limited",
+    "price": 265.15,
+    "sector": "Services",
+    "marketCap": "Mid",
+    "pe": 35.03,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JSWSTEEL.NS": {
+    "company": "JSW Steel Limited",
+    "price": 1097,
+    "sector": "Metals",
+    "marketCap": "Large",
+    "pe": 44.52,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JUBLFOOD.NS": {
+    "company": "Jubilant FoodWorks Limited",
+    "price": 586.65,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 130.08,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JUBLINGREA.NS": {
+    "company": "Jubilant Ingrevia Limited",
+    "price": 670.65,
+    "sector": "Chemicals",
+    "marketCap": "Small",
+    "pe": 36.83,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JUBLPHARMA.NS": {
+    "company": "Jubilant Pharmova Limited",
+    "price": 1077.5,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 35.86,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JWL.NS": {
+    "company": "Jupiter Wagons Limited",
+    "price": 255.05,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 38.64,
+    "beta": 1,
+    "dividend": 0.38,
+    "risk": "Moderate"
+  },
+  "JYOTHYLAB.NS": {
+    "company": "Jyothy Labs Limited",
+    "price": 282,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 29.72,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "JYOTICNC.NS": {
+    "company": "Jyoti CNC Automation Limited",
+    "price": 958.5,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 63.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KAJARIACER.NS": {
+    "company": "Kajaria Ceramics Limited",
+    "price": 1042.1,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 41.34,
+    "beta": 1,
+    "dividend": 1.15,
+    "risk": "Moderate"
+  },
+  "KALYANKJIL.NS": {
+    "company": "Kalyan Jewellers India Limited",
+    "price": 465.1,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 51.62,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KARURVYSYA.NS": {
+    "company": "The Karur Vysya Bank Limited",
+    "price": 241.5,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 11.08,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KAYNES.NS": {
+    "company": "Kaynes Technology India Limited",
+    "price": 3947,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 67.66,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KEC.NS": {
+    "company": "KEC International Limited",
+    "price": 682.95,
+    "sector": "Infrastructure",
+    "marketCap": "Mid",
+    "pe": 26.44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KEI.NS": {
+    "company": "KEI Industries Limited",
+    "price": 4001.8,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 47.82,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KFINTECH.NS": {
+    "company": "KFin Technologies Limited",
+    "price": 1028.8,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 51.59,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KIMS.NS": {
+    "company": "Krishna Institute of Medical Sciences Limited",
+    "price": 675.3,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 80.58,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KIRLOSBROS.NS": {
+    "company": "Kirloskar Brothers Limited",
+    "price": 1565,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 31.74,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KIRLOSENG.NS": {
+    "company": "Kirloskar Oil Engines Limited",
+    "price": 1122.5,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 32.44,
+    "beta": 1,
+    "dividend": 0.36,
+    "risk": "Moderate"
+  },
+  "KOTAKBANK.NS": {
+    "company": "Kotak Mahindra Bank Limited",
+    "price": 2126.6,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 22.79,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KPIL.NS": {
+    "company": "Kalpataru Projects International Limited",
+    "price": 1168.5,
+    "sector": "Infrastructure",
+    "marketCap": "Mid",
+    "pe": 23.99,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KPITTECH.NS": {
+    "company": "KPIT Technologies Limited",
+    "price": 1206.2,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 42.7,
+    "beta": 1,
+    "dividend": 0.5,
+    "risk": "Moderate"
+  },
+  "KPRMILL.NS": {
+    "company": "K.P.R. Mill Limited",
+    "price": 978.2,
+    "sector": "Textiles",
+    "marketCap": "Mid",
+    "pe": 39.86,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "KSB.NS": {
+    "company": "KSB Limited",
+    "price": 736.45,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 48.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LALPATHLAB.NS": {
+    "company": "Dr. Lal PathLabs Limited",
+    "price": 2858.8,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 44.72,
+    "beta": 1,
+    "dividend": 0.86,
+    "risk": "Moderate"
+  },
+  "LATENTVIEW.NS": {
+    "company": "Latent View Analytics Limited",
+    "price": 475.75,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 51.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LAURUSLABS.NS": {
+    "company": "Laurus Labs Limited",
+    "price": 1022.6,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 81.03,
+    "beta": 1,
+    "dividend": 0.16,
+    "risk": "Moderate"
+  },
+  "LEMONTREE.NS": {
+    "company": "Lemon Tree Hotels Limited",
+    "price": 161.54,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 58.11,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LICHSGFIN.NS": {
+    "company": "LIC Housing Finance Limited",
+    "price": 530.75,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 5.29,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LICI.NS": {
+    "company": "Life Insurance Corporation of India",
+    "price": 858.5,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 10.62,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LINDEINDIA.NS": {
+    "company": "Linde India Limited",
+    "price": 5908.5,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 98.02,
+    "beta": 1,
+    "dividend": 0.08,
+    "risk": "Moderate"
+  },
+  "LLOYDSME.NS": {
+    "company": "Lloyds Metals and Energy Limited",
+    "price": 1276,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 39.6,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LODHA.NS": {
+    "company": "Lodha Developers Limited",
+    "price": 1071.7,
+    "sector": "Real Estate",
+    "marketCap": "Large",
+    "pe": 32.13,
+    "beta": 1,
+    "dividend": 0.39,
+    "risk": "Moderate"
+  },
+  "LT.NS": {
+    "company": "Larsen & Toubro Limited",
+    "price": 3998.5,
+    "sector": "Infrastructure",
+    "marketCap": "Large",
+    "pe": 33.56,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LTF.NS": {
+    "company": "L&T Finance Limited",
+    "price": 304.9,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 28.31,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "LTFOODS.NS": {
+    "company": "LT Foods Limited",
+    "price": 386.15,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 21.09,
+    "beta": 1,
+    "dividend": 0.51,
+    "risk": "Moderate"
+  },
+  "LTIM.NS": {
+    "company": "LTIMindtree Limited",
+    "price": 6252,
+    "sector": "IT",
+    "marketCap": "Large",
+    "pe": 38.07,
+    "beta": 1,
+    "dividend": 1.07,
+    "risk": "Moderate"
+  },
+  "LTTS.NS": {
+    "company": "L&T Technology Services Limited",
+    "price": 4555.3,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 37.81,
+    "beta": 1,
+    "dividend": 1.23,
+    "risk": "Moderate"
+  },
+  "LUPIN.NS": {
+    "company": "Lupin Limited",
+    "price": 2056.1,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 21.77,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "M&M.NS": {
+    "company": "Mahindra & Mahindra Limited",
+    "price": 3636.1,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 28.77,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "M&MFIN.NS": {
+    "company": "Mahindra & Mahindra Financial Services Limited",
+    "price": 348.45,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 18.37,
+    "beta": 1,
+    "dividend": 1.84,
+    "risk": "Moderate"
+  },
+  "MAHABANK.NS": {
+    "company": "Bank of Maharashtra",
+    "price": 56.84,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 7.17,
+    "beta": 1,
+    "dividend": 2.63,
+    "risk": "Moderate"
+  },
+  "MAHSCOOTER.NS": {
+    "company": "Maharashtra Scooters Ltd.",
+    "price": 14149,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 45.22,
+    "beta": 1,
+    "dividend": 1.36,
+    "risk": "Moderate"
+  },
+  "MAHSEAMLES.NS": {
+    "company": "Maharashtra Seamless Limited",
+    "price": 560.5,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 9.58,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MANAPPURAM.NS": {
+    "company": "Manappuram Finance Limited",
+    "price": 280.8,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 54.31,
+    "beta": 1,
+    "dividend": 0.91,
+    "risk": "Moderate"
+  },
+  "MANKIND.NS": {
+    "company": "Mankind Pharma Limited",
+    "price": 2148.1,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 50.46,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MANYAVAR.NS": {
+    "company": "Vedant Fashions Limited",
+    "price": 592,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 37.26,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MAPMYINDIA.NS": {
+    "company": "C. E. Info Systems Limited",
+    "price": 1626.7,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 61.57,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MARICO.NS": {
+    "company": "Marico Limited",
+    "price": 723.85,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 56.46,
+    "beta": 1,
+    "dividend": 0.96,
+    "risk": "Moderate"
+  },
+  "MARUTI.NS": {
+    "company": "Maruti Suzuki India Limited",
+    "price": 16019,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 34.04,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MAXHEALTH.NS": {
+    "company": "Max Healthcare Institute Limited",
+    "price": 1068.6,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 77.27,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MAZDOCK.NS": {
+    "company": "Mazagon Dock Shipbuilders Limited",
+    "price": 2443.2,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 42.26,
+    "beta": 1,
+    "dividend": 0.47,
+    "risk": "Moderate"
+  },
+  "MCX.NS": {
+    "company": "Multi Commodity Exchange of India Limited",
+    "price": 10072,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 73.77,
+    "beta": 1,
+    "dividend": 0.29,
+    "risk": "Moderate"
+  },
+  "MEDANTA.NS": {
+    "company": "Global Health Limited",
+    "price": 1161.5,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 55.76,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "METROPOLIS.NS": {
+    "company": "Metropolis Healthcare Limited",
+    "price": 1927.5,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 63.01,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MFSL.NS": {
+    "company": "Max Financial Services Limited",
+    "price": 1708,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 361.1,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MGL.NS": {
+    "company": "Mahanagar Gas Limited",
+    "price": 1112.7,
+    "sector": "Energy",
+    "marketCap": "Small",
+    "pe": 11.28,
+    "beta": 1,
+    "dividend": 1.63,
+    "risk": "Moderate"
+  },
+  "MINDACORP.NS": {
+    "company": "Minda Corporation Limited",
+    "price": 588.7,
+    "sector": "Auto",
+    "marketCap": "Small",
+    "pe": 52.85,
+    "beta": 1,
+    "dividend": 0.15,
+    "risk": "Moderate"
+  },
+  "MMTC.NS": {
+    "company": "MMTC Limited",
+    "price": 55.32,
+    "sector": "Services",
+    "marketCap": "Small",
+    "pe": 37.63,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MOTHERSON.NS": {
+    "company": "Samvardhana Motherson International Limited",
+    "price": 116.73,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 40.53,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MOTILALOFS.NS": {
+    "company": "Motilal Oswal Financial Services Limited",
+    "price": 841,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 25.48,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MPHASIS.NS": {
+    "company": "Mphasis Limited",
+    "price": 2867.6,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 30.63,
+    "beta": 1,
+    "dividend": 1.98,
+    "risk": "Moderate"
+  },
+  "MRF.NS": {
+    "company": "MRF Limited",
+    "price": 152000,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 34.81,
+    "beta": 1,
+    "dividend": 0.15,
+    "risk": "Moderate"
+  },
+  "MRPL.NS": {
+    "company": "Mangalore Refinery and Petrochemicals Limited",
+    "price": 153.75,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 25.97,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MSUMI.NS": {
+    "company": "Motherson Sumi Wiring India Limited",
+    "price": 44.43,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 47.77,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "MUTHOOTFIN.NS": {
+    "company": "Muthoot Finance Limited",
+    "price": 3758.9,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 20.57,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NAM-INDIA.NS": {
+    "company": "Nippon Life India Asset Management Limited",
+    "price": 818.9,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 39.6,
+    "beta": 1,
+    "dividend": 2.32,
+    "risk": "Moderate"
+  },
+  "NATCOPHARM.NS": {
+    "company": "NATCO Pharma Limited",
+    "price": 882.8,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 10.28,
+    "beta": 1,
+    "dividend": 0.56,
+    "risk": "Moderate"
+  },
+  "NATIONALUM.NS": {
+    "company": "National Aluminium Company Limited",
+    "price": 263.1,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 7.91,
+    "beta": 1,
+    "dividend": 3.95,
+    "risk": "Moderate"
+  },
+  "NAUKRI.NS": {
+    "company": "Info Edge (India) Limited",
+    "price": 1347.1,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 66.43,
+    "beta": 1,
+    "dividend": 0.44,
+    "risk": "Moderate"
+  },
+  "NAVA.NS": {
+    "company": "Nava Limited",
+    "price": 551.8,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 17.13,
+    "beta": 1,
+    "dividend": 1.62,
+    "risk": "Moderate"
+  },
+  "NAVINFLUOR.NS": {
+    "company": "Navin Fluorine International Limited",
+    "price": 5990,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 67.39,
+    "beta": 1,
+    "dividend": 0.24,
+    "risk": "Moderate"
+  },
+  "NBCC.NS": {
+    "company": "NBCC (India) Limited",
+    "price": 107.2,
+    "sector": "Infrastructure",
+    "marketCap": "Mid",
+    "pe": 48.29,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NCC.NS": {
+    "company": "NCC Limited",
+    "price": 161.95,
+    "sector": "Infrastructure",
+    "marketCap": "Small",
+    "pe": 12.8,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NESTLEIND.NS": {
+    "company": "Nestlé India Limited",
+    "price": 1208.2,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 78.76,
+    "beta": 1,
+    "dividend": 1,
+    "risk": "Moderate"
+  },
+  "NETWEB.NS": {
+    "company": "Netweb Technologies India Limited",
+    "price": 3082.5,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 129.9,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NEULANDLAB.NS": {
+    "company": "Neuland Laboratories Limited",
+    "price": 16310,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 87.01,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NEWGEN.NS": {
+    "company": "Newgen Software Technologies Limited",
+    "price": 841.2,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 36.81,
+    "beta": 1,
+    "dividend": 0.59,
+    "risk": "Moderate"
+  },
+  "NH.NS": {
+    "company": "Narayana Hrudayalaya Limited",
+    "price": 1855.8,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 44.61,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NHPC.NS": {
+    "company": "NHPC Limited",
+    "price": 77.01,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 28.42,
+    "beta": 1,
+    "dividend": 0.67,
+    "risk": "Moderate"
+  },
+  "NIACL.NS": {
+    "company": "The New India Assurance Company Limited",
+    "price": 160.88,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 22.85,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NIVABUPA.NS": {
+    "company": "Niva Bupa Health Insurance Company Limited",
+    "price": 74.03,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 148.06,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NLCINDIA.NS": {
+    "company": "NLC India Limited",
+    "price": 237.84,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 12.51,
+    "beta": 1,
+    "dividend": 0.63,
+    "risk": "Moderate"
+  },
+  "NMDC.NS": {
+    "company": "NMDC Limited",
+    "price": 74.35,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 9.31,
+    "beta": 1,
+    "dividend": 4.41,
+    "risk": "Moderate"
+  },
+  "NSLNISP.NS": {
+    "company": "NMDC Steel Limited",
+    "price": 40.54,
+    "sector": "Metals",
+    "marketCap": "Small",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NTPC.NS": {
+    "company": "NTPC Limited",
+    "price": 320.95,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 17.17,
+    "beta": 1,
+    "dividend": 2.69,
+    "risk": "Moderate"
+  },
+  "NTPCGREEN.NS": {
+    "company": "NTPC Green Energy Ltd.",
+    "price": 90.55,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 109.1,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NUVAMA.NS": {
+    "company": "Nuvama Wealth Management Limited",
+    "price": 7047,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 25.52,
+    "beta": 1,
+    "dividend": 1.96,
+    "risk": "Moderate"
+  },
+  "NUVOCO.NS": {
+    "company": "Nuvoco Vistas Corporation Limited",
+    "price": 337.05,
+    "sector": "Materials",
+    "marketCap": "Small",
+    "pe": 44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "NYKAA.NS": {
+    "company": "FSN E-Commerce Ventures Limited",
+    "price": 249,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 691.67,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "OBEROIRLTY.NS": {
+    "company": "Oberoi Realty Limited",
+    "price": 1626.2,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 26.52,
+    "beta": 1,
+    "dividend": 0.49,
+    "risk": "Moderate"
+  },
+  "OFSS.NS": {
+    "company": "Oracle Financial Services Software Limited",
+    "price": 7938.5,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 29.18,
+    "beta": 1,
+    "dividend": 4.9,
+    "risk": "Moderate"
+  },
+  "OIL.NS": {
+    "company": "Oil India Limited",
+    "price": 398,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 10.84,
+    "beta": 1,
+    "dividend": 2.99,
+    "risk": "Moderate"
+  },
+  "OLAELEC.NS": {
+    "company": "Ola Electric Mobility Ltd.",
+    "price": 34.1,
+    "sector": "Auto",
+    "marketCap": "Small",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "OLECTRA.NS": {
+    "company": "Olectra Greentech Limited",
+    "price": 1188,
+    "sector": "Auto",
+    "marketCap": "Small",
+    "pe": 68.2,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ONESOURCE.NS": {
+    "company": "Onesource Specialty Pharma Ltd.",
+    "price": 1679.8,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 474.52,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ONGC.NS": {
+    "company": "Oil and Natural Gas Corporation Limited",
+    "price": 239.12,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 8.21,
+    "beta": 1,
+    "dividend": 5.11,
+    "risk": "Moderate"
+  },
+  "PAGEIND.NS": {
+    "company": "Page Industries Limited",
+    "price": 36925,
+    "sector": "Textiles",
+    "marketCap": "Mid",
+    "pe": 53.87,
+    "beta": 1,
+    "dividend": 1.68,
+    "risk": "Moderate"
+  },
+  "PATANJALI.NS": {
+    "company": "Patanjali Foods Limited",
+    "price": 530.2,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 40.44,
+    "beta": 1,
+    "dividend": 0.12,
+    "risk": "Moderate"
+  },
+  "PAYTM.NS": {
+    "company": "One97 Communications Limited",
+    "price": 1276.5,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PCBL.NS": {
+    "company": "PCBL Chemical Limited",
+    "price": 311,
+    "sector": "Chemicals",
+    "marketCap": "Small",
+    "pe": 33.8,
+    "beta": 1,
+    "dividend": 1.92,
+    "risk": "Moderate"
+  },
+  "PERSISTENT.NS": {
+    "company": "Persistent Systems Limited",
+    "price": 6089,
+    "sector": "IT",
+    "marketCap": "Large",
+    "pe": 56.94,
+    "beta": 1,
+    "dividend": 0.24,
+    "risk": "Moderate"
+  },
+  "PETRONET.NS": {
+    "company": "Petronet LNG Limited",
+    "price": 270.1,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 11.04,
+    "beta": 1,
+    "dividend": 3.71,
+    "risk": "Moderate"
+  },
+  "PFC.NS": {
+    "company": "Power Finance Corporation Limited",
+    "price": 345.15,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 4.6,
+    "beta": 1,
+    "dividend": 4.79,
+    "risk": "Moderate"
+  },
+  "PFIZER.NS": {
+    "company": "Pfizer Limited",
+    "price": 5044.3,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 27.49,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PGEL.NS": {
+    "company": "PG Electroplast Limited",
+    "price": 542.2,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 59.71,
+    "beta": 1,
+    "dividend": 0.04,
+    "risk": "Moderate"
+  },
+  "PGHH.NS": {
+    "company": "Procter & Gamble Hygiene and Health Care Limited",
+    "price": 12588,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 56.82,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PHOENIXLTD.NS": {
+    "company": "The Phoenix Mills Limited",
+    "price": 1756.9,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 58.19,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PIDILITIND.NS": {
+    "company": "Pidilite Industries Limited",
+    "price": 1458.3,
+    "sector": "Chemicals",
+    "marketCap": "Large",
+    "pe": 66.8,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PIIND.NS": {
+    "company": "PI Industries Limited",
+    "price": 3362.2,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 33.79,
+    "beta": 1,
+    "dividend": 0.3,
+    "risk": "Moderate"
+  },
+  "PNB.NS": {
+    "company": "Punjab National Bank",
+    "price": 117.16,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 7.89,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PNBHOUSING.NS": {
+    "company": "PNB Housing Finance Limited",
+    "price": 883.55,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 10.72,
+    "beta": 1,
+    "dividend": 0.57,
+    "risk": "Moderate"
+  },
+  "POLICYBZR.NS": {
+    "company": "PB Fintech Limited",
+    "price": 1920.4,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 191.27,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "POLYCAB.NS": {
+    "company": "Polycab India Limited",
+    "price": 7154,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 43.81,
+    "beta": 1,
+    "dividend": 0.49,
+    "risk": "Moderate"
+  },
+  "POLYMED.NS": {
+    "company": "Poly Medicure Limited",
+    "price": 1888.3,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 52.89,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "POONAWALLA.NS": {
+    "company": "Poonawalla Fincorp Limited",
+    "price": 447.25,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 158.6,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "POWERGRID.NS": {
+    "company": "Power Grid Corporation of India Limited",
+    "price": 265.7,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 17.19,
+    "beta": 1,
+    "dividend": 3.4,
+    "risk": "Moderate"
+  },
+  "POWERINDIA.NS": {
+    "company": "Hitachi Energy India Limited",
+    "price": 18960,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 115.55,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PPLPHARMA.NS": {
+    "company": "Piramal Pharma Limited",
+    "price": 171.87,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PRAJIND.NS": {
+    "company": "Praj Industries Limited",
+    "price": 302.3,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 52.67,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PREMIERENE.NS": {
+    "company": "Premier Energies Ltd.",
+    "price": 856.2,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 34.33,
+    "beta": 1,
+    "dividend": 0.09,
+    "risk": "Moderate"
+  },
+  "PRESTIGE.NS": {
+    "company": "Prestige Estates Projects Limited",
+    "price": 1617.6,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 92.97,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PTCIL.NS": {
+    "company": "PTC Industries Limited",
+    "price": 18723,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 450.83,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "PVRINOX.NS": {
+    "company": "PVR INOX Limited",
+    "price": 1061,
+    "sector": "Media",
+    "marketCap": "Small",
+    "pe": 20.98,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RADICO.NS": {
+    "company": "Radico Khaitan Limited",
+    "price": 3239,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 94.54,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RAILTEL.NS": {
+    "company": "RailTel Corporation of India Limited",
+    "price": 319.35,
+    "sector": "Telecom",
+    "marketCap": "Small",
+    "pe": 31.94,
+    "beta": 1,
+    "dividend": 0.88,
+    "risk": "Moderate"
+  },
+  "RAINBOW.NS": {
+    "company": "Rainbow Children's Medicare Limited",
+    "price": 1350.2,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 54.31,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RAMCOCEM.NS": {
+    "company": "The Ramco Cements Limited",
+    "price": 1021.1,
+    "sector": "Materials",
+    "marketCap": "Mid",
+    "pe": 65.16,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RBLBANK.NS": {
+    "company": "RBL Bank Limited",
+    "price": 302.3,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 34.08,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RCF.NS": {
+    "company": "Rashtriya Chemicals and Fertilizers Limited",
+    "price": 139.97,
+    "sector": "Chemicals",
+    "marketCap": "Small",
+    "pe": 24.69,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RECLTD.NS": {
+    "company": "REC Limited",
+    "price": 343.7,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 5.25,
+    "beta": 1,
+    "dividend": 5.75,
+    "risk": "Moderate"
+  },
+  "REDINGTON.NS": {
+    "company": "Redington Limited",
+    "price": 273.95,
+    "sector": "Services",
+    "marketCap": "Mid",
+    "pe": 12.38,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RELIANCE.NS": {
+    "company": "Reliance Industries Limited",
+    "price": 1537.7,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 25.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RELINFRA.NS": {
+    "company": "Reliance Infrastructure Limited",
+    "price": 134.17,
+    "sector": "Energy",
+    "marketCap": "Small",
+    "pe": 1.91,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RHIM.NS": {
+    "company": "RHI Magnesita India Limited",
+    "price": 440,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 57.59,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RITES.NS": {
+    "company": "RITES Limited",
+    "price": 223.6,
+    "sector": "Infrastructure",
+    "marketCap": "Small",
+    "pe": 26.12,
+    "beta": 1,
+    "dividend": 3.44,
+    "risk": "Moderate"
+  },
+  "RKFORGE.NS": {
+    "company": "Ramkrishna Forgings Limited",
+    "price": 519,
+    "sector": "Auto",
+    "marketCap": "Small",
+    "pe": 42.09,
+    "beta": 1,
+    "dividend": 0.19,
+    "risk": "Moderate"
+  },
+  "RPOWER.NS": {
+    "company": "Reliance Power Limited",
+    "price": 34.1,
+    "sector": "Energy",
+    "marketCap": "Small",
+    "pe": 57.8,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "RRKABEL.NS": {
+    "company": "R R Kabel Limited",
+    "price": 1422.5,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 39.83,
+    "beta": 1,
+    "dividend": 0.54,
+    "risk": "Moderate"
+  },
+  "RVNL.NS": {
+    "company": "Rail Vikas Nigam Limited",
+    "price": 308.5,
+    "sector": "Infrastructure",
+    "marketCap": "Mid",
+    "pe": 56.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SAGILITY.NS": {
+    "company": "Sagility Limited",
+    "price": 48.6,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 28.42,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SAIL.NS": {
+    "company": "Steel Authority of India Limited",
+    "price": 128.74,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 20.8,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SAILIFE.NS": {
+    "company": "Sai Life Sciences Ltd.",
+    "price": 887.55,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 63.72,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SAMMAANCAP.NS": {
+    "company": "Sammaan Capital Limited",
+    "price": 142.28,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 6.44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SAPPHIRE.NS": {
+    "company": "Sapphire Foods India Limited",
+    "price": 236.78,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SARDAEN.NS": {
+    "company": "Sarda Energy & Minerals Limited",
+    "price": 488.9,
+    "sector": "Metals",
+    "marketCap": "Mid",
+    "pe": 16.2,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SAREGAMA.NS": {
+    "company": "Saregama India Limited",
+    "price": 366.3,
+    "sector": "Media",
+    "marketCap": "Small",
+    "pe": 34.82,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SBFC.NS": {
+    "company": "SBFC Finance Limited",
+    "price": 105.85,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 29.65,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SBICARD.NS": {
+    "company": "SBI Cards and Payment Services Limited",
+    "price": 860.2,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 42.63,
+    "beta": 1,
+    "dividend": 0.29,
+    "risk": "Moderate"
+  },
+  "SBILIFE.NS": {
+    "company": "SBI Life Insurance Company Limited",
+    "price": 2017.8,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 82.39,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SBIN.NS": {
+    "company": "State Bank of India",
+    "price": 956.5,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 10.64,
+    "beta": 1,
+    "dividend": 1.66,
+    "risk": "Moderate"
+  },
+  "SCHAEFFLER.NS": {
+    "company": "Schaeffler India Limited",
+    "price": 3850,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 56.33,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SCHNEIDER.NS": {
+    "company": "Schneider Electric Infrastructure Limited",
+    "price": 721.85,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 67.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SCI.NS": {
+    "company": "The Shipping Corporation of India Limited",
+    "price": 224.33,
+    "sector": "Services",
+    "marketCap": "Small",
+    "pe": 13,
+    "beta": 1,
+    "dividend": 4.22,
+    "risk": "Moderate"
+  },
+  "SHREECEM.NS": {
+    "company": "Shree Cement Limited",
+    "price": 25890,
+    "sector": "Materials",
+    "marketCap": "Large",
+    "pe": 54.26,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SHRIRAMFIN.NS": {
+    "company": "Shriram Finance Limited",
+    "price": 839.3,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 16.04,
+    "beta": 1,
+    "dividend": 1.74,
+    "risk": "Moderate"
+  },
+  "SHYAMMETL.NS": {
+    "company": "Shyam Metalics and Energy Limited",
+    "price": 796.7,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 22.91,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SIEMENS.NS": {
+    "company": "Siemens Limited",
+    "price": 3175.9,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 66.78,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SIGNATURE.NS": {
+    "company": "Signatureglobal (India) Limited",
+    "price": 1104.2,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 200.4,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SJVN.NS": {
+    "company": "SJVN Limited",
+    "price": 73.41,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 50.63,
+    "beta": 1,
+    "dividend": 0.42,
+    "risk": "Moderate"
+  },
+  "SKFINDIA.NS": {
+    "company": "SKF India Limited",
+    "price": 1814.2,
+    "sector": "Auto",
+    "marketCap": "Small",
+    "pe": 16.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SKFINDUS.NS": {
+    "company": "SKF India (Industrial) Ltd.",
+    "price": 2670,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SOBHA.NS": {
+    "company": "Sobha Limited",
+    "price": 1444.3,
+    "sector": "Real Estate",
+    "marketCap": "Mid",
+    "pe": 103.24,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SOLARINDS.NS": {
+    "company": "Solar Industries India Limited",
+    "price": 12449,
+    "sector": "Chemicals",
+    "marketCap": "Large",
+    "pe": 85.19,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SONACOMS.NS": {
+    "company": "Sona BLW Precision Forgings Limited",
+    "price": 472.7,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 47.94,
+    "beta": 1,
+    "dividend": 0.33,
+    "risk": "Moderate"
+  },
+  "SONATSOFTW.NS": {
+    "company": "Sonata Software Limited",
+    "price": 350.45,
+    "sector": "IT",
+    "marketCap": "Small",
+    "pe": 22,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SRF.NS": {
+    "company": "SRF Limited",
+    "price": 2940,
+    "sector": "Chemicals",
+    "marketCap": "Large",
+    "pe": 53.92,
+    "beta": 1,
+    "dividend": 0.26,
+    "risk": "Moderate"
+  },
+  "STARHEALTH.NS": {
+    "company": "Star Health and Allied Insurance Company Limited",
+    "price": 471,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 52.51,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SUMICHEM.NS": {
+    "company": "Sumitomo Chemical India Limited",
+    "price": 457.6,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 42.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SUNDARMFIN.NS": {
+    "company": "Sundaram Finance Limited",
+    "price": 4675.1,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 26.13,
+    "beta": 1,
+    "dividend": 0.44,
+    "risk": "Moderate"
+  },
+  "SUNDRMFAST.NS": {
+    "company": "Sundram Fasteners Limited",
+    "price": 928.75,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 35.19,
+    "beta": 1,
+    "dividend": 0.85,
+    "risk": "Moderate"
+  },
+  "SUNPHARMA.NS": {
+    "company": "Sun Pharmaceutical Industries Limited",
+    "price": 1784.9,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 40.85,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SUNTV.NS": {
+    "company": "Sun TV Network Limited",
+    "price": 551.1,
+    "sector": "Media",
+    "marketCap": "Mid",
+    "pe": 13.41,
+    "beta": 1,
+    "dividend": 2.47,
+    "risk": "Moderate"
+  },
+  "SUPREMEIND.NS": {
+    "company": "The Supreme Industries Limited",
+    "price": 3286.4,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 49.23,
+    "beta": 1,
+    "dividend": 1.05,
+    "risk": "Moderate"
+  },
+  "SUZLON.NS": {
+    "company": "Suzlon Energy Limited",
+    "price": 51.65,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 22.36,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SWANCORP.NS": {
+    "company": "Swan Corp Limited",
+    "price": 450.45,
+    "sector": "Chemicals",
+    "marketCap": "Small",
+    "pe": 31.99,
+    "beta": 1,
+    "dividend": 0.02,
+    "risk": "Moderate"
+  },
+  "SWIGGY.NS": {
+    "company": "Swiggy Ltd.",
+    "price": 402.45,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SYNGENE.NS": {
+    "company": "Syngene International Limited",
+    "price": 628.7,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 54.01,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "SYRMA.NS": {
+    "company": "Syrma SGS Technology Limited",
+    "price": 739.2,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 65.88,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TARIL.NS": {
+    "company": "Transformers And Rectifiers (India) Ltd.",
+    "price": 240.85,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 28.81,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TATACHEM.NS": {
+    "company": "Tata Chemicals Limited",
+    "price": 756.35,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 95.74,
+    "beta": 1,
+    "dividend": 1.47,
+    "risk": "Moderate"
+  },
+  "TATACOMM.NS": {
+    "company": "Tata Communications Limited",
+    "price": 1798.5,
+    "sector": "Telecom",
+    "marketCap": "Mid",
+    "pe": 35.85,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TATACONSUM.NS": {
+    "company": "Tata Consumer Products Limited",
+    "price": 1142,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 83.24,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TATAELXSI.NS": {
+    "company": "Tata Elxsi Limited",
+    "price": 4884,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 45.44,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TATAINVEST.NS": {
+    "company": "Tata Investment Corporation Limited",
+    "price": 716.6,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 115.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TATAPOWER.NS": {
+    "company": "Tata Power Company Limited",
+    "price": 380.45,
+    "sector": "Energy",
+    "marketCap": "Large",
+    "pe": 29.98,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TATASTEEL.NS": {
+    "company": "Tata Steel Limited",
+    "price": 162.5,
+    "sector": "Metals",
+    "marketCap": "Large",
+    "pe": 29.82,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TATATECH.NS": {
+    "company": "Tata Technologies Limited",
+    "price": 645.4,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 37.83,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TBOTEK.NS": {
+    "company": "TBO Tek Ltd.",
+    "price": 1663.5,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 74.7,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TCS.NS": {
+    "company": "Tata Consultancy Services Limited",
+    "price": 3187,
+    "sector": "IT",
+    "marketCap": "Large",
+    "pe": 23.32,
+    "beta": 1,
+    "dividend": 1.93,
+    "risk": "Moderate"
+  },
+  "TECHM.NS": {
+    "company": "Tech Mahindra Limited",
+    "price": 1559,
+    "sector": "IT",
+    "marketCap": "Large",
+    "pe": 30.82,
+    "beta": 1,
+    "dividend": 2.88,
+    "risk": "Moderate"
+  },
+  "TECHNOE.NS": {
+    "company": "Techno Electric & Engineering Company Limited",
+    "price": 1081.4,
+    "sector": "Infrastructure",
+    "marketCap": "Small",
+    "pe": 28.14,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TEJASNET.NS": {
+    "company": "Tejas Networks Limited",
+    "price": 463.4,
+    "sector": "Telecom",
+    "marketCap": "Small",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "THELEELA.NS": {
+    "company": "Leela Palaces Hotels & Resorts Limited",
+    "price": 393,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 50.91,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "THERMAX.NS": {
+    "company": "Thermax Limited",
+    "price": 2770.8,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 52.63,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TIINDIA.NS": {
+    "company": "Tube Investments of India Limited",
+    "price": 2665.4,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 82.6,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TIMKEN.NS": {
+    "company": "Timken India Limited",
+    "price": 3029.6,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 50.22,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TITAGARH.NS": {
+    "company": "Titagarh Rail Systems Limited",
+    "price": 756.4,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 52.09,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TITAN.NS": {
+    "company": "Titan Company Limited",
+    "price": 3840.8,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 82.56,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TMPV.NS": {
+    "company": "Tata Motors Passenger Vehicles Limited",
+    "price": 343.25,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 11.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TORNTPHARM.NS": {
+    "company": "Torrent Pharmaceuticals Limited",
+    "price": 3793,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 60,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TORNTPOWER.NS": {
+    "company": "Torrent Power Limited",
+    "price": 1266.6,
+    "sector": "Energy",
+    "marketCap": "Mid",
+    "pe": 21.16,
+    "beta": 1,
+    "dividend": 1.51,
+    "risk": "Moderate"
+  },
+  "TRENT.NS": {
+    "company": "Trent Limited",
+    "price": 4045,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Large",
+    "pe": 88.71,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TRIDENT.NS": {
+    "company": "Trident Limited",
+    "price": 27.68,
+    "sector": "Textiles",
+    "marketCap": "Small",
+    "pe": 32.19,
+    "beta": 1,
+    "dividend": 1.81,
+    "risk": "Moderate"
+  },
+  "TRITURBINE.NS": {
+    "company": "Triveni Turbine Limited",
+    "price": 536.4,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 49.67,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TRIVENI.NS": {
+    "company": "Triveni Engineering & Industries Limited",
+    "price": 351.35,
+    "sector": "FMCG",
+    "marketCap": "Small",
+    "pe": 29.4,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TTML.NS": {
+    "company": "Tata Teleservices (Maharashtra) Limited",
+    "price": 51.28,
+    "sector": "Telecom",
+    "marketCap": "Small",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "TVSMOTOR.NS": {
+    "company": "TVS Motor Company Limited",
+    "price": 3618.2,
+    "sector": "Auto",
+    "marketCap": "Large",
+    "pe": 65.81,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "UBL.NS": {
+    "company": "United Breweries Limited",
+    "price": 1657.7,
+    "sector": "FMCG",
+    "marketCap": "Mid",
+    "pe": 120.12,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "UCOBANK.NS": {
+    "company": "UCO Bank",
+    "price": 28.92,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 14.04,
+    "beta": 1,
+    "dividend": 1.34,
+    "risk": "Moderate"
+  },
+  "ULTRACEMCO.NS": {
+    "company": "UltraTech Cement Limited",
+    "price": 11363,
+    "sector": "Materials",
+    "marketCap": "Large",
+    "pe": 45.79,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "UNIONBANK.NS": {
+    "company": "Union Bank of India",
+    "price": 148.04,
+    "sector": "Financials",
+    "marketCap": "Large",
+    "pe": 6.11,
+    "beta": 1,
+    "dividend": 3.16,
+    "risk": "Moderate"
+  },
+  "UNITDSPR.NS": {
+    "company": "United Spirits Ltd.",
+    "price": 1441.4,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 62.67,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "UNOMINDA.NS": {
+    "company": "Uno Minda Limited",
+    "price": 1233.9,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 65.08,
+    "beta": 1,
+    "dividend": 0.12,
+    "risk": "Moderate"
+  },
+  "UPL.NS": {
+    "company": "UPL Limited",
+    "price": 744,
+    "sector": "Chemicals",
+    "marketCap": "Mid",
+    "pe": 28.66,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "USHAMART.NS": {
+    "company": "Usha Martin Limited",
+    "price": 428.65,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 30.9,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "UTIAMC.NS": {
+    "company": "UTI Asset Management Company Limited",
+    "price": 1105.4,
+    "sector": "Financials",
+    "marketCap": "Small",
+    "pe": 24.2,
+    "beta": 1,
+    "dividend": 2.32,
+    "risk": "Moderate"
+  },
+  "VBL.NS": {
+    "company": "Varun Beverages Limited",
+    "price": 473.05,
+    "sector": "FMCG",
+    "marketCap": "Large",
+    "pe": 53.88,
+    "beta": 1,
+    "dividend": 0.32,
+    "risk": "Moderate"
+  },
+  "VEDL.NS": {
+    "company": "Vedanta Limited",
+    "price": 526.35,
+    "sector": "Metals",
+    "marketCap": "Large",
+    "pe": 17.27,
+    "beta": 1,
+    "dividend": 9.98,
+    "risk": "Moderate"
+  },
+  "VENTIVE.NS": {
+    "company": "Ventive Hospitality Ltd.",
+    "price": 708.2,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 72.12,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "VGUARD.NS": {
+    "company": "V-Guard Industries Limited",
+    "price": 334,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 50.53,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "VIJAYA.NS": {
+    "company": "Vijaya Diagnostic Centre Limited",
+    "price": 1018.1,
+    "sector": "Healthcare",
+    "marketCap": "Small",
+    "pe": 69.02,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "VMM.NS": {
+    "company": "Vishal Mega Mart Ltd.",
+    "price": 130.07,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 82.85,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "VOLTAS.NS": {
+    "company": "Voltas Limited",
+    "price": 1340.4,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Mid",
+    "pe": 80.8,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "VTL.NS": {
+    "company": "Vardhman Textiles Limited",
+    "price": 443.25,
+    "sector": "Textiles",
+    "marketCap": "Small",
+    "pe": 14.98,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "WAAREEENER.NS": {
+    "company": "Waaree Energies Ltd.",
+    "price": 2859,
+    "sector": "Industrials",
+    "marketCap": "Large",
+    "pe": 30.45,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "WELCORP.NS": {
+    "company": "Welspun Corp Limited",
+    "price": 807.65,
+    "sector": "Industrials",
+    "marketCap": "Mid",
+    "pe": 9.84,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "WELSPUNLIV.NS": {
+    "company": "Welspun Living Limited",
+    "price": 139.6,
+    "sector": "Textiles",
+    "marketCap": "Small",
+    "pe": 37.73,
+    "beta": 1,
+    "dividend": 1.29,
+    "risk": "Moderate"
+  },
+  "WHIRLPOOL.NS": {
+    "company": "Whirlpool of India Limited",
+    "price": 923.3,
+    "sector": "Consumer Discretionary",
+    "marketCap": "Small",
+    "pe": 33.42,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "WIPRO.NS": {
+    "company": "Wipro Limited",
+    "price": 258.34,
+    "sector": "IT",
+    "marketCap": "Large",
+    "pe": 20.12,
+    "beta": 1,
+    "dividend": 1.94,
+    "risk": "Moderate"
+  },
+  "WOCKPHARMA.NS": {
+    "company": "Wockhardt Limited",
+    "price": 1339.7,
+    "sector": "Healthcare",
+    "marketCap": "Mid",
+    "pe": 18,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "YESBANK.NS": {
+    "company": "Yes Bank Limited",
+    "price": 21.74,
+    "sector": "Financials",
+    "marketCap": "Mid",
+    "pe": 24.16,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ZEEL.NS": {
+    "company": "Zee Entertainment Enterprises Limited",
+    "price": 93.16,
+    "sector": "Media",
+    "marketCap": "Small",
+    "pe": 15.63,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ZENSARTECH.NS": {
+    "company": "Zensar Technologies Limited",
+    "price": 720,
+    "sector": "IT",
+    "marketCap": "Mid",
+    "pe": 23.54,
+    "beta": 1,
+    "dividend": 1.51,
+    "risk": "Moderate"
+  },
+  "ZENTEC.NS": {
+    "company": "Zen Technologies Limited",
+    "price": 1332.8,
+    "sector": "Industrials",
+    "marketCap": "Small",
+    "pe": 48.22,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ZFCVINDIA.NS": {
+    "company": "ZF Commercial Vehicle Control Systems India Limited",
+    "price": 14500,
+    "sector": "Auto",
+    "marketCap": "Mid",
+    "pe": 63.24,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  },
+  "ZYDUSLIFE.NS": {
+    "company": "Zydus Lifesciences Limited",
+    "price": 927.65,
+    "sector": "Healthcare",
+    "marketCap": "Large",
+    "pe": 18.97,
+    "beta": 1,
+    "dividend": 0,
+    "risk": "Moderate"
+  }
+}

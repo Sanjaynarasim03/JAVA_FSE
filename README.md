@@ -130,6 +130,11 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 NEXT_PUBLIC_USE_LIVE_DATA=true
 ```
 
+### Market Data Refresh
+- The application now ships with an expanded NSE universe (~500 tickers) stored in `src/data/market-data.json`.
+- Regenerate the dataset any time using `npm run data:update`. The script fetches the latest Nifty 500 list from NSE and enriches it with Yahoo Finance fundamentals.
+- The generated files are cached in `src/data/market-data.json` and `src/data/market-universe.json`; commit them if you want the updated universe in version control.
+
 ### Customization
 - **Stock Data**: Update `src/lib/marketData.ts` with real-time data sources
 - **Live Quotes**: The app can fetch live prices via Yahoo Finance (`/api/quotes`). If a quote isn't available, it gracefully falls back to values in `marketData.ts`.

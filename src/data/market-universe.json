@@ -1,0 +1,4010 @@
+[
+  {
+    "ticker": "RELIANCE.NS",
+    "company": "Reliance Industries Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 20809649225728,
+    "isin": "INE002A01018"
+  },
+  {
+    "ticker": "HDFCBANK.NS",
+    "company": "HDFC Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 15200958808064,
+    "isin": "INE040A01034"
+  },
+  {
+    "ticker": "BHARTIARTL.NS",
+    "company": "Bharti Airtel Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 12632289443840,
+    "isin": "INE397D01024"
+  },
+  {
+    "ticker": "TCS.NS",
+    "company": "Tata Consultancy Services Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 11530844241920,
+    "isin": "INE467B01029"
+  },
+  {
+    "ticker": "ICICIBANK.NS",
+    "company": "ICICI Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 9715948978176,
+    "isin": "INE090A01021"
+  },
+  {
+    "ticker": "SBIN.NS",
+    "company": "State Bank of India",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 8829085417472,
+    "isin": "INE062A01020"
+  },
+  {
+    "ticker": "INFY.NS",
+    "company": "Infosys Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 6574815313920,
+    "isin": "INE009A01021"
+  },
+  {
+    "ticker": "BAJFINANCE.NS",
+    "company": "Bajaj Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 6287230238720,
+    "isin": "INE296A01032"
+  },
+  {
+    "ticker": "LT.NS",
+    "company": "Larsen & Toubro Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 5500260319232,
+    "isin": "INE018A01030"
+  },
+  {
+    "ticker": "LICI.NS",
+    "company": "Life Insurance Corporation of India",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 5430010445824,
+    "isin": "INE0J1Y01017"
+  },
+  {
+    "ticker": "HINDUNILVR.NS",
+    "company": "Hindustan Unilever Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 5404167241728,
+    "isin": "INE030A01027"
+  },
+  {
+    "ticker": "ITC.NS",
+    "company": "ITC Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 5049718669312,
+    "isin": "INE154A01025"
+  },
+  {
+    "ticker": "MARUTI.NS",
+    "company": "Maruti Suzuki India Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 5036414861312,
+    "isin": "INE585B01010"
+  },
+  {
+    "ticker": "HCLTECH.NS",
+    "company": "HCL Technologies Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 4509910171648,
+    "isin": "INE860A01027"
+  },
+  {
+    "ticker": "M&M.NS",
+    "company": "Mahindra & Mahindra Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 4363488591872,
+    "isin": "INE101A01026"
+  },
+  {
+    "ticker": "SUNPHARMA.NS",
+    "company": "Sun Pharmaceutical Industries Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 4282572865536,
+    "isin": "INE044A01036"
+  },
+  {
+    "ticker": "KOTAKBANK.NS",
+    "company": "Kotak Mahindra Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 4229282398208,
+    "isin": "INE237A01028"
+  },
+  {
+    "ticker": "AXISBANK.NS",
+    "company": "Axis Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 4024882692096,
+    "isin": "INE238A01034"
+  },
+  {
+    "ticker": "TITAN.NS",
+    "company": "Titan Company Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 3406963408896,
+    "isin": "INE280A01028"
+  },
+  {
+    "ticker": "ULTRACEMCO.NS",
+    "company": "UltraTech Cement Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 3342250016768,
+    "isin": "INE481G01011"
+  },
+  {
+    "ticker": "BAJAJFINSV.NS",
+    "company": "Bajaj Finserv Ltd.",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 3318625861632,
+    "isin": "INE918I01026"
+  },
+  {
+    "ticker": "ADANIPORTS.NS",
+    "company": "Adani Ports and Special Economic Zone Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 3250592677888,
+    "isin": "INE742F01042"
+  },
+  {
+    "ticker": "NTPC.NS",
+    "company": "NTPC Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 3112145256448,
+    "isin": "INE733E01010"
+  },
+  {
+    "ticker": "ONGC.NS",
+    "company": "Oil and Natural Gas Corporation Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 3008824344576,
+    "isin": "INE213A01029"
+  },
+  {
+    "ticker": "HAL.NS",
+    "company": "Hindustan Aeronautics Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 2870716661760,
+    "isin": "INE066F01020"
+  },
+  {
+    "ticker": "BEL.NS",
+    "company": "Bharat Electronics Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 2830711914496,
+    "isin": "INE263A01024"
+  },
+  {
+    "ticker": "ADANIPOWER.NS",
+    "company": "Adani Power Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 2725891801088,
+    "isin": "INE814H01029"
+  },
+  {
+    "ticker": "WIPRO.NS",
+    "company": "Wipro Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 2705920098304,
+    "isin": "INE075A01022"
+  },
+  {
+    "ticker": "ASIANPAINT.NS",
+    "company": "Asian Paints Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 2689421541376,
+    "isin": "INE021A01026"
+  },
+  {
+    "ticker": "JSWSTEEL.NS",
+    "company": "JSW Steel Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 2679474225152,
+    "isin": "INE019A01038"
+  },
+  {
+    "ticker": "ADANIENT.NS",
+    "company": "Adani Enterprises Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 2655225118720,
+    "isin": "INE423A01024"
+  },
+  {
+    "ticker": "ETERNAL.NS",
+    "company": "Eternal Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 2593631764480,
+    "isin": "INE758T01015"
+  },
+  {
+    "ticker": "TMPV.NS",
+    "company": "Tata Motors Passenger Vehicles Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 2526964875264,
+    "isin": "INE155A01022"
+  },
+  {
+    "ticker": "BAJAJ-AUTO.NS",
+    "company": "Bajaj Auto Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 2505182543872,
+    "isin": "INE917I01010"
+  },
+  {
+    "ticker": "DMART.NS",
+    "company": "Avenue Supermarts Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 2488403230720,
+    "isin": "INE192R01011"
+  },
+  {
+    "ticker": "POWERGRID.NS",
+    "company": "Power Grid Corporation of India Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 2471170670592,
+    "isin": "INE752E01010"
+  },
+  {
+    "ticker": "COALINDIA.NS",
+    "company": "Coal India Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 2350772912128,
+    "isin": "INE522F01014"
+  },
+  {
+    "ticker": "NESTLEIND.NS",
+    "company": "Nestlé India Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 2329789333504,
+    "isin": "INE239A01024"
+  },
+  {
+    "ticker": "IOC.NS",
+    "company": "Indian Oil Corporation Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 2304586022912,
+    "isin": "INE242A01010"
+  },
+  {
+    "ticker": "HINDZINC.NS",
+    "company": "Hindustan Zinc Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 2171813888000,
+    "isin": "INE267A01025"
+  },
+  {
+    "ticker": "VEDL.NS",
+    "company": "Vedanta Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 2055556956160,
+    "isin": "INE205A01025"
+  },
+  {
+    "ticker": "TATASTEEL.NS",
+    "company": "Tata Steel Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 2026675240960,
+    "isin": "INE081A01020"
+  },
+  {
+    "ticker": "SBILIFE.NS",
+    "company": "SBI Life Insurance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 2023816953856,
+    "isin": "INE123W01016"
+  },
+  {
+    "ticker": "EICHERMOT.NS",
+    "company": "Eicher Motors Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 1987435036672,
+    "isin": "INE066A01021"
+  },
+  {
+    "ticker": "HYUNDAI.NS",
+    "company": "Hyundai Motor India Ltd.",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 1881438945280,
+    "isin": "INE0V6F01027"
+  },
+  {
+    "ticker": "INDIGO.NS",
+    "company": "InterGlobe Aviation Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 1864526462976,
+    "isin": "INE646L01027"
+  },
+  {
+    "ticker": "GRASIM.NS",
+    "company": "Grasim Industries Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 1863788920832,
+    "isin": "INE047A01021"
+  },
+  {
+    "ticker": "LTIM.NS",
+    "company": "LTIMindtree Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 1852774678528,
+    "isin": "INE214T01019"
+  },
+  {
+    "ticker": "JIOFIN.NS",
+    "company": "Jio Financial Services Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1848764268544,
+    "isin": "INE758E01017"
+  },
+  {
+    "ticker": "HINDALCO.NS",
+    "company": "Hindalco Industries Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 1840962863104,
+    "isin": "INE038A01020"
+  },
+  {
+    "ticker": "TVSMOTOR.NS",
+    "company": "TVS Motor Company Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 1718352216064,
+    "isin": "INE494B01023"
+  },
+  {
+    "ticker": "DLF.NS",
+    "company": "DLF Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 1695692750848,
+    "isin": "INE271C01023"
+  },
+  {
+    "ticker": "DIVISLAB.NS",
+    "company": "Divi's Laboratories Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 1695415009280,
+    "isin": "INE361B01024"
+  },
+  {
+    "ticker": "HDFCLIFE.NS",
+    "company": "HDFC Life Insurance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1660874653696,
+    "isin": "INE795G01014"
+  },
+  {
+    "ticker": "ADANIGREEN.NS",
+    "company": "Adani Green Energy Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 1641411117056,
+    "isin": "INE364U01010"
+  },
+  {
+    "ticker": "VBL.NS",
+    "company": "Varun Beverages Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 1599849758720,
+    "isin": "INE200M01039"
+  },
+  {
+    "ticker": "SHRIRAMFIN.NS",
+    "company": "Shriram Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1578958323712,
+    "isin": "INE721A01047"
+  },
+  {
+    "ticker": "BPCL.NS",
+    "company": "Bharat Petroleum Corporation Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 1537783365632,
+    "isin": "INE029A01011"
+  },
+  {
+    "ticker": "MUTHOOTFIN.NS",
+    "company": "Muthoot Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1509798707200,
+    "isin": "INE414G01012"
+  },
+  {
+    "ticker": "PIDILITIND.NS",
+    "company": "Pidilite Industries Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 1484132450304,
+    "isin": "INE318A01026"
+  },
+  {
+    "ticker": "BANKBARODA.NS",
+    "company": "Bank of Baroda Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1482456432640,
+    "isin": "INE028A01039"
+  },
+  {
+    "ticker": "CHOLAFIN.NS",
+    "company": "Cholamandalam Investment and Finance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1474380824576,
+    "isin": "INE121A01024"
+  },
+  {
+    "ticker": "IRFC.NS",
+    "company": "Indian Railway Finance Corporation Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1469292085248,
+    "isin": "INE053F01010"
+  },
+  {
+    "ticker": "TRENT.NS",
+    "company": "Trent Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 1438285037568,
+    "isin": "INE849A01020"
+  },
+  {
+    "ticker": "BRITANNIA.NS",
+    "company": "Britannia Industries Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 1405492264960,
+    "isin": "INE216A01030"
+  },
+  {
+    "ticker": "TECHM.NS",
+    "company": "Tech Mahindra Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 1380377559040,
+    "isin": "INE669C01036"
+  },
+  {
+    "ticker": "PNB.NS",
+    "company": "Punjab National Bank",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1347348725760,
+    "isin": "INE160A01022"
+  },
+  {
+    "ticker": "CANBK.NS",
+    "company": "Canara Bank",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1324133646336,
+    "isin": "INE476A01022"
+  },
+  {
+    "ticker": "AMBUJACEM.NS",
+    "company": "Ambuja Cements Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 1316847878144,
+    "isin": "INE079A01024"
+  },
+  {
+    "ticker": "TORNTPHARM.NS",
+    "company": "Torrent Pharmaceuticals Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 1283723493376,
+    "isin": "INE685A01028"
+  },
+  {
+    "ticker": "CUMMINSIND.NS",
+    "company": "Cummins India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 1259760123904,
+    "isin": "INE298A01020"
+  },
+  {
+    "ticker": "MOTHERSON.NS",
+    "company": "Samvardhana Motherson International Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 1232020176896,
+    "isin": "INE775A01035"
+  },
+  {
+    "ticker": "BAJAJHLDNG.NS",
+    "company": "Bajaj Holdings & Investment Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1226830118912,
+    "isin": "INE118A01012"
+  },
+  {
+    "ticker": "TATAPOWER.NS",
+    "company": "Tata Power Company Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 1215979847680,
+    "isin": "INE245A01021"
+  },
+  {
+    "ticker": "CIPLA.NS",
+    "company": "Cipla Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 1204225310720,
+    "isin": "INE059A01026"
+  },
+  {
+    "ticker": "ADANIENSOL.NS",
+    "company": "Adani Energy Solutions Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 1188368875520,
+    "isin": "INE931S01010"
+  },
+  {
+    "ticker": "HEROMOTOCO.NS",
+    "company": "Hero MotoCorp Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 1186183905280,
+    "isin": "INE158A01026"
+  },
+  {
+    "ticker": "IDEA.NS",
+    "company": "Vodafone Idea Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 1167205072896,
+    "isin": "INE669E01016"
+  },
+  {
+    "ticker": "GODREJCP.NS",
+    "company": "Godrej Consumer Products Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 1159950106624,
+    "isin": "INE102D01028"
+  },
+  {
+    "ticker": "PFC.NS",
+    "company": "Power Finance Corporation Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1139307708416,
+    "isin": "INE134E01011"
+  },
+  {
+    "ticker": "SIEMENS.NS",
+    "company": "Siemens Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 1131075338240,
+    "isin": "INE003A01024"
+  },
+  {
+    "ticker": "TATACONSUM.NS",
+    "company": "Tata Consumer Products Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 1130204495872,
+    "isin": "INE192A01025"
+  },
+  {
+    "ticker": "UNIONBANK.NS",
+    "company": "Union Bank of India",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1130078928896,
+    "isin": "INE692A01016"
+  },
+  {
+    "ticker": "SOLARINDS.NS",
+    "company": "Solar Industries India Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 1126510755840,
+    "isin": "INE343H01029"
+  },
+  {
+    "ticker": "HDFCAMC.NS",
+    "company": "HDFC Asset Management Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1116413624320,
+    "isin": "INE127D01025"
+  },
+  {
+    "ticker": "GAIL.NS",
+    "company": "GAIL (India) Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 1106914705408,
+    "isin": "INE129A01019"
+  },
+  {
+    "ticker": "ABB.NS",
+    "company": "ABB India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 1093159419904,
+    "isin": "INE117A01022"
+  },
+  {
+    "ticker": "BOSCHLTD.NS",
+    "company": "Bosch Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 1079736664064,
+    "isin": "INE323A01026"
+  },
+  {
+    "ticker": "POLYCAB.NS",
+    "company": "Polycab India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 1076935327744,
+    "isin": "INE455K01017"
+  },
+  {
+    "ticker": "BSE.NS",
+    "company": "BSE Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1076485816320,
+    "isin": "INE118H01025"
+  },
+  {
+    "ticker": "ENRIN.NS",
+    "company": "Siemens Energy India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 1074771722240,
+    "isin": "INE1NPP01017"
+  },
+  {
+    "ticker": "LODHA.NS",
+    "company": "Lodha Developers Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 1070646231040,
+    "isin": "INE670K01029"
+  },
+  {
+    "ticker": "INDUSTOWER.NS",
+    "company": "Indus Towers Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 1068699025408,
+    "isin": "INE121J01017"
+  },
+  {
+    "ticker": "INDIANB.NS",
+    "company": "Indian Bank",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1056447660032,
+    "isin": "INE562A01011"
+  },
+  {
+    "ticker": "CGPOWER.NS",
+    "company": "CG Power and Industrial Solutions Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 1053553000448,
+    "isin": "INE067A01029"
+  },
+  {
+    "ticker": "UNITDSPR.NS",
+    "company": "United Spirits Ltd.",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 1050580615168,
+    "isin": "INE854D01024"
+  },
+  {
+    "ticker": "GMRAIRPORT.NS",
+    "company": "GMR Airports Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 1044113784832,
+    "isin": "INE776C01039"
+  },
+  {
+    "ticker": "DRREDDY.NS",
+    "company": "Dr. Reddy's Laboratories Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 1041903517696,
+    "isin": "INE089A01031"
+  },
+  {
+    "ticker": "MAXHEALTH.NS",
+    "company": "Max Healthcare Institute Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 1039692726272,
+    "isin": "INE027H01010"
+  },
+  {
+    "ticker": "INDHOTEL.NS",
+    "company": "The Indian Hotels Company Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 1031562133504,
+    "isin": "INE053A01029"
+  },
+  {
+    "ticker": "JINDALSTEL.NS",
+    "company": "Jindal Steel Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 1024610533376,
+    "isin": "INE749A01030"
+  },
+  {
+    "ticker": "IDBI.NS",
+    "company": "IDBI Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 1018790150144,
+    "isin": "INE008A01015"
+  },
+  {
+    "ticker": "APOLLOHOSP.NS",
+    "company": "Apollo Hospitals Enterprise Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 1010015338496,
+    "isin": "INE437A01024"
+  },
+  {
+    "ticker": "MAZDOCK.NS",
+    "company": "Mazagon Dock Shipbuilders Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 986091159552,
+    "isin": "INE249Z01020"
+  },
+  {
+    "ticker": "ICICIGI.NS",
+    "company": "ICICI Lombard General Insurance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 962592178176,
+    "isin": "INE765G01017"
+  },
+  {
+    "ticker": "BHEL.NS",
+    "company": "Bharat Heavy Electricals Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 958611980288,
+    "isin": "INE257A01026"
+  },
+  {
+    "ticker": "HINDPETRO.NS",
+    "company": "Hindustan Petroleum Corporation Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 957626449920,
+    "isin": "INE094A01015"
+  },
+  {
+    "ticker": "PERSISTENT.NS",
+    "company": "Persistent Systems Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 948057210880,
+    "isin": "INE262H01021"
+  },
+  {
+    "ticker": "ABCAPITAL.NS",
+    "company": "Aditya Birla Capital Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 946228166656,
+    "isin": "INE674K01013"
+  },
+  {
+    "ticker": "LUPIN.NS",
+    "company": "Lupin Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 940323438592,
+    "isin": "INE326A01037"
+  },
+  {
+    "ticker": "MARICO.NS",
+    "company": "Marico Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 937150513152,
+    "isin": "INE196A01026"
+  },
+  {
+    "ticker": "SHREECEM.NS",
+    "company": "Shree Cement Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 935097729024,
+    "isin": "INE070A01015"
+  },
+  {
+    "ticker": "SWIGGY.NS",
+    "company": "Swiggy Ltd.",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 934500499456,
+    "isin": "INE00H001014"
+  },
+  {
+    "ticker": "ZYDUSLIFE.NS",
+    "company": "Zydus Lifesciences Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 933432983552,
+    "isin": "INE010B01027"
+  },
+  {
+    "ticker": "ICICIPRULI.NS",
+    "company": "ICICI Prudential Life Insurance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 930783166464,
+    "isin": "INE726G01019"
+  },
+  {
+    "ticker": "ASHOKLEY.NS",
+    "company": "Ashok Leyland Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 929478737920,
+    "isin": "INE208A01029"
+  },
+  {
+    "ticker": "RECLTD.NS",
+    "company": "REC Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 905524609024,
+    "isin": "INE020B01018"
+  },
+  {
+    "ticker": "DABUR.NS",
+    "company": "Dabur India Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 890924498944,
+    "isin": "INE016A01026"
+  },
+  {
+    "ticker": "MANKIND.NS",
+    "company": "Mankind Pharma Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 886746578944,
+    "isin": "INE634S01028"
+  },
+  {
+    "ticker": "POLICYBZR.NS",
+    "company": "PB Fintech Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 885368553472,
+    "isin": "INE417T01026"
+  },
+  {
+    "ticker": "HAVELLS.NS",
+    "company": "Havells India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 880661561344,
+    "isin": "INE176B01034"
+  },
+  {
+    "ticker": "NAUKRI.NS",
+    "company": "Info Edge (India) Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 872153153536,
+    "isin": "INE663F01032"
+  },
+  {
+    "ticker": "SRF.NS",
+    "company": "SRF Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 871489011712,
+    "isin": "INE647A01010"
+  },
+  {
+    "ticker": "POWERINDIA.NS",
+    "company": "Hitachi Energy India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 845092028416,
+    "isin": "INE07Y701011"
+  },
+  {
+    "ticker": "BHARTIHEXA.NS",
+    "company": "Bharti Hexacom Ltd.",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 834749988864,
+    "isin": "INE343G01021"
+  },
+  {
+    "ticker": "WAAREEENER.NS",
+    "company": "Waaree Energies Ltd.",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 822365323264,
+    "isin": "INE377N01017"
+  },
+  {
+    "ticker": "SBICARD.NS",
+    "company": "SBI Cards and Payment Services Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 818521178112,
+    "isin": "INE018E01016"
+  },
+  {
+    "ticker": "PAYTM.NS",
+    "company": "One97 Communications Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 817699094528,
+    "isin": "INE982J01020"
+  },
+  {
+    "ticker": "BAJAJHFL.NS",
+    "company": "Bajaj Housing Finance Ltd.",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 801212137472,
+    "isin": "INE377Y01014"
+  },
+  {
+    "ticker": "JSWENERGY.NS",
+    "company": "JSW Energy Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 793348866048,
+    "isin": "INE121E01018"
+  },
+  {
+    "ticker": "NHPC.NS",
+    "company": "NHPC Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 773568135168,
+    "isin": "INE848E01016"
+  },
+  {
+    "ticker": "DIXON.NS",
+    "company": "Dixon Technologies (India) Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 772093837312,
+    "isin": "INE935N01020"
+  },
+  {
+    "ticker": "LTF.NS",
+    "company": "L&T Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 763051114496,
+    "isin": "INE498L01015"
+  },
+  {
+    "ticker": "NTPCGREEN.NS",
+    "company": "NTPC Green Energy Ltd.",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 763004190720,
+    "isin": "INE0ONG01011"
+  },
+  {
+    "ticker": "AUBANK.NS",
+    "company": "AU Small Finance Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 744526381056,
+    "isin": "INE949L01017"
+  },
+  {
+    "ticker": "GVT&D.NS",
+    "company": "GE Vernova T&D India Ltd",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 744045608960,
+    "isin": "INE200A01026"
+  },
+  {
+    "ticker": "NYKAA.NS",
+    "company": "FSN E-Commerce Ventures Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 712458436608,
+    "isin": "INE388Y01029"
+  },
+  {
+    "ticker": "UNOMINDA.NS",
+    "company": "Uno Minda Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 711923138560,
+    "isin": "INE405E01023"
+  },
+  {
+    "ticker": "IOB.NS",
+    "company": "Indian Overseas Bank",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 710375636992,
+    "isin": "INE565A01014"
+  },
+  {
+    "ticker": "SUZLON.NS",
+    "company": "Suzlon Energy Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 708218978304,
+    "isin": "INE040H01021"
+  },
+  {
+    "ticker": "PRESTIGE.NS",
+    "company": "Prestige Estates Projects Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 696749195264,
+    "isin": "INE811K01011"
+  },
+  {
+    "ticker": "IDFCFIRSTB.NS",
+    "company": "IDFC First Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 692517208064,
+    "isin": "INE092T01019"
+  },
+  {
+    "ticker": "OFSS.NS",
+    "company": "Oracle Financial Services Software Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 690879594496,
+    "isin": "INE881D01027"
+  },
+  {
+    "ticker": "COROMANDEL.NS",
+    "company": "Coromandel International Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 683531501568,
+    "isin": "INE169A01031"
+  },
+  {
+    "ticker": "AUROPHARMA.NS",
+    "company": "Aurobindo Pharma Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 682790354944,
+    "isin": "INE406A01037"
+  },
+  {
+    "ticker": "YESBANK.NS",
+    "company": "Yes Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 682123919360,
+    "isin": "INE528G01035"
+  },
+  {
+    "ticker": "LLOYDSME.NS",
+    "company": "Lloyds Metals and Energy Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 677027971072,
+    "isin": "INE281B01032"
+  },
+  {
+    "ticker": "ALKEM.NS",
+    "company": "Alkem Laboratories Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 671596609536,
+    "isin": "INE540L01014"
+  },
+  {
+    "ticker": "GICRE.NS",
+    "company": "General Insurance Corporation of India",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 666935164928,
+    "isin": "INE481Y01014"
+  },
+  {
+    "ticker": "BHARATFORG.NS",
+    "company": "Bharat Forge Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 663354277888,
+    "isin": "INE465A01025"
+  },
+  {
+    "ticker": "NMDC.NS",
+    "company": "NMDC Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 654014021632,
+    "isin": "INE584A01023"
+  },
+  {
+    "ticker": "INDUSINDBK.NS",
+    "company": "IndusInd Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 651073814528,
+    "isin": "INE095A01012"
+  },
+  {
+    "ticker": "OIL.NS",
+    "company": "Oil India Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 647389904896,
+    "isin": "INE274J01014"
+  },
+  {
+    "ticker": "JSL.NS",
+    "company": "Jindal Stainless Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 646823542784,
+    "isin": "INE220G01021"
+  },
+  {
+    "ticker": "MRF.NS",
+    "company": "MRF Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 644867162112,
+    "isin": "INE883A01011"
+  },
+  {
+    "ticker": "RVNL.NS",
+    "company": "Rail Vikas Nigam Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 644649910272,
+    "isin": "INE415G01027"
+  },
+  {
+    "ticker": "FORTIS.NS",
+    "company": "Fortis Healthcare Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 643845783552,
+    "isin": "INE061F01013"
+  },
+  {
+    "ticker": "ATGL.NS",
+    "company": "Adani Total Gas Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 643773759488,
+    "isin": "INE399L01023"
+  },
+  {
+    "ticker": "FEDERALBNK.NS",
+    "company": "The Federal Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 638536450048,
+    "isin": "INE171A01029"
+  },
+  {
+    "ticker": "BERGEPAINT.NS",
+    "company": "Berger Paints India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 638385651712,
+    "isin": "INE463A01038"
+  },
+  {
+    "ticker": "TORNTPOWER.NS",
+    "company": "Torrent Power Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 638244225024,
+    "isin": "INE813H01021"
+  },
+  {
+    "ticker": "BANKINDIA.NS",
+    "company": "Bank of India Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 634141016064,
+    "isin": "INE084A01016"
+  },
+  {
+    "ticker": "PHOENIXLTD.NS",
+    "company": "The Phoenix Mills Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 628264468480,
+    "isin": "INE211B01039"
+  },
+  {
+    "ticker": "UPL.NS",
+    "company": "UPL Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 628258570240,
+    "isin": "INE628A01036"
+  },
+  {
+    "ticker": "COFORGE.NS",
+    "company": "Coforge Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 616075821056,
+    "isin": "INE591G01025"
+  },
+  {
+    "ticker": "VMM.NS",
+    "company": "Vishal Mega Mart Ltd.",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 607817564160,
+    "isin": "INE01EA01019"
+  },
+  {
+    "ticker": "GODREJPROP.NS",
+    "company": "Godrej Properties Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 605605462016,
+    "isin": "INE484J01027"
+  },
+  {
+    "ticker": "SCHAEFFLER.NS",
+    "company": "Schaeffler India Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 601769115648,
+    "isin": "INE513A01022"
+  },
+  {
+    "ticker": "OBEROIRLTY.NS",
+    "company": "Oberoi Realty Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 591607627776,
+    "isin": "INE093I01010"
+  },
+  {
+    "ticker": "ABBOTINDIA.NS",
+    "company": "Abbott India Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 590943092736,
+    "isin": "INE358A01014"
+  },
+  {
+    "ticker": "MFSL.NS",
+    "company": "Max Financial Services Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 589456080896,
+    "isin": "INE180A01020"
+  },
+  {
+    "ticker": "COLPAL.NS",
+    "company": "Colgate-Palmolive (India) Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 582281854976,
+    "isin": "INE259A01022"
+  },
+  {
+    "ticker": "PATANJALI.NS",
+    "company": "Patanjali Foods Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 578269085696,
+    "isin": "INE619A01035"
+  },
+  {
+    "ticker": "LAURUSLABS.NS",
+    "company": "Laurus Labs Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 552057307136,
+    "isin": "INE947Q01028"
+  },
+  {
+    "ticker": "JSWINFRA.NS",
+    "company": "JSW Infrastructure Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 551882653696,
+    "isin": "INE880J01026"
+  },
+  {
+    "ticker": "GLENMARK.NS",
+    "company": "Glenmark Pharmaceuticals Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 550037553152,
+    "isin": "INE935A01035"
+  },
+  {
+    "ticker": "MPHASIS.NS",
+    "company": "Mphasis Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 545833582592,
+    "isin": "INE356A01018"
+  },
+  {
+    "ticker": "IRCTC.NS",
+    "company": "Indian Railway Catering & Tourism Corporation Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 534839984128,
+    "isin": "INE335Y01020"
+  },
+  {
+    "ticker": "SAIL.NS",
+    "company": "Steel Authority of India Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 532633780224,
+    "isin": "INE114A01011"
+  },
+  {
+    "ticker": "FACT.NS",
+    "company": "The Fertilisers and Chemicals Travancore Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 526069530624,
+    "isin": "INE188A01015"
+  },
+  {
+    "ticker": "NAM-INDIA.NS",
+    "company": "Nippon Life India Asset Management Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 521633431552,
+    "isin": "INE298J01013"
+  },
+  {
+    "ticker": "TIINDIA.NS",
+    "company": "Tube Investments of India Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 515778478080,
+    "isin": "INE974X01010"
+  },
+  {
+    "ticker": "SUNDARMFIN.NS",
+    "company": "Sundaram Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 515256942592,
+    "isin": "INE660A01013"
+  },
+  {
+    "ticker": "MCX.NS",
+    "company": "Multi Commodity Exchange of India Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 512693174272,
+    "isin": "INE745G01035"
+  },
+  {
+    "ticker": "TATACOMM.NS",
+    "company": "Tata Communications Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 512572489728,
+    "isin": "INE151A01013"
+  },
+  {
+    "ticker": "BDL.NS",
+    "company": "Bharat Dynamics Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 511354667008,
+    "isin": "INE171Z01026"
+  },
+  {
+    "ticker": "PIIND.NS",
+    "company": "PI Industries Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 510056595456,
+    "isin": "INE603J01030"
+  },
+  {
+    "ticker": "BIOCON.NS",
+    "company": "Biocon Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 508396896256,
+    "isin": "INE376G01013"
+  },
+  {
+    "ticker": "MOTILALOFS.NS",
+    "company": "Motilal Oswal Financial Services Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 505257361408,
+    "isin": "INE338I01027"
+  },
+  {
+    "ticker": "LINDEINDIA.NS",
+    "company": "Linde India Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 503901847552,
+    "isin": "INE473A01011"
+  },
+  {
+    "ticker": "M&MFIN.NS",
+    "company": "Mahindra & Mahindra Financial Services Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 484133699584,
+    "isin": "INE774D01024"
+  },
+  {
+    "ticker": "NATIONALUM.NS",
+    "company": "National Aluminium Company Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 483398582272,
+    "isin": "INE139A01034"
+  },
+  {
+    "ticker": "LTTS.NS",
+    "company": "L&T Technology Services Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 482344828928,
+    "isin": "INE010V01017"
+  },
+  {
+    "ticker": "APLAPOLLO.NS",
+    "company": "APL Apollo Tubes Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 480814497792,
+    "isin": "INE702C01027"
+  },
+  {
+    "ticker": "KALYANKJIL.NS",
+    "company": "Kalyan Jewellers India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 480291422208,
+    "isin": "INE303R01014"
+  },
+  {
+    "ticker": "HEXT.NS",
+    "company": "Hexaware Technologies Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 454197379072,
+    "isin": "INE093A01041"
+  },
+  {
+    "ticker": "BALKRISIND.NS",
+    "company": "Balkrishna Industries Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 448573177856,
+    "isin": "INE787D01026"
+  },
+  {
+    "ticker": "360ONE.NS",
+    "company": "360 One Wam Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 446049550336,
+    "isin": "INE466L01038"
+  },
+  {
+    "ticker": "GODFRYPHLP.NS",
+    "company": "Godfrey Phillips India Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 445327933440,
+    "isin": "INE260B01028"
+  },
+  {
+    "ticker": "VOLTAS.NS",
+    "company": "Voltas Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 443517894656,
+    "isin": "INE226A01021"
+  },
+  {
+    "ticker": "GLAXO.NS",
+    "company": "GlaxoSmithKline Pharmaceuticals Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 439286792192,
+    "isin": "INE159A01016"
+  },
+  {
+    "ticker": "UBL.NS",
+    "company": "United Breweries Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 438304407552,
+    "isin": "INE686F01025"
+  },
+  {
+    "ticker": "MAHABANK.NS",
+    "company": "Bank of Maharashtra",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 437187969024,
+    "isin": "INE457A01014"
+  },
+  {
+    "ticker": "RADICO.NS",
+    "company": "Radico Khaitan Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 433770233856,
+    "isin": "INE944F01028"
+  },
+  {
+    "ticker": "AIIL.NS",
+    "company": "Authum Investment & Infrastructure Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 429565181952,
+    "isin": "INE206F01022"
+  },
+  {
+    "ticker": "JKCEMENT.NS",
+    "company": "J.K. Cement Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 424202665984,
+    "isin": "INE823G01014"
+  },
+  {
+    "ticker": "COCHINSHIP.NS",
+    "company": "Cochin Shipyard Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 423902085120,
+    "isin": "INE704P01025"
+  },
+  {
+    "ticker": "HUDCO.NS",
+    "company": "Housing and Urban Development Corporation Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 423582007296,
+    "isin": "INE031A01017"
+  },
+  {
+    "ticker": "SUPREMEIND.NS",
+    "company": "The Supreme Industries Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 417752973312,
+    "isin": "INE195A01028"
+  },
+  {
+    "ticker": "PAGEIND.NS",
+    "company": "Page Industries Limited",
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "marketCapValue": 411856797696,
+    "isin": "INE761H01022"
+  },
+  {
+    "ticker": "PGHH.NS",
+    "company": "Procter & Gamble Hygiene and Health Care Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 408615747584,
+    "isin": "INE179A01014"
+  },
+  {
+    "ticker": "ITCHOTELS.NS",
+    "company": "ITC Hotels Ltd.",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 406256975872,
+    "isin": "INE379A01028"
+  },
+  {
+    "ticker": "PETRONET.NS",
+    "company": "Petronet LNG Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 405440659456,
+    "isin": "INE347G01014"
+  },
+  {
+    "ticker": "ESCORTS.NS",
+    "company": "Escorts Kubota Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 401976459264,
+    "isin": "INE042A01014"
+  },
+  {
+    "ticker": "3MINDIA.NS",
+    "company": "3M India Limited",
+    "sector": "Conglomerate",
+    "industry": "Diversified",
+    "marketCapValue": 389489786880,
+    "isin": "INE470A01017"
+  },
+  {
+    "ticker": "JUBLFOOD.NS",
+    "company": "Jubilant FoodWorks Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 385720680448,
+    "isin": "INE797F01020"
+  },
+  {
+    "ticker": "PREMIERENE.NS",
+    "company": "Premier Energies Ltd.",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 385149140992,
+    "isin": "INE0BS701011"
+  },
+  {
+    "ticker": "CONCOR.NS",
+    "company": "Container Corporation of India Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 384841908224,
+    "isin": "INE111A01025"
+  },
+  {
+    "ticker": "KEI.NS",
+    "company": "KEI Industries Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 382725160960,
+    "isin": "INE878B01027"
+  },
+  {
+    "ticker": "FLUOROCHEM.NS",
+    "company": "Gujarat Fluorochemicals Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 378674905088,
+    "isin": "INE09N301011"
+  },
+  {
+    "ticker": "NH.NS",
+    "company": "Narayana Hrudayalaya Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 376912707584,
+    "isin": "INE410P01011"
+  },
+  {
+    "ticker": "IREDA.NS",
+    "company": "Indian Renewable Energy Development Agency Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 374933651456,
+    "isin": "INE202E01016"
+  },
+  {
+    "ticker": "ASTRAL.NS",
+    "company": "Astral Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 374605807616,
+    "isin": "INE006I01046"
+  },
+  {
+    "ticker": "IPCALAB.NS",
+    "company": "Ipca Laboratories Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 373345583104,
+    "isin": "INE571A01038"
+  },
+  {
+    "ticker": "DALBHARAT.NS",
+    "company": "Dalmia Bharat Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 364897992704,
+    "isin": "INE00R701025"
+  },
+  {
+    "ticker": "CHOLAHLDNG.NS",
+    "company": "Cholamandalam Financial Holdings Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 364492652544,
+    "isin": "INE149A01033"
+  },
+  {
+    "ticker": "ENDURANCE.NS",
+    "company": "Endurance Technologies Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 363810390016,
+    "isin": "INE913H01037"
+  },
+  {
+    "ticker": "TATAINVEST.NS",
+    "company": "Tata Investment Corporation Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 362874109952,
+    "isin": "INE672A01026"
+  },
+  {
+    "ticker": "UCOBANK.NS",
+    "company": "UCO Bank",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 362762960896,
+    "isin": "INE691A01018"
+  },
+  {
+    "ticker": "POONAWALLA.NS",
+    "company": "Poonawalla Fincorp Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 361190981632,
+    "isin": "INE511C01022"
+  },
+  {
+    "ticker": "BLUESTARCO.NS",
+    "company": "Blue Star Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 355670327296,
+    "isin": "INE472A01039"
+  },
+  {
+    "ticker": "HINDCOPPER.NS",
+    "company": "Hindustan Copper Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 350062673920,
+    "isin": "INE531E01026"
+  },
+  {
+    "ticker": "APARINDS.NS",
+    "company": "APAR Industries Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 347338571776,
+    "isin": "INE372A01015"
+  },
+  {
+    "ticker": "GODREJIND.NS",
+    "company": "Godrej Industries Limited",
+    "sector": "Conglomerate",
+    "industry": "Diversified",
+    "marketCapValue": 347111063552,
+    "isin": "INE233A01035"
+  },
+  {
+    "ticker": "AIAENG.NS",
+    "company": "AIA Engineering Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 346218561536,
+    "isin": "INE212H01026"
+  },
+  {
+    "ticker": "ACC.NS",
+    "company": "ACC Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 334772633600,
+    "isin": "INE012A01025"
+  },
+  {
+    "ticker": "KPRMILL.NS",
+    "company": "K.P.R. Mill Limited",
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "marketCapValue": 334362476544,
+    "isin": "INE930H01031"
+  },
+  {
+    "ticker": "AJANTPHARM.NS",
+    "company": "Ajanta Pharma Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 331196366848,
+    "isin": "INE031B01049"
+  },
+  {
+    "ticker": "NLCINDIA.NS",
+    "company": "NLC India Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 330005708800,
+    "isin": "INE589A01014"
+  },
+  {
+    "ticker": "APOLLOTYRE.NS",
+    "company": "Apollo Tyres Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 329632841728,
+    "isin": "INE438A01022"
+  },
+  {
+    "ticker": "CENTRALBK.NS",
+    "company": "Central Bank of India",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 328475344896,
+    "isin": "INE483A01010"
+  },
+  {
+    "ticker": "KPITTECH.NS",
+    "company": "KPIT Technologies Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 328159592448,
+    "isin": "INE04I401011"
+  },
+  {
+    "ticker": "ASTERDM.NS",
+    "company": "Aster DM Healthcare Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 325658935296,
+    "isin": "INE914M01019"
+  },
+  {
+    "ticker": "AWL.NS",
+    "company": "AWL Agri Business Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 319999639552,
+    "isin": "INE699H01024"
+  },
+  {
+    "ticker": "CRISIL.NS",
+    "company": "CRISIL Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 318419959808,
+    "isin": "INE007A01025"
+  },
+  {
+    "ticker": "EXIDEIND.NS",
+    "company": "Exide Industries Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 316070428672,
+    "isin": "INE302A01020"
+  },
+  {
+    "ticker": "GODIGIT.NS",
+    "company": "Go Digit General Insurance Ltd.",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 315369521152,
+    "isin": "INE03JT01014"
+  },
+  {
+    "ticker": "THERMAX.NS",
+    "company": "Thermax Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 312123883520,
+    "isin": "INE152A01029"
+  },
+  {
+    "ticker": "MEDANTA.NS",
+    "company": "Global Health Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 312022401024,
+    "isin": "INE474Q01031"
+  },
+  {
+    "ticker": "CDSL.NS",
+    "company": "Central Depository Services (India) Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 310950199296,
+    "isin": "INE736A01011"
+  },
+  {
+    "ticker": "NAVINFLUOR.NS",
+    "company": "Navin Fluorine International Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 306922356736,
+    "isin": "INE048G01026"
+  },
+  {
+    "ticker": "TATAELXSI.NS",
+    "company": "Tata Elxsi Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 304405708800,
+    "isin": "INE670A01012"
+  },
+  {
+    "ticker": "HONAUT.NS",
+    "company": "Honeywell Automation India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 302954774528,
+    "isin": "INE671A01010"
+  },
+  {
+    "ticker": "DELHIVERY.NS",
+    "company": "Delhivery Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 301540966400,
+    "isin": "INE148O01028"
+  },
+  {
+    "ticker": "MSUMI.NS",
+    "company": "Motherson Sumi Wiring India Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 294644744192,
+    "isin": "INE0FS801015"
+  },
+  {
+    "ticker": "SONACOMS.NS",
+    "company": "Sona BLW Precision Forgings Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 294101647360,
+    "isin": "INE073K01018"
+  },
+  {
+    "ticker": "LICHSGFIN.NS",
+    "company": "LIC Housing Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 291945938944,
+    "isin": "INE115A01026"
+  },
+  {
+    "ticker": "ITI.NS",
+    "company": "ITI Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 290781396992,
+    "isin": "INE248A01017"
+  },
+  {
+    "ticker": "NBCC.NS",
+    "company": "NBCC (India) Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 289440006144,
+    "isin": "INE095N01031"
+  },
+  {
+    "ticker": "SJVN.NS",
+    "company": "SJVN Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 288486260736,
+    "isin": "INE002L01015"
+  },
+  {
+    "ticker": "JBCHEPHARM.NS",
+    "company": "J. B. Chemicals & Pharmaceuticals Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 284222947328,
+    "isin": "INE572A01036"
+  },
+  {
+    "ticker": "GLAND.NS",
+    "company": "Gland Pharma Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 281766428672,
+    "isin": "INE068V01023"
+  },
+  {
+    "ticker": "PTCIL.NS",
+    "company": "PTC Industries Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 280705499136,
+    "isin": "INE596F01018"
+  },
+  {
+    "ticker": "STARHEALTH.NS",
+    "company": "Star Health and Allied Insurance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 277048393728,
+    "isin": "INE575P01011"
+  },
+  {
+    "ticker": "ZFCVINDIA.NS",
+    "company": "ZF Commercial Vehicle Control Systems India Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 275029983232,
+    "isin": "INE342J01019"
+  },
+  {
+    "ticker": "GRSE.NS",
+    "company": "Garden Reach Shipbuilders & Engineers Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 274082988032,
+    "isin": "INE382Z01011"
+  },
+  {
+    "ticker": "GUJGASLTD.NS",
+    "company": "Gujarat Gas Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 272292167680,
+    "isin": "INE844O01030"
+  },
+  {
+    "ticker": "KIMS.NS",
+    "company": "Krishna Institute of Medical Sciences Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 270213824512,
+    "isin": "INE967H01025"
+  },
+  {
+    "ticker": "AEGISVOPAK.NS",
+    "company": "Aegis Vopak Terminals Ltd.",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 269740539904,
+    "isin": "INE0INX01018"
+  },
+  {
+    "ticker": "MRPL.NS",
+    "company": "Mangalore Refinery and Petrochemicals Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 269462061056,
+    "isin": "INE103A01014"
+  },
+  {
+    "ticker": "GILLETTE.NS",
+    "company": "Gillette India Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 266954375168,
+    "isin": "INE322A01010"
+  },
+  {
+    "ticker": "EMCURE.NS",
+    "company": "Emcure Pharmaceuticals Ltd.",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 266035314688,
+    "isin": "INE168P01015"
+  },
+  {
+    "ticker": "NIACL.NS",
+    "company": "The New India Assurance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 265130246144,
+    "isin": "INE470Y01017"
+  },
+  {
+    "ticker": "KAYNES.NS",
+    "company": "Kaynes Technology India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 264810889216,
+    "isin": "INE918Z01012"
+  },
+  {
+    "ticker": "IKS.NS",
+    "company": "Inventurus Knowledge Solutions Ltd.",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 264416051200,
+    "isin": "INE115Q01022"
+  },
+  {
+    "ticker": "TATATECH.NS",
+    "company": "Tata Technologies Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 261866946560,
+    "isin": "INE142M01025"
+  },
+  {
+    "ticker": "AEGISLOG.NS",
+    "company": "Aegis Logistics Ltd.",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 260155457536,
+    "isin": "INE208C01025"
+  },
+  {
+    "ticker": "IGL.NS",
+    "company": "Indraprastha Gas Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 259220963328,
+    "isin": "INE203G01027"
+  },
+  {
+    "ticker": "NUVAMA.NS",
+    "company": "Nuvama Wealth Management Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 256237600768,
+    "isin": "INE531F01015"
+  },
+  {
+    "ticker": "ASAHIINDIA.NS",
+    "company": "Asahi India Glass Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 255742967808,
+    "isin": "INE439A01020"
+  },
+  {
+    "ticker": "IRB.NS",
+    "company": "IRB Infrastructure Developers Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 253880778752,
+    "isin": "INE821I01022"
+  },
+  {
+    "ticker": "SYNGENE.NS",
+    "company": "Syngene International Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 252802088960,
+    "isin": "INE398R01022"
+  },
+  {
+    "ticker": "ATHERENERG.NS",
+    "company": "Ather Energy Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 246789586944,
+    "isin": "INE0LEZ01016"
+  },
+  {
+    "ticker": "RAMCOCEM.NS",
+    "company": "The Ramco Cements Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 241278140416,
+    "isin": "INE331A01037"
+  },
+  {
+    "ticker": "IIFL.NS",
+    "company": "IIFL Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 240459022336,
+    "isin": "INE530B01024"
+  },
+  {
+    "ticker": "LALPATHLAB.NS",
+    "company": "Dr. Lal PathLabs Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 238615756800,
+    "isin": "INE600L01024"
+  },
+  {
+    "ticker": "EIHOTEL.NS",
+    "company": "EIH Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 238388822016,
+    "isin": "INE230A01023"
+  },
+  {
+    "ticker": "ANANDRATHI.NS",
+    "company": "Anand Rathi Wealth Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 238069972992,
+    "isin": "INE463V01026"
+  },
+  {
+    "ticker": "MANAPPURAM.NS",
+    "company": "Manappuram Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 237678870528,
+    "isin": "INE522D01027"
+  },
+  {
+    "ticker": "HSCL.NS",
+    "company": "Himadri Speciality Chemical Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 235509432320,
+    "isin": "INE019C01026"
+  },
+  {
+    "ticker": "KARURVYSYA.NS",
+    "company": "The Karur Vysya Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 233438478336,
+    "isin": "INE036D01028"
+  },
+  {
+    "ticker": "FSL.NS",
+    "company": "Firstsource Solutions Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 233159737344,
+    "isin": "INE684F01012"
+  },
+  {
+    "ticker": "AMBER.NS",
+    "company": "Amber Enterprises India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 231027539968,
+    "isin": "INE371P01015"
+  },
+  {
+    "ticker": "PFIZER.NS",
+    "company": "Pfizer Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 230765281280,
+    "isin": "INE182A01018"
+  },
+  {
+    "ticker": "AFFLE.NS",
+    "company": "Affle 3i Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 230485442560,
+    "isin": "INE00WC01027"
+  },
+  {
+    "ticker": "EMAMILTD.NS",
+    "company": "Emami Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 230202032128,
+    "isin": "INE548C01032"
+  },
+  {
+    "ticker": "PNBHOUSING.NS",
+    "company": "PNB Housing Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 230172327936,
+    "isin": "INE572E01012"
+  },
+  {
+    "ticker": "SUMICHEM.NS",
+    "company": "Sumitomo Chemical India Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 228409081856,
+    "isin": "INE258G01013"
+  },
+  {
+    "ticker": "TIMKEN.NS",
+    "company": "Timken India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 227882696704,
+    "isin": "INE325A01013"
+  },
+  {
+    "ticker": "PPLPHARMA.NS",
+    "company": "Piramal Pharma Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 227798630400,
+    "isin": "INE0DK501011"
+  },
+  {
+    "ticker": "SAGILITY.NS",
+    "company": "Sagility Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 227512565760,
+    "isin": "INE0W2G01015"
+  },
+  {
+    "ticker": "BANDHANBNK.NS",
+    "company": "Bandhan Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 227171106816,
+    "isin": "INE545U01014"
+  },
+  {
+    "ticker": "ASTRAZEN.NS",
+    "company": "AstraZeneca Pharma India Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 226599403520,
+    "isin": "INE203A01020"
+  },
+  {
+    "ticker": "ANGELONE.NS",
+    "company": "Angel One Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 225435975680,
+    "isin": "INE732I01013"
+  },
+  {
+    "ticker": "HBLENGINE.NS",
+    "company": "HBL Engineering Ltd.",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 223017189376,
+    "isin": "INE292B01021"
+  },
+  {
+    "ticker": "FORCEMOT.NS",
+    "company": "Force Motors Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 222995054592,
+    "isin": "INE451A01017"
+  },
+  {
+    "ticker": "CESC.NS",
+    "company": "CESC Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 222594613248,
+    "isin": "INE486A01021"
+  },
+  {
+    "ticker": "SHYAMMETL.NS",
+    "company": "Shyam Metalics and Energy Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 221664575488,
+    "isin": "INE810G01011"
+  },
+  {
+    "ticker": "ERIS.NS",
+    "company": "Eris Lifesciences Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 220031156224,
+    "isin": "INE406M01024"
+  },
+  {
+    "ticker": "JYOTICNC.NS",
+    "company": "Jyoti CNC Automation Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 217985040384,
+    "isin": "INE980O01024"
+  },
+  {
+    "ticker": "WOCKPHARMA.NS",
+    "company": "Wockhardt Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 217690767360,
+    "isin": "INE049B01025"
+  },
+  {
+    "ticker": "SUNTV.NS",
+    "company": "Sun TV Network Limited",
+    "sector": "Media",
+    "industry": "Media Entertainment & Publication",
+    "marketCapValue": 217180012544,
+    "isin": "INE424H01027"
+  },
+  {
+    "ticker": "BRIGADE.NS",
+    "company": "Brigade Enterprises Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 215887101952,
+    "isin": "INE791I01019"
+  },
+  {
+    "ticker": "REDINGTON.NS",
+    "company": "Redington Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 214167109632,
+    "isin": "INE891D01026"
+  },
+  {
+    "ticker": "WELCORP.NS",
+    "company": "Welspun Corp Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 212832075776,
+    "isin": "INE191B01025"
+  },
+  {
+    "ticker": "ABSLAMC.NS",
+    "company": "Aditya Birla Sun Life AMC Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 209891459072,
+    "isin": "INE404A01024"
+  },
+  {
+    "ticker": "NEULANDLAB.NS",
+    "company": "Neuland Laboratories Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 209495490560,
+    "isin": "INE794A01010"
+  },
+  {
+    "ticker": "AADHARHFC.NS",
+    "company": "Aadhar Housing Finance Ltd.",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 209400905728,
+    "isin": "INE883F01010"
+  },
+  {
+    "ticker": "ECLERX.NS",
+    "company": "eClerx Services Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 208775512064,
+    "isin": "INE738I01010"
+  },
+  {
+    "ticker": "DEEPAKNTR.NS",
+    "company": "Deepak Nitrite Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 208450519040,
+    "isin": "INE288B01029"
+  },
+  {
+    "ticker": "INOXWIND.NS",
+    "company": "Inox Wind Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 208010706944,
+    "isin": "INE066P01011"
+  },
+  {
+    "ticker": "CREDITACC.NS",
+    "company": "CreditAccess Grameen Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 205583958016,
+    "isin": "INE741K01010"
+  },
+  {
+    "ticker": "COHANCE.NS",
+    "company": "Cohance Lifesciences Ltd.",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 201345073152,
+    "isin": "INE03QK01018"
+  },
+  {
+    "ticker": "KPIL.NS",
+    "company": "Kalpataru Projects International Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 199547715584,
+    "isin": "INE220B01022"
+  },
+  {
+    "ticker": "CUB.NS",
+    "company": "City Union Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 198103154688,
+    "isin": "INE491A01021"
+  },
+  {
+    "ticker": "BAYERCROP.NS",
+    "company": "Bayer CropScience Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 197781143552,
+    "isin": "INE462A01022"
+  },
+  {
+    "ticker": "SUNDRMFAST.NS",
+    "company": "Sundram Fasteners Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 195156721664,
+    "isin": "INE387A01021"
+  },
+  {
+    "ticker": "CHALET.NS",
+    "company": "Chalet Hotels Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 194721841152,
+    "isin": "INE427F01016"
+  },
+  {
+    "ticker": "TATACHEM.NS",
+    "company": "Tata Chemicals Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 192684900352,
+    "isin": "INE092A01019"
+  },
+  {
+    "ticker": "ONESOURCE.NS",
+    "company": "Onesource Specialty Pharma Ltd.",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 192379469824,
+    "isin": "INE013P01021"
+  },
+  {
+    "ticker": "POLYMED.NS",
+    "company": "Poly Medicure Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 191397117952,
+    "isin": "INE205C01021"
+  },
+  {
+    "ticker": "INDIACEM.NS",
+    "company": "The India Cements Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 191191318528,
+    "isin": "INE383A01012"
+  },
+  {
+    "ticker": "DCMSHRIRAM.NS",
+    "company": "DCM Shriram Limited",
+    "sector": "Conglomerate",
+    "industry": "Diversified",
+    "marketCapValue": 187536441344,
+    "isin": "INE499A01024"
+  },
+  {
+    "ticker": "SAILIFE.NS",
+    "company": "Sai Life Sciences Ltd.",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 186593853440,
+    "isin": "INE570L01029"
+  },
+  {
+    "ticker": "RBLBANK.NS",
+    "company": "RBL Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 186449985536,
+    "isin": "INE976G01028"
+  },
+  {
+    "ticker": "CASTROLIND.NS",
+    "company": "Castrol India Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 184471322624,
+    "isin": "INE172A01027"
+  },
+  {
+    "ticker": "CENTURYPLY.NS",
+    "company": "Century Plyboards (India) Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 184084627456,
+    "isin": "INE348B01021"
+  },
+  {
+    "ticker": "EIDPARRY.NS",
+    "company": "E.I.D.- Parry (India) Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 183938170880,
+    "isin": "INE126A01031"
+  },
+  {
+    "ticker": "ANANTRAJ.NS",
+    "company": "Anant Raj Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 183321296896,
+    "isin": "INE242C01024"
+  },
+  {
+    "ticker": "CAMS.NS",
+    "company": "Computer Age Management Services Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 183311007744,
+    "isin": "INE596I01020"
+  },
+  {
+    "ticker": "ABREL.NS",
+    "company": "Aditya Birla Real Estate Limited",
+    "sector": "Forest Materials",
+    "industry": "Forest Materials",
+    "marketCapValue": 182696968192,
+    "isin": "INE055A01016"
+  },
+  {
+    "ticker": "KEC.NS",
+    "company": "KEC International Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 181801287680,
+    "isin": "INE389H01022"
+  },
+  {
+    "ticker": "BIKAJI.NS",
+    "company": "Bikaji Foods International Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 181178531840,
+    "isin": "INE00E101023"
+  },
+  {
+    "ticker": "KFINTECH.NS",
+    "company": "KFin Technologies Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 177366171648,
+    "isin": "INE138Y01010"
+  },
+  {
+    "ticker": "TBOTEK.NS",
+    "company": "TBO Tek Ltd.",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 177032904704,
+    "isin": "INE673O01025"
+  },
+  {
+    "ticker": "NETWEB.NS",
+    "company": "Netweb Technologies India Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 174635548672,
+    "isin": "INE0NT901020"
+  },
+  {
+    "ticker": "APLLTD.NS",
+    "company": "Alembic Pharmaceuticals Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 174125432832,
+    "isin": "INE901L01018"
+  },
+  {
+    "ticker": "ARE&M.NS",
+    "company": "Amara Raja Energy & Mobility Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 173874085888,
+    "isin": "INE885A01032"
+  },
+  {
+    "ticker": "CGCL.NS",
+    "company": "Capri Global Capital Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 173283934208,
+    "isin": "INE180C01042"
+  },
+  {
+    "ticker": "ATUL.NS",
+    "company": "Atul Ltd",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 172940869632,
+    "isin": "INE100A01010"
+  },
+  {
+    "ticker": "BASF.NS",
+    "company": "BASF India Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 172917473280,
+    "isin": "INE373A01013"
+  },
+  {
+    "ticker": "CHAMBLFERT.NS",
+    "company": "Chambal Fertilisers and Chemicals Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 172753846272,
+    "isin": "INE085A01013"
+  },
+  {
+    "ticker": "SCHNEIDER.NS",
+    "company": "Schneider Electric Infrastructure Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 172597231616,
+    "isin": "INE839M01018"
+  },
+  {
+    "ticker": "SARDAEN.NS",
+    "company": "Sarda Energy & Minerals Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 172279201792,
+    "isin": "INE385C01021"
+  },
+  {
+    "ticker": "TRITURBINE.NS",
+    "company": "Triveni Turbine Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 170704666624,
+    "isin": "INE152M01016"
+  },
+  {
+    "ticker": "JUBLPHARMA.NS",
+    "company": "Jubilant Pharmova Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 170539909120,
+    "isin": "INE700A01033"
+  },
+  {
+    "ticker": "CRAFTSMAN.NS",
+    "company": "Craftsman Automation Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 168050655232,
+    "isin": "INE00LO01017"
+  },
+  {
+    "ticker": "FIVESTAR.NS",
+    "company": "Five-Star Business Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 166525288448,
+    "isin": "INE128S01021"
+  },
+  {
+    "ticker": "DEVYANI.NS",
+    "company": "Devyani International Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 166339133440,
+    "isin": "INE872J01023"
+  },
+  {
+    "ticker": "KAJARIACER.NS",
+    "company": "Kajaria Ceramics Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 165977653248,
+    "isin": "INE217B01036"
+  },
+  {
+    "ticker": "VENTIVE.NS",
+    "company": "Ventive Hospitality Ltd.",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 165394169856,
+    "isin": "INE781S01027"
+  },
+  {
+    "ticker": "ZENSARTECH.NS",
+    "company": "Zensar Technologies Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 163719364608,
+    "isin": "INE520A01027"
+  },
+  {
+    "ticker": "KIRLOSENG.NS",
+    "company": "Kirloskar Oil Engines Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 163134504960,
+    "isin": "INE146L01010"
+  },
+  {
+    "ticker": "CARBORUNIV.NS",
+    "company": "Carborundum Universal Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 162427125760,
+    "isin": "INE120A01034"
+  },
+  {
+    "ticker": "CROMPTON.NS",
+    "company": "Crompton Greaves Consumer Electricals Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 162266546176,
+    "isin": "INE299U01018"
+  },
+  {
+    "ticker": "MAHSCOOTER.NS",
+    "company": "Maharashtra Scooters Ltd.",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 161796096000,
+    "isin": "INE288A01013"
+  },
+  {
+    "ticker": "RRKABEL.NS",
+    "company": "R R Kabel Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 160869384192,
+    "isin": "INE777K01022"
+  },
+  {
+    "ticker": "AKZOINDIA.NS",
+    "company": "Akzo Nobel India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 160620675072,
+    "isin": "INE133A01011"
+  },
+  {
+    "ticker": "GSPL.NS",
+    "company": "Gujarat State Petronet Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 160450592768,
+    "isin": "INE246F01010"
+  },
+  {
+    "ticker": "CHOICEIN.NS",
+    "company": "Choice International Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 158478548992,
+    "isin": "INE102B01014"
+  },
+  {
+    "ticker": "ABLBL.NS",
+    "company": "Aditya Birla Lifestyle Brands Ltd.",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 158445633536,
+    "isin": "INE14LE01019"
+  },
+  {
+    "ticker": "NATCOPHARM.NS",
+    "company": "NATCO Pharma Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 158118199296,
+    "isin": "INE987B01026"
+  },
+  {
+    "ticker": "AGARWALEYE.NS",
+    "company": "Dr. Agarwal's Health Care Ltd.",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 156963045376,
+    "isin": "INE943P01029"
+  },
+  {
+    "ticker": "NAVA.NS",
+    "company": "Nava Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 156232073216,
+    "isin": "INE725A01030"
+  },
+  {
+    "ticker": "SIGNATURE.NS",
+    "company": "Signatureglobal (India) Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 155269660672,
+    "isin": "INE903U01023"
+  },
+  {
+    "ticker": "GMDCLTD.NS",
+    "company": "Gujarat Mineral Development Corporation Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 155144421376,
+    "isin": "INE131A01031"
+  },
+  {
+    "ticker": "DEEPAKFERT.NS",
+    "company": "Deepak Fertilisers And Petrochemicals Corporation Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 154835550208,
+    "isin": "INE501A01019"
+  },
+  {
+    "ticker": "GESHIP.NS",
+    "company": "The Great Eastern Shipping Company Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 154588299264,
+    "isin": "INE017A01032"
+  },
+  {
+    "ticker": "SOBHA.NS",
+    "company": "Sobha Limited",
+    "sector": "Real Estate",
+    "industry": "Realty",
+    "marketCapValue": 154412335104,
+    "isin": "INE671H01015"
+  },
+  {
+    "ticker": "PGEL.NS",
+    "company": "PG Electroplast Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 154067091456,
+    "isin": "INE457L01029"
+  },
+  {
+    "ticker": "CEATLTD.NS",
+    "company": "CEAT Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 153950879744,
+    "isin": "INE482A01020"
+  },
+  {
+    "ticker": "ELGIEQUIP.NS",
+    "company": "Elgi Equipments Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 153604702208,
+    "isin": "INE285A01027"
+  },
+  {
+    "ticker": "DOMS.NS",
+    "company": "DOMS Industries Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 153473548288,
+    "isin": "INE321T01012"
+  },
+  {
+    "ticker": "GPIL.NS",
+    "company": "Godawari Power & Ispat Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 151467130880,
+    "isin": "INE177H01039"
+  },
+  {
+    "ticker": "CAPLIPOINT.NS",
+    "company": "Caplin Point Laboratories Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 148643676160,
+    "isin": "INE475E01026"
+  },
+  {
+    "ticker": "CONCORDBIO.NS",
+    "company": "Concord Biotech Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 145886887936,
+    "isin": "INE338H01029"
+  },
+  {
+    "ticker": "VGUARD.NS",
+    "company": "V-Guard Industries Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 145642045440,
+    "isin": "INE951I01027"
+  },
+  {
+    "ticker": "AFCONS.NS",
+    "company": "Afcons Infrastructure Ltd.",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 145495605248,
+    "isin": "INE101I01011"
+  },
+  {
+    "ticker": "APTUS.NS",
+    "company": "Aptus Value Housing Finance India Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 144334946304,
+    "isin": "INE852O01025"
+  },
+  {
+    "ticker": "MANYAVAR.NS",
+    "company": "Vedant Fashions Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 143963176960,
+    "isin": "INE825V01034"
+  },
+  {
+    "ticker": "OLAELEC.NS",
+    "company": "Ola Electric Mobility Ltd.",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 143080390656,
+    "isin": "INE0LXG01040"
+  },
+  {
+    "ticker": "DATAPATTNS.NS",
+    "company": "Data Patterns (India) Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 142624768000,
+    "isin": "INE0IX101010"
+  },
+  {
+    "ticker": "SYRMA.NS",
+    "company": "Syrma SGS Technology Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 142426161152,
+    "isin": "INE0DYJ01015"
+  },
+  {
+    "ticker": "UTIAMC.NS",
+    "company": "UTI Asset Management Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 141841711104,
+    "isin": "INE094J01016"
+  },
+  {
+    "ticker": "INTELLECT.NS",
+    "company": "Intellect Design Arena Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 141614743552,
+    "isin": "INE306R01017"
+  },
+  {
+    "ticker": "IRCON.NS",
+    "company": "Ircon International Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 141321879552,
+    "isin": "INE962Y01021"
+  },
+  {
+    "ticker": "SWANCORP.NS",
+    "company": "Swan Corp Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 141212188672,
+    "isin": "INE665A01038"
+  },
+  {
+    "ticker": "RPOWER.NS",
+    "company": "Reliance Power Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 141061570560,
+    "isin": "INE614G01033"
+  },
+  {
+    "ticker": "TRIDENT.NS",
+    "company": "Trident Limited",
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "marketCapValue": 141040140288,
+    "isin": "INE064C01022"
+  },
+  {
+    "ticker": "CHENNPETRO.NS",
+    "company": "Chennai Petroleum Corporation Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 140529369088,
+    "isin": "INE178A01016"
+  },
+  {
+    "ticker": "BEML.NS",
+    "company": "BEML Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 139092623360,
+    "isin": "INE258A01024"
+  },
+  {
+    "ticker": "MINDACORP.NS",
+    "company": "Minda Corporation Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 138556964864,
+    "isin": "INE842C01021"
+  },
+  {
+    "ticker": "IGIL.NS",
+    "company": "International Gemmological Institute (India) Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 137707683840,
+    "isin": "INE0Q9301021"
+  },
+  {
+    "ticker": "FIRSTCRY.NS",
+    "company": "Brainbees Solutions Ltd.",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 137573711872,
+    "isin": "INE02RE01045"
+  },
+  {
+    "ticker": "RAINBOW.NS",
+    "company": "Rainbow Children's Medicare Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 137165299712,
+    "isin": "INE961O01016"
+  },
+  {
+    "ticker": "NIVABUPA.NS",
+    "company": "Niva Bupa Health Insurance Company Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 136638038016,
+    "isin": "INE995S01015"
+  },
+  {
+    "ticker": "GRANULES.NS",
+    "company": "Granules India Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 135324221440,
+    "isin": "INE101D01020"
+  },
+  {
+    "ticker": "INDIAMART.NS",
+    "company": "IndiaMART InterMESH Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 134403719168,
+    "isin": "INE933S01016"
+  },
+  {
+    "ticker": "JMFINANCIL.NS",
+    "company": "JM Financial Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 134288678912,
+    "isin": "INE780C01023"
+  },
+  {
+    "ticker": "LTFOODS.NS",
+    "company": "LT Foods Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 134240493568,
+    "isin": "INE818H01020"
+  },
+  {
+    "ticker": "WELSPUNLIV.NS",
+    "company": "Welspun Living Limited",
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "marketCapValue": 133409103872,
+    "isin": "INE192B01031"
+  },
+  {
+    "ticker": "JBMA.NS",
+    "company": "JBM Auto Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 132843479040,
+    "isin": "INE927D01051"
+  },
+  {
+    "ticker": "BBTC.NS",
+    "company": "The Bombay Burmah Trading Corporation Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 132418633728,
+    "isin": "INE050A01025"
+  },
+  {
+    "ticker": "ACMESOLAR.NS",
+    "company": "ACME Solar Holdings Ltd.",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 131411042304,
+    "isin": "INE622W01025"
+  },
+  {
+    "ticker": "THELEELA.NS",
+    "company": "Leela Palaces Hotels & Resorts Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 131372556288,
+    "isin": "INE0AQ201015"
+  },
+  {
+    "ticker": "BLS.NS",
+    "company": "BLS International Services Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 131226525696,
+    "isin": "INE153T01027"
+  },
+  {
+    "ticker": "GRAVITA.NS",
+    "company": "Gravita India Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 130842886144,
+    "isin": "INE024L01027"
+  },
+  {
+    "ticker": "USHAMART.NS",
+    "company": "Usha Martin Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 130561728512,
+    "isin": "INE228A01035"
+  },
+  {
+    "ticker": "IFCI.NS",
+    "company": "IFCI Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 130078621696,
+    "isin": "INE039A01010"
+  },
+  {
+    "ticker": "CCL.NS",
+    "company": "CCL Products (India) Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 129019387904,
+    "isin": "INE421D01022"
+  },
+  {
+    "ticker": "VTL.NS",
+    "company": "Vardhman Textiles Limited",
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "marketCapValue": 128199999488,
+    "isin": "INE825A01020"
+  },
+  {
+    "ticker": "KSB.NS",
+    "company": "KSB Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 128171180032,
+    "isin": "INE999A01023"
+  },
+  {
+    "ticker": "LEMONTREE.NS",
+    "company": "Lemon Tree Hotels Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 127915057152,
+    "isin": "INE970X01018"
+  },
+  {
+    "ticker": "BLUEDART.NS",
+    "company": "Blue Dart Express Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 127905431552,
+    "isin": "INE233B01017"
+  },
+  {
+    "ticker": "AARTIIND.NS",
+    "company": "Aarti Industries Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 127811067904,
+    "isin": "INE769A01020"
+  },
+  {
+    "ticker": "INDGN.NS",
+    "company": "Indegene Ltd.",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 127298011136,
+    "isin": "INE065X01017"
+  },
+  {
+    "ticker": "BATAINDIA.NS",
+    "company": "Bata India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 126625333248,
+    "isin": "INE176A01028"
+  },
+  {
+    "ticker": "JPPOWER.NS",
+    "company": "Jaiprakash Power Ventures Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 126107410432,
+    "isin": "INE351F01018"
+  },
+  {
+    "ticker": "CYIENT.NS",
+    "company": "Cyient Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 126031405056,
+    "isin": "INE136B01020"
+  },
+  {
+    "ticker": "TECHNOE.NS",
+    "company": "Techno Electric & Engineering Company Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 125766361088,
+    "isin": "INE285K01026"
+  },
+  {
+    "ticker": "IEX.NS",
+    "company": "Indian Energy Exchange Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 124546506752,
+    "isin": "INE022Q01020"
+  },
+  {
+    "ticker": "KIRLOSBROS.NS",
+    "company": "Kirloskar Brothers Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 124413427712,
+    "isin": "INE732A01036"
+  },
+  {
+    "ticker": "HOMEFIRST.NS",
+    "company": "Home First Finance Company India Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 123167055872,
+    "isin": "INE481N01025"
+  },
+  {
+    "ticker": "JKTYRE.NS",
+    "company": "JK Tyre & Industries Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 123007590400,
+    "isin": "INE573A01042"
+  },
+  {
+    "ticker": "PCBL.NS",
+    "company": "PCBL Chemical Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 122383974400,
+    "isin": "INE602A01031"
+  },
+  {
+    "ticker": "AAVAS.NS",
+    "company": "Aavas Financiers Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 121944367104,
+    "isin": "INE216P01012"
+  },
+  {
+    "ticker": "CANFINHOME.NS",
+    "company": "Can Fin Homes Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 121170255872,
+    "isin": "INE477A01020"
+  },
+  {
+    "ticker": "NUVOCO.NS",
+    "company": "Nuvoco Vistas Corporation Limited",
+    "sector": "Materials",
+    "industry": "Construction Materials",
+    "marketCapValue": 120537276416,
+    "isin": "INE118D01016"
+  },
+  {
+    "ticker": "ZENTEC.NS",
+    "company": "Zen Technologies Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 119872782336,
+    "isin": "INE251B01027"
+  },
+  {
+    "ticker": "NSLNISP.NS",
+    "company": "NMDC Steel Limited",
+    "sector": "Metals",
+    "industry": "Metals & Mining",
+    "marketCapValue": 118806765568,
+    "isin": "INE0NNS01018"
+  },
+  {
+    "ticker": "NEWGEN.NS",
+    "company": "Newgen Software Technologies Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 118346670080,
+    "isin": "INE619B01017"
+  },
+  {
+    "ticker": "BSOFT.NS",
+    "company": "Birlasoft Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 118135504896,
+    "isin": "INE836A01035"
+  },
+  {
+    "ticker": "WHIRLPOOL.NS",
+    "company": "Whirlpool of India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 117146263552,
+    "isin": "INE716A01013"
+  },
+  {
+    "ticker": "SAMMAANCAP.NS",
+    "company": "Sammaan Capital Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 116191174656,
+    "isin": "INE148I01020"
+  },
+  {
+    "ticker": "SBFC.NS",
+    "company": "SBFC Finance Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 115986505728,
+    "isin": "INE423Y01016"
+  },
+  {
+    "ticker": "GODREJAGRO.NS",
+    "company": "Godrej Agrovet Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 114801188864,
+    "isin": "INE850D01014"
+  },
+  {
+    "ticker": "FINCABLES.NS",
+    "company": "Finolex Cables Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 112869236736,
+    "isin": "INE235A01022"
+  },
+  {
+    "ticker": "J&KBANK.NS",
+    "company": "Jammu and Kashmir Bank Limited",
+    "sector": "Financials",
+    "industry": "Financial Services",
+    "marketCapValue": 111153356800,
+    "isin": "INE168A01041"
+  },
+  {
+    "ticker": "ACE.NS",
+    "company": "Action Construction Equipment Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 110267580416,
+    "isin": "INE731H01025"
+  },
+  {
+    "ticker": "MGL.NS",
+    "company": "Mahanagar Gas Limited",
+    "sector": "Energy",
+    "industry": "Oil Gas & Consumable Fuels",
+    "marketCapValue": 109910024192,
+    "isin": "INE002S01010"
+  },
+  {
+    "ticker": "ENGINERSIN.NS",
+    "company": "Engineers India Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 108412354560,
+    "isin": "INE510A01028"
+  },
+  {
+    "ticker": "JWL.NS",
+    "company": "Jupiter Wagons Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 108268224512,
+    "isin": "INE209L01016"
+  },
+  {
+    "ticker": "RITES.NS",
+    "company": "RITES Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 107467374592,
+    "isin": "INE320J01015"
+  },
+  {
+    "ticker": "ELECON.NS",
+    "company": "Elecon Engineering Company Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 106599350272,
+    "isin": "INE205B01031"
+  },
+  {
+    "ticker": "GRAPHITE.NS",
+    "company": "Graphite India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 106411327488,
+    "isin": "INE371A01025"
+  },
+  {
+    "ticker": "JUBLINGREA.NS",
+    "company": "Jubilant Ingrevia Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 106112147456,
+    "isin": "INE0BY001018"
+  },
+  {
+    "ticker": "HEG.NS",
+    "company": "HEG Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 105331499008,
+    "isin": "INE545A01024"
+  },
+  {
+    "ticker": "INOXINDIA.NS",
+    "company": "INOX India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 104768315392,
+    "isin": "INE616N01034"
+  },
+  {
+    "ticker": "VIJAYA.NS",
+    "company": "Vijaya Diagnostic Centre Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 104584257536,
+    "isin": "INE043W01024"
+  },
+  {
+    "ticker": "SCI.NS",
+    "company": "The Shipping Corporation of India Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 104492695552,
+    "isin": "INE109A01011"
+  },
+  {
+    "ticker": "PVRINOX.NS",
+    "company": "PVR INOX Limited",
+    "sector": "Media",
+    "industry": "Media Entertainment & Publication",
+    "marketCapValue": 104248311808,
+    "isin": "INE191H01014"
+  },
+  {
+    "ticker": "JYOTHYLAB.NS",
+    "company": "Jyothy Labs Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 103554490368,
+    "isin": "INE668F01031"
+  },
+  {
+    "ticker": "JINDALSAW.NS",
+    "company": "Jindal Saw Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 103176216576,
+    "isin": "INE324A01032"
+  },
+  {
+    "ticker": "RAILTEL.NS",
+    "company": "RailTel Corporation of India Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 102542499840,
+    "isin": "INE0DD101019"
+  },
+  {
+    "ticker": "TITAGARH.NS",
+    "company": "Titagarh Rail Systems Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 101867233280,
+    "isin": "INE615H01020"
+  },
+  {
+    "ticker": "NCC.NS",
+    "company": "NCC Limited",
+    "sector": "Infrastructure",
+    "industry": "Construction",
+    "marketCapValue": 101679751168,
+    "isin": "INE868B01028"
+  },
+  {
+    "ticker": "FINPIPE.NS",
+    "company": "Finolex Industries Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 101675540480,
+    "isin": "INE183A01024"
+  },
+  {
+    "ticker": "TTML.NS",
+    "company": "Tata Teleservices (Maharashtra) Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 100248690688,
+    "isin": "INE517B01013"
+  },
+  {
+    "ticker": "METROPOLIS.NS",
+    "company": "Metropolis Healthcare Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 99943432192,
+    "isin": "INE112L01020"
+  },
+  {
+    "ticker": "LATENTVIEW.NS",
+    "company": "Latent View Analytics Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 98444558336,
+    "isin": "INE0I7C01011"
+  },
+  {
+    "ticker": "OLECTRA.NS",
+    "company": "Olectra Greentech Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 97524400128,
+    "isin": "INE260D01016"
+  },
+  {
+    "ticker": "SONATSOFTW.NS",
+    "company": "Sonata Software Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 97473404928,
+    "isin": "INE269A01021"
+  },
+  {
+    "ticker": "HFCL.NS",
+    "company": "HFCL Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 95539511296,
+    "isin": "INE548A01028"
+  },
+  {
+    "ticker": "CLEAN.NS",
+    "company": "Clean Science and Technology Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 95135727616,
+    "isin": "INE227W01023"
+  },
+  {
+    "ticker": "BLUEJET.NS",
+    "company": "Blue Jet Healthcare Limited",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 94334410752,
+    "isin": "INE0KBH01020"
+  },
+  {
+    "ticker": "RKFORGE.NS",
+    "company": "Ramkrishna Forgings Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 93913219072,
+    "isin": "INE399G01023"
+  },
+  {
+    "ticker": "ABFRL.NS",
+    "company": "Aditya Birla Fashion and Retail Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 92091383808,
+    "isin": "INE647O01011"
+  },
+  {
+    "ticker": "RHIM.NS",
+    "company": "RHI Magnesita India Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 90953367552,
+    "isin": "INE743M01012"
+  },
+  {
+    "ticker": "BALRAMCHIN.NS",
+    "company": "Balrampur Chini Mills Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 89837649920,
+    "isin": "INE119A01028"
+  },
+  {
+    "ticker": "SKFINDIA.NS",
+    "company": "SKF India Limited",
+    "sector": "Auto",
+    "industry": "Automobile and Auto Components",
+    "marketCapValue": 89690349568,
+    "isin": "INE640A01023"
+  },
+  {
+    "ticker": "ZEEL.NS",
+    "company": "Zee Entertainment Enterprises Limited",
+    "sector": "Media",
+    "industry": "Media Entertainment & Publication",
+    "marketCapValue": 89481994240,
+    "isin": "INE256A01028"
+  },
+  {
+    "ticker": "MAPMYINDIA.NS",
+    "company": "C. E. Info Systems Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 89080496128,
+    "isin": "INE0BV301023"
+  },
+  {
+    "ticker": "HONASA.NS",
+    "company": "Honasa Consumer Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 84124352512,
+    "isin": "INE0J5401028"
+  },
+  {
+    "ticker": "MMTC.NS",
+    "company": "MMTC Limited",
+    "sector": "Services",
+    "industry": "Services",
+    "marketCapValue": 82979995648,
+    "isin": "INE123F01029"
+  },
+  {
+    "ticker": "CAMPUS.NS",
+    "company": "Campus Activewear Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 82080718848,
+    "isin": "INE278Y01022"
+  },
+  {
+    "ticker": "ALKYLAMINE.NS",
+    "company": "Alkyl Amines Chemicals Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 82024710144,
+    "isin": "INE150B01039"
+  },
+  {
+    "ticker": "TEJASNET.NS",
+    "company": "Tejas Networks Limited",
+    "sector": "Telecom",
+    "industry": "Telecommunication",
+    "marketCapValue": 81915273216,
+    "isin": "INE010J01012"
+  },
+  {
+    "ticker": "ALOKINDS.NS",
+    "company": "Alok Industries Limited",
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "marketCapValue": 80135561216,
+    "isin": "INE270A01029"
+  },
+  {
+    "ticker": "RCF.NS",
+    "company": "Rashtriya Chemicals and Fertilizers Limited",
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "marketCapValue": 77219790848,
+    "isin": "INE027A01015"
+  },
+  {
+    "ticker": "TRIVENI.NS",
+    "company": "Triveni Engineering & Industries Limited",
+    "sector": "FMCG",
+    "industry": "Fast Moving Consumer Goods",
+    "marketCapValue": 76909805568,
+    "isin": "INE256C01024"
+  },
+  {
+    "ticker": "SAPPHIRE.NS",
+    "company": "Sapphire Foods India Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 76097044480,
+    "isin": "INE806T01020"
+  },
+  {
+    "ticker": "MAHSEAMLES.NS",
+    "company": "Maharashtra Seamless Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 75106582528,
+    "isin": "INE271B01025"
+  },
+  {
+    "ticker": "HAPPSTMNDS.NS",
+    "company": "Happiest Minds Technologies Limited",
+    "sector": "IT",
+    "industry": "Information Technology",
+    "marketCapValue": 74038050816,
+    "isin": "INE419U01012"
+  },
+  {
+    "ticker": "TARIL.NS",
+    "company": "Transformers And Rectifiers (India) Ltd.",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 72294940672,
+    "isin": "INE763I01026"
+  },
+  {
+    "ticker": "SAREGAMA.NS",
+    "company": "Saregama India Limited",
+    "sector": "Media",
+    "industry": "Media Entertainment & Publication",
+    "marketCapValue": 70389227520,
+    "isin": "INE979A01025"
+  },
+  {
+    "ticker": "CERA.NS",
+    "company": "Cera Sanitaryware Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Durables",
+    "marketCapValue": 69130297344,
+    "isin": "INE739E01017"
+  },
+  {
+    "ticker": "DBREALTY.NS",
+    "company": "Valor Estate Limited",
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Services",
+    "marketCapValue": 64979525632,
+    "isin": "INE879I01012"
+  },
+  {
+    "ticker": "AKUMS.NS",
+    "company": "Akums Drugs and Pharmaceuticals Ltd.",
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "marketCapValue": 64428961792,
+    "isin": "INE09XN01023"
+  },
+  {
+    "ticker": "PRAJIND.NS",
+    "company": "Praj Industries Limited",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": 55566692352,
+    "isin": "INE074A01025"
+  },
+  {
+    "ticker": "RELINFRA.NS",
+    "company": "Reliance Infrastructure Limited",
+    "sector": "Energy",
+    "industry": "Power",
+    "marketCapValue": 54765670400,
+    "isin": "INE036A01016"
+  },
+  {
+    "ticker": "SKFINDUS.NS",
+    "company": "SKF India (Industrial) Ltd.",
+    "sector": "Industrials",
+    "industry": "Capital Goods",
+    "marketCapValue": null,
+    "isin": "INE2J8701016"
+  }
+]
