@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { IndianRupee, Clock, ShieldCheck, ShieldAlert, Shield, Zap, Settings2, Search } from 'lucide-react'
 import type { InvestmentParams } from '../types/portfolio'
 
 interface InvestmentFormProps {
@@ -8,185 +9,277 @@ interface InvestmentFormProps {
   loading: boolean
 }
 
+const DURATIONS = [
+  { months: 3, label: '3M' },
+  { months: 6, label: '6M' },
+  { months: 12, label: '1Y' },
+  { months: 24, label: '2Y' },
+  { months: 36, label: '3Y' },
+  { months: 60, label: '5Y' },
+] as const
+
+const RISK_OPTIONS = [
+  {
+    value: 'low' as const,
+    label: 'Conservative',
+    desc: 'Blue-chip, low volatility',
+    icon: ShieldCheck,
+    color: 'text-success',
+    bg: 'bg-success-muted',
+    border: 'border-success/30',
+  },
+  {
+    value: 'moderate' as const,
+    label: 'Balanced',
+    desc: 'Growth & stability mix',
+    icon: Shield,
+    color: 'text-info',
+    bg: 'bg-info-muted',
+    border: 'border-info/30',
+  },
+  {
+    value: 'high' as const,
+    label: 'Aggressive',
+    desc: 'High growth, high volatility',
+    icon: ShieldAlert,
+    color: 'text-warning',
+    bg: 'bg-warning-muted',
+    border: 'border-warning/30',
+  },
+]
+
+const MODE_OPTIONS = [
+  { value: 'auto' as const, label: 'Auto', desc: '2-5 stocks' },
+  { value: 'single' as const, label: 'Single', desc: '1 stock' },
+  { value: 'multiple' as const, label: 'Multi', desc: '3-7 stocks' },
+]
+
 export default function InvestmentForm({ onSubmit, loading }: InvestmentFormProps) {
   const [formData, setFormData] = useState<InvestmentParams>({
-    investment_amount: 10000,
+    investment_amount: 50000,
     duration_months: 12,
     risk_preference: 'moderate',
     mode: 'auto',
-    preferred_tickers: []
+    preferred_tickers: [],
   })
 
   const [customTickers, setCustomTickers] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    
     const params = {
       ...formData,
-      preferred_tickers: customTickers.trim() ? 
-        customTickers.split(',').map(t => t.trim().toUpperCase()) : 
-        undefined
+      preferred_tickers: customTickers.trim()
+        ? customTickers.split(',').map((t) => t.trim().toUpperCase())
+        : undefined,
     }
-    
     onSubmit(params)
   }
 
-  const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(e.target.value) || 0
-    setFormData(prev => ({ ...prev, investment_amount: value }))
-  }
+  const formatAmount = (n: number) =>
+    new Intl.NumberFormat('en-IN').format(n)
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Investment Parameters</h2>
-      
-      <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Investment Amount */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Investment Amount (INR)
+    <div className="rounded-xl border border-border bg-card p-6">
+      <div className="flex items-center gap-2 mb-6">
+        <Settings2 className="w-5 h-5 text-primary" />
+        <h2 className="text-lg font-semibold text-foreground">
+          Investment Parameters
+        </h2>
+      </div>
+
+      <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+        {/* ---- Investment Amount ---- */}
+        <div className="flex flex-col gap-2">
+          <label className="text-sm font-medium text-foreground-secondary flex items-center gap-1.5">
+            <IndianRupee className="w-3.5 h-3.5" />
+            Investment Amount
           </label>
           <div className="relative">
-            <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">₹</span>
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground-muted font-mono text-sm">
+              {'INR'}
+            </span>
             <input
               type="number"
-              min="2000"
-              max="10000000"
-              step="1000"
+              min={2000}
+              max={10000000}
+              step={1000}
               value={formData.investment_amount}
-              onChange={handleAmountChange}
-              className="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              placeholder="10000"
+              onChange={(e) =>
+                setFormData((prev) => ({
+                  ...prev,
+                  investment_amount: parseInt(e.target.value) || 0,
+                }))
+              }
+              className="w-full rounded-lg border border-border bg-background-secondary pl-12 pr-4 py-3 text-foreground font-mono text-sm placeholder:text-foreground-muted focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
+              placeholder="50000"
               required
             />
           </div>
-          <p className="text-xs text-gray-500 mt-1">Minimum: ₹2,000 | Maximum: ₹1,00,00,000</p>
+          <div className="flex items-center justify-between">
+            <p className="text-xs text-foreground-muted">
+              Min ₹2,000 &mdash; Max ₹1,00,00,000
+            </p>
+            {formData.investment_amount >= 2000 && (
+              <span className="text-xs text-foreground-secondary font-mono">
+                ₹{formatAmount(formData.investment_amount)}
+              </span>
+            )}
+          </div>
+
+          {/* Quick amount pills */}
+          <div className="flex flex-wrap gap-2">
+            {[10000, 25000, 50000, 100000, 500000].map((amt) => (
+              <button
+                key={amt}
+                type="button"
+                onClick={() =>
+                  setFormData((prev) => ({ ...prev, investment_amount: amt }))
+                }
+                className={`px-3 py-1 rounded-full text-xs font-medium transition ${
+                  formData.investment_amount === amt
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-background-secondary text-foreground-secondary hover:bg-card-hover'
+                }`}
+              >
+                ₹{formatAmount(amt)}
+              </button>
+            ))}
+          </div>
         </div>
 
-        {/* Duration */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Investment Duration
+        {/* ---- Duration ---- */}
+        <div className="flex flex-col gap-2">
+          <label className="text-sm font-medium text-foreground-secondary flex items-center gap-1.5">
+            <Clock className="w-3.5 h-3.5" />
+            Investment Horizon
           </label>
-          <div className="grid grid-cols-3 gap-2 mb-3">
-            {[
-              { months: 3, label: '3 Months' },
-              { months: 6, label: '6 Months' },
-              { months: 12, label: '1 Year' }
-            ].map((duration) => (
+          <div className="grid grid-cols-6 gap-1.5">
+            {DURATIONS.map((d) => (
               <button
-                key={duration.months}
+                key={d.months}
                 type="button"
-                onClick={() => setFormData(prev => ({ ...prev, duration_months: duration.months as any }))}
-                className={`p-3 rounded-lg border-2 transition-colors text-sm ${
-                  formData.duration_months === duration.months
-                    ? 'border-blue-500 bg-blue-50 text-blue-700 font-medium'
-                    : 'border-gray-300 hover:border-gray-400'
+                onClick={() =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    duration_months: d.months as any,
+                  }))
+                }
+                className={`py-2.5 rounded-lg text-xs font-semibold transition ${
+                  formData.duration_months === d.months
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-background-secondary text-foreground-secondary hover:bg-card-hover'
                 }`}
               >
-                {duration.label}
+                {d.label}
               </button>
             ))}
           </div>
-          <div className="grid grid-cols-3 gap-2">
-            {[
-              { months: 24, label: '2 Years' },
-              { months: 36, label: '3 Years' },
-              { months: 60, label: '5 Years' }
-            ].map((duration) => (
-              <button
-                key={duration.months}
-                type="button"
-                onClick={() => setFormData(prev => ({ ...prev, duration_months: duration.months as any }))}
-                className={`p-3 rounded-lg border-2 transition-colors text-sm ${
-                  formData.duration_months === duration.months
-                    ? 'border-blue-500 bg-blue-50 text-blue-700 font-medium'
-                    : 'border-gray-300 hover:border-gray-400'
-                }`}
-              >
-                {duration.label}
-              </button>
-            ))}
-          </div>
-          <p className="text-xs text-gray-500 mt-2">Select your investment horizon for optimized recommendations</p>
         </div>
 
-        {/* Risk Preference */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+        {/* ---- Risk Preference ---- */}
+        <div className="flex flex-col gap-2">
+          <label className="text-sm font-medium text-foreground-secondary">
             Risk Preference
           </label>
-          <div className="space-y-2">
-            {[
-              { value: 'low', label: 'Low Risk', desc: 'Conservative, blue-chip stocks' },
-              { value: 'moderate', label: 'Moderate Risk', desc: 'Balanced growth & defensive mix' },
-              { value: 'high', label: 'High Risk', desc: 'Growth-focused, higher volatility' }
-            ].map((option) => (
-              <label key={option.value} className="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-gray-50">
-                <input
-                  type="radio"
-                  name="risk_preference"
-                  value={option.value}
-                  checked={formData.risk_preference === option.value}
-                  onChange={(e) => setFormData(prev => ({ ...prev, risk_preference: e.target.value as any }))}
-                  className="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
-                />
-                <div className="ml-3">
-                  <div className="font-medium text-gray-900">{option.label}</div>
-                  <div className="text-sm text-gray-500">{option.desc}</div>
-                </div>
-              </label>
+          <div className="grid grid-cols-3 gap-2">
+            {RISK_OPTIONS.map((opt) => {
+              const Icon = opt.icon
+              const isActive = formData.risk_preference === opt.value
+              return (
+                <button
+                  key={opt.value}
+                  type="button"
+                  onClick={() =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      risk_preference: opt.value,
+                    }))
+                  }
+                  className={`flex flex-col items-center gap-1.5 p-3 rounded-lg border transition text-center ${
+                    isActive
+                      ? `${opt.bg} ${opt.border} border`
+                      : 'border-border bg-background-secondary hover:bg-card-hover'
+                  }`}
+                >
+                  <Icon
+                    className={`w-5 h-5 ${isActive ? opt.color : 'text-foreground-muted'}`}
+                  />
+                  <span
+                    className={`text-xs font-semibold ${isActive ? opt.color : 'text-foreground-secondary'}`}
+                  >
+                    {opt.label}
+                  </span>
+                  <span className="text-[10px] text-foreground-muted leading-tight">
+                    {opt.desc}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
+        {/* ---- Selection Mode ---- */}
+        <div className="flex flex-col gap-2">
+          <label className="text-sm font-medium text-foreground-secondary">
+            Selection Mode
+          </label>
+          <div className="grid grid-cols-3 gap-2">
+            {MODE_OPTIONS.map((m) => (
+              <button
+                key={m.value}
+                type="button"
+                onClick={() =>
+                  setFormData((prev) => ({ ...prev, mode: m.value }))
+                }
+                className={`py-2.5 rounded-lg border text-xs font-medium transition ${
+                  formData.mode === m.value
+                    ? 'bg-primary-muted border-primary/30 text-primary'
+                    : 'border-border bg-background-secondary text-foreground-secondary hover:bg-card-hover'
+                }`}
+              >
+                <span className="block font-semibold">{m.label}</span>
+                <span className="text-[10px] text-foreground-muted">{m.desc}</span>
+              </button>
             ))}
           </div>
         </div>
 
-        {/* Selection Mode */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Stock Selection Mode
-          </label>
-          <select
-            value={formData.mode}
-            onChange={(e) => setFormData(prev => ({ ...prev, mode: e.target.value as any }))}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          >
-            <option value="auto">Auto (2-5 stocks)</option>
-            <option value="single">Single Stock</option>
-            <option value="multiple">Multiple Stocks (3-7)</option>
-          </select>
-        </div>
-
-        {/* Preferred Tickers */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Preferred Stocks (Optional)
+        {/* ---- Preferred Tickers ---- */}
+        <div className="flex flex-col gap-2">
+          <label className="text-sm font-medium text-foreground-secondary flex items-center gap-1.5">
+            <Search className="w-3.5 h-3.5" />
+            Preferred Stocks
+            <span className="text-foreground-muted text-xs font-normal">(optional)</span>
           </label>
           <input
             type="text"
             value={customTickers}
             onChange={(e) => setCustomTickers(e.target.value)}
             placeholder="TCS.NS, RELIANCE.NS, INFY.NS"
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full rounded-lg border border-border bg-background-secondary px-4 py-3 text-foreground text-sm font-mono placeholder:text-foreground-muted focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
           />
-          <p className="text-xs text-gray-500 mt-1">
-            Enter NSE tickers separated by commas (e.g., TCS.NS, RELIANCE.NS)
+          <p className="text-xs text-foreground-muted">
+            Comma-separated NSE tickers
           </p>
         </div>
 
-        {/* Submit Button */}
+        {/* ---- Submit ---- */}
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-3.5 px-4 rounded-lg font-semibold text-sm hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed transition"
         >
           {loading ? (
-            <div className="flex items-center justify-center">
-              <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-              Generating Portfolio...
-            </div>
+            <>
+              <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary-foreground/30 border-t-primary-foreground" />
+              Analyzing Markets...
+            </>
           ) : (
-            'Generate AI Portfolio'
+            <>
+              <Zap className="w-4 h-4" />
+              Generate Portfolio
+            </>
           )}
         </button>
       </form>

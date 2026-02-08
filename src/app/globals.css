@@ -2,81 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+:root {
+  /* Core backgrounds */
+  --background: #080C14;
+  --background-secondary: #0F1629;
+  --card: #141C2F;
+  --card-hover: #1A2440;
+  --surface: #1E293B;
+
+  /* Borders */
+  --border: #1E293B;
+  --border-hover: #334155;
+  --ring: #10B981;
+
+  /* Text */
+  --foreground: #F1F5F9;
+  --foreground-secondary: #94A3B8;
+  --foreground-muted: #64748B;
+
+  /* Brand / Accent - Emerald (growth/profit) */
+  --primary: #10B981;
+  --primary-hover: #059669;
+  --primary-foreground: #FFFFFF;
+  --primary-muted: rgba(16, 185, 129, 0.12);
+
+  /* Semantic */
+  --success: #10B981;
+  --success-muted: rgba(16, 185, 129, 0.12);
+  --warning: #F59E0B;
+  --warning-muted: rgba(245, 158, 11, 0.12);
+  --danger: #EF4444;
+  --danger-muted: rgba(239, 68, 68, 0.12);
+  --info: #3B82F6;
+  --info-muted: rgba(59, 130, 246, 0.12);
+
+  /* Radius */
+  --radius: 0.75rem;
 }
 
-/* Ensure root containers don't block the background */
-html, body, #__next {
-  height: 100%;
-  min-height: 100%;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-color: var(--border);
+  }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #111827;
-  position: relative;
-  min-height: 100vh;
-}
+  html {
+    color-scheme: dark;
+  }
 
-/* Background image via body (safe approach) */
-body {
-  background-image: url('/360_F_203669387_m7IvXlkV0FQwA69Xpt8AwlAdO5Ih05Mc.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-/* Ensure app container is above background with transparent bg */
-#__next, main {
-  position: relative;
-  z-index: 1;
-  background: transparent !important;
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-@layer base {
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-gray-900 font-semibold;
-  }
-  
-  p, span, div {
-    @apply text-gray-800;
-  }
-  
-  label {
-    @apply text-gray-700 font-medium;
-  }
-}
-
-/* Ensure text is always visible */
-* {
-  color: inherit;
-}
-
-.text-gray-900 {
-  color: #111827 !important;
-}
-
-.text-gray-800 {
-  color: #1f2937 !important;
-}
-
-.text-gray-700 {
-  color: #374151 !important;
 }

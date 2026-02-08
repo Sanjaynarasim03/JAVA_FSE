@@ -1,12 +1,24 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
+})
 
 export const metadata: Metadata = {
-  title: 'AI Financial Advisor - Indian Stock Market',
-  description: 'Data-driven portfolio allocation for Indian stocks with risk-adjusted returns',
+  title: 'INTELLiINVEST - AI-Powered Indian Stock Market Portfolio',
+  description: 'Data-driven portfolio allocation for Indian stocks with real-time data, risk-adjusted returns, and AI-powered recommendations.',
+}
+
+export const viewport: Viewport = {
+  themeColor: '#080C14',
 }
 
 export default function RootLayout({
@@ -15,11 +27,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} text-gray-900 antialiased`}>
-        <div className="min-h-screen text-gray-900">
-          {children}
-        </div>
+    <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
+      <body className="font-sans antialiased">
+        {children}
       </body>
     </html>
   )

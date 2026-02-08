@@ -8,33 +8,53 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        background: {
+          DEFAULT: 'var(--background)',
+          secondary: 'var(--background-secondary)',
+        },
+        card: {
+          DEFAULT: 'var(--card)',
+          hover: 'var(--card-hover)',
+        },
+        surface: 'var(--surface)',
+        border: {
+          DEFAULT: 'var(--border)',
+          hover: 'var(--border-hover)',
+        },
+        foreground: {
+          DEFAULT: 'var(--foreground)',
+          secondary: 'var(--foreground-secondary)',
+          muted: 'var(--foreground-muted)',
+        },
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
+          DEFAULT: 'var(--primary)',
+          hover: 'var(--primary-hover)',
+          foreground: 'var(--primary-foreground)',
+          muted: 'var(--primary-muted)',
         },
         success: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          500: '#22c55e',
-          600: '#16a34a',
+          DEFAULT: 'var(--success)',
+          muted: 'var(--success-muted)',
         },
         warning: {
-          50: '#fefce8',
-          100: '#fef3c7',
-          500: '#eab308',
-          600: '#ca8a04',
+          DEFAULT: 'var(--warning)',
+          muted: 'var(--warning-muted)',
         },
         danger: {
-          50: '#fef2f2',
-          100: '#fee2e2',
-          500: '#ef4444',
-          600: '#dc2626',
-        }
+          DEFAULT: 'var(--danger)',
+          muted: 'var(--danger-muted)',
+        },
+        info: {
+          DEFAULT: 'var(--info)',
+          muted: 'var(--info-muted)',
+        },
+      },
+      borderRadius: {
+        DEFAULT: 'var(--radius)',
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-jetbrains)'],
       },
     },
   },
