@@ -5,39 +5,18 @@ import Header from '../components/Header'
 import InvestmentForm from '../components/InvestmentForm'
 import PortfolioResults from '../components/PortfolioResults'
 import { generatePortfolio } from '../lib/portfolioGenerator'
-import { ALL_TICKERS } from '../lib/marketData'
 import { BarChart3, AlertTriangle } from 'lucide-react'
 import type { InvestmentParams, PortfolioAllocation } from '../types/portfolio'
 
 export default function Home() {
   const [portfolio, setPortfolio] = useState<PortfolioAllocation | null>(null)
   const [loading, setLoading] = useState(false)
-  const [usingLiveData, setUsingLiveData] = useState(false)
 
   const handleGeneratePortfolio = async (params: InvestmentParams) => {
     setLoading(true)
-    setUsingLiveData(false)
     try {
-      let livePrices: Record<string, number> | undefined = undefined
-
-      try {
-        const tickers = ALL_TICKERS
-        const qs = encodeURIComponent(tickers.join(','))
-        const resp = await fetch(`/api/quotes?tickers=${qs}`, {
-          cache: 'no-store',
-        })
-        if (resp.ok) {
-          const data = await resp.json()
-          livePrices = data?.prices
-          if (livePrices && Object.keys(livePrices).length > 0) {
-            setUsingLiveData(true)
-          }
-        }
-      } catch {
-        // fallback to cached prices
-      }
-
-      const result = generatePortfolio(params, livePrices)
+      // Generate portfolio using only top stocks
+      const result = generatePortfolio(params)
       setPortfolio(result)
     } catch (error) {
       console.error('Error generating portfolio:', error)
@@ -48,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <Header usingLiveData={usingLiveData} />
+      <Header usingLiveData={false} />
 
       {/* Hero bar */}
       <section className="border-b border-border bg-background-secondary">

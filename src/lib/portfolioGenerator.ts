@@ -1,5 +1,6 @@
-import { DEFAULT_TICKER_POOL, MARKET_DATA, SECTOR_ALLOCATIONS } from './marketData'
+import { MARKET_DATA, SECTOR_ALLOCATIONS } from './marketData'
 import { getHistoricalReturn, HISTORICAL_RETURNS } from './historicalReturns'
+import { getTopStockTickers, getTopStockPrices } from './topStocksData'
 import type { InvestmentParams, PortfolioAllocation, StockAllocation } from '../types/portfolio'
 
 type MarketEntry = (typeof MARKET_DATA)[string]
@@ -36,15 +37,22 @@ function toSectorBucket(rawSector?: string): string {
 
 // Optional live price map can be provided to override static prices
 export type LivePriceMap = Record<string, number>
-export function generatePortfolio(params: InvestmentParams, livePrices?: LivePriceMap): PortfolioAllocation {
+export function generatePortfolio(params: InvestmentParams): PortfolioAllocation {
   const { investment_amount, duration_months, risk_preference, mode, preferred_tickers } = params
 
+  // Get top stock tickers and prices
+  const topStockTickers = getTopStockTickers()
+  const topStockPrices = getTopStockPrices()
+
+  // Use preferred tickers if provided, otherwise use all top stocks
   const normalizedPreferred = preferred_tickers?.map((ticker) => ticker.toUpperCase()) ?? []
   const universeSet = new Set(
-    normalizedPreferred.length > 0 ? normalizedPreferred : DEFAULT_TICKER_POOL
+    normalizedPreferred.length > 0 
+      ? normalizedPreferred.filter(ticker => topStockTickers.includes(ticker)) // Only include if in top stocks
+      : topStockTickers // Use all top stocks by default
   )
 
-  // Filter stocks based on risk preference
+  // Filter stocks based on risk preference, using only stocks from top stocks list
   let availableStocks = Object.entries(MARKET_DATA).filter(([ticker, stockData]) => {
     if (!universeSet.has(ticker)) {
       return false
@@ -61,7 +69,8 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
   })
 
   if (availableStocks.length === 0) {
-    availableStocks = Object.entries(MARKET_DATA).filter(([ticker]) => DEFAULT_TICKER_POOL.includes(ticker))
+    // Fallback to all top stocks if no stocks match the risk preference
+    availableStocks = Object.entries(MARKET_DATA).filter(([ticker]) => topStockTickers.includes(ticker))
   }
 
   // Determine number of stocks based on mode
@@ -207,7 +216,8 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
   const totalScore = selectedStocks.reduce((sum, stock) => sum + stock.score, 0)
 
   // For low investment amounts, filter stocks by price affordability
-  const entryPrices = selectedStocks.map(stock => livePrices?.[stock.ticker] ?? stock.data.price)
+  // Use top stock prices
+  const entryPrices = selectedStocks.map(stock => topStockPrices[stock.ticker] ?? stock.data.price)
   const maxAffordablePrice = investment_amount * 0.8 // Allow up to 80% for one stock
   
   // Filter affordable stocks for low investment amounts
@@ -219,8 +229,8 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
   const stocksToAllocate = affordableStocks.length > 0 
     ? affordableStocks.slice(0, Math.min(affordableStocks.length, numStocks))
     : [selectedStocks.sort((a, b) => {
-        const priceA = livePrices?.[a.ticker] ?? a.data.price
-        const priceB = livePrices?.[b.ticker] ?? b.data.price
+        const priceA = topStockPrices[a.ticker] ?? a.data.price
+        const priceB = topStockPrices[b.ticker] ?? b.data.price
         return priceA - priceB
       })[0]]
 
@@ -237,7 +247,7 @@ export function generatePortfolio(params: InvestmentParams, livePrices?: LivePri
       allocationAmount = Math.floor(investment_amount * allocationPercentage)
     }
 
-    const entryPrice = livePrices?.[stock.ticker] ?? stock.data.price
+    const entryPrice = topStockPrices[stock.ticker] ?? stock.data.price
     const shares = Math.floor(allocationAmount / entryPrice)
     const actualAllocation = shares * entryPrice
     

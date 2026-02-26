@@ -1,5 +1,8 @@
 'use client'
 
+import Link from 'next/link'
+import Image from 'next/image'
+
 export default function TestImage() {
   const checkBackground = () => {
     const bg = getComputedStyle(document.body).backgroundImage;
@@ -12,9 +15,11 @@ export default function TestImage() {
       
       <div style={{ marginBottom: '1.5rem' }}>
         <h2 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '0.5rem' }}>Direct Image Test:</h2>
-        <img 
+        <Image 
           src="/360_F_203669387_m7IvXlkV0FQwA69Xpt8AwlAdO5Ih05Mc.jpg" 
           alt="bg-test" 
+          width={400}
+          height={300}
           style={{ width: '100%', maxWidth: 400, border: '2px solid #333', borderRadius: '4px' }} 
         />
         <p style={{ marginTop: '0.5rem', fontSize: '14px', color: '#22c55e' }}>
@@ -55,7 +60,7 @@ export default function TestImage() {
         <ul style={{ marginLeft: '1.5rem', fontSize: '14px', color: '#78350f' }}>
           <li>Click the button above to see the computed CSS</li>
           <li>Open DevTools → Network tab → reload to check if image loads (200 status)</li>
-          <li>Go back to home page: <a href="/" style={{ color: '#2563eb', textDecoration: 'underline' }}>localhost:3000</a></li>
+          <li><Link href="/" style={{ color: '#2563eb', textDecoration: 'underline' }}>Go back to home</Link></li>
           <li>If background not visible, check for elements with opaque backgrounds</li>
         </ul>
       </div>

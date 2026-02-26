@@ -1,3 +1,9 @@
+/**
+ * DEPRECATED: This API route is no longer used by the frontend.
+ * The application now uses top stocks data directly from .data/top-stocks.json
+ * See API_DEPRECATION.md for more information.
+ */
+
 import { NextResponse } from 'next/server'
 import { MARKET_DATA } from '@/lib/marketData'
 
