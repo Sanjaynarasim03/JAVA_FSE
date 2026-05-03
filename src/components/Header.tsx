@@ -16,6 +16,9 @@ const NAV_LINKS = [
   { href: '/dashboard', label: 'Dashboard' },
   { href: '/generator', label: 'Generator' },
   { href: '/history', label: 'History' },
+  { href: '/performance', label: 'Performance' },
+  { href: '/alerts', label: 'Alerts' },
+  { href: '/models', label: 'Models' },
 ]
 
 export default function Header({ usingLiveData = false, section }: HeaderProps) {
