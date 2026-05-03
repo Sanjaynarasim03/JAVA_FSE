@@ -50,13 +50,22 @@
 
   html {
     color-scheme: dark;
+    scroll-behavior: smooth;
   }
 
   body {
-    background-color: var(--background);
+    background:
+      radial-gradient(circle at top left, rgba(16, 185, 129, 0.12), transparent 28%),
+      radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 22%),
+      linear-gradient(180deg, #060914 0%, #080C14 36%, #0B1120 100%);
     color: var(--foreground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(16, 185, 129, 0.28);
+    color: #ffffff;
   }
 }
 

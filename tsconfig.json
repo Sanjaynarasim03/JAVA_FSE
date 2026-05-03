@@ -27,6 +27,7 @@
         "./src/*"
       ]
     },
+    "ignoreDeprecations": "5.0",
     "target": "ES2017"
   },
   "include": [

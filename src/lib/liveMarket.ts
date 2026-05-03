@@ -62,7 +62,7 @@ export async function fetchQuotes(tickers: string[]): Promise<PriceMap> {
   await Promise.all(
     uniqueTickers.map(async (ticker) => {
       try {
-        const quote = await withTimeout(yahooFinance.quote(ticker), QUOTE_TIMEOUT_MS)
+        const quote: any = await withTimeout(yahooFinance.quote(ticker), QUOTE_TIMEOUT_MS)
         const price = quote?.regularMarketPrice ?? quote?.previousClose
         if (typeof price === 'number' && Number.isFinite(price) && price > 0) {
           results[ticker] = price
