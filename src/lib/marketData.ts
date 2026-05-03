@@ -186,7 +186,7 @@ const LEGACY_MARKET_DATA: MarketData = {
   },
   'TATAGOLD.NS': {
     company: 'Tata Gold Exchange Traded Fund',
-    price: 58,
+    price: 13.79,
     sector: 'Commodities',
     marketCap: 'Mid',
     pe: 0,

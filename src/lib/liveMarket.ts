@@ -1,7 +1,5 @@
 import { MARKET_DATA, ALL_TICKERS } from './marketData'
 
-const REQUEST_DELAY_MS = 150
-
 export type PriceMap = Record<string, number>
 
 // Simple in-memory cache
@@ -11,18 +9,35 @@ const cache: { prices: PriceMap; timestamp: number } = {
 }
 
 const CACHE_TTL_MS = 60_000 // 1 minute
+const QUOTE_TIMEOUT_MS = 1_200
 
 export function getAllTickers(): string[] {
   return ALL_TICKERS
 }
 
+function withTimeout<T>(promise: Promise<T>, timeoutMs: number): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error('Quote request timed out')), timeoutMs)
+    promise
+      .then((value) => {
+        clearTimeout(timer)
+        resolve(value)
+      })
+      .catch((error) => {
+        clearTimeout(timer)
+        reject(error)
+      })
+  })
+}
+
 export async function fetchQuotes(tickers: string[]): Promise<PriceMap> {
+  const uniqueTickers = Array.from(new Set(tickers.filter(Boolean)))
   const now = Date.now()
   const fresh = now - cache.timestamp < CACHE_TTL_MS
 
   // Return cached values if still fresh and covers requested tickers
   if (fresh) {
-    const allCovered = tickers.every(t => cache.prices[t] !== undefined)
+    const allCovered = uniqueTickers.every((ticker) => cache.prices[ticker] !== undefined)
     if (allCovered) return cache.prices
   }
 
@@ -33,36 +48,35 @@ export async function fetchQuotes(tickers: string[]): Promise<PriceMap> {
   try {
     const YahooFinance = (await import('yahoo-finance2')).default
     yahooFinance = new YahooFinance({ suppressNotices: ['yahooSurvey'] })
-  } catch (error) {
+  } catch {
     // If import fails, use fallback prices only
-    for (const t of tickers) {
-      if (results[t] === undefined) {
-        results[t] = MARKET_DATA[t]?.price || 0
+    for (const ticker of uniqueTickers) {
+      if (results[ticker] === undefined) {
+        results[ticker] = MARKET_DATA[ticker]?.price || 0
       }
     }
     return results
   }
 
-  // Fetch in parallel but guard per-ticker errors
-  for (const ticker of tickers) {
-    try {
-      const quote = await yahooFinance.quote(ticker)
-      const price = quote?.regularMarketPrice ?? quote?.previousClose
-      if (typeof price === 'number' && !Number.isNaN(price)) {
-        results[ticker] = price
+  // Fetch concurrently for lower latency
+  await Promise.all(
+    uniqueTickers.map(async (ticker) => {
+      try {
+        const quote = await withTimeout(yahooFinance.quote(ticker), QUOTE_TIMEOUT_MS)
+        const price = quote?.regularMarketPrice ?? quote?.previousClose
+        if (typeof price === 'number' && Number.isFinite(price) && price > 0) {
+          results[ticker] = price
+        }
+      } catch {
+        // Ignore errors for individual tickers; fallback will be used
       }
-    } catch (err) {
-      // Ignore errors for individual tickers; fallback will be used
-    }
-
-    // Gentle throttle to avoid rate limits
-    await new Promise(resolve => setTimeout(resolve, REQUEST_DELAY_MS))
-  }
+    })
+  )
 
   // Fill any missing prices with mock data fallback
-  for (const t of tickers) {
-    if (results[t] === undefined) {
-      results[t] = MARKET_DATA[t]?.price || 0
+  for (const ticker of uniqueTickers) {
+    if (results[ticker] === undefined) {
+      results[ticker] = MARKET_DATA[ticker]?.price || 0
     }
   }
 

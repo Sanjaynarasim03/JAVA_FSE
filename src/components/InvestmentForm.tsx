@@ -56,7 +56,7 @@ const MODE_OPTIONS = [
 
 export default function InvestmentForm({ onSubmit, loading }: InvestmentFormProps) {
   const [formData, setFormData] = useState<InvestmentParams>({
-    investment_amount: 50000,
+    investment_amount: 1000,
     duration_months: 12,
     risk_preference: 'moderate',
     mode: 'auto',
@@ -101,9 +101,9 @@ export default function InvestmentForm({ onSubmit, loading }: InvestmentFormProp
             </span>
             <input
               type="number"
-              min={2000}
-              max={10000000}
-              step={1000}
+              min={10}
+              max={5000000}
+              step={10}
               value={formData.investment_amount}
               onChange={(e) =>
                 setFormData((prev) => ({
@@ -118,9 +118,9 @@ export default function InvestmentForm({ onSubmit, loading }: InvestmentFormProp
           </div>
           <div className="flex items-center justify-between">
             <p className="text-xs text-foreground-muted">
-              Min ₹2,000 &mdash; Max ₹1,00,00,000
+              Min ₹10 &mdash; Max ₹50,00,000
             </p>
-            {formData.investment_amount >= 2000 && (
+            {formData.investment_amount >= 10 && (
               <span className="text-xs text-foreground-secondary font-mono">
                 ₹{formatAmount(formData.investment_amount)}
               </span>
@@ -128,23 +128,31 @@ export default function InvestmentForm({ onSubmit, loading }: InvestmentFormProp
           </div>
 
           {/* Quick amount pills */}
-          <div className="flex flex-wrap gap-2">
-            {[10000, 25000, 50000, 100000, 500000].map((amt) => (
+          <div className="flex flex-wrap gap-2 items-center">
+            {[100, 200, 500, 1000, 5000, 10000, 25000, 50000, 100000].map((amt) => (
               <button
                 key={amt}
                 type="button"
                 onClick={() =>
-                  setFormData((prev) => ({ ...prev, investment_amount: amt }))
+                  setFormData((prev) => ({ 
+                    ...prev, 
+                    investment_amount: Math.min(prev.investment_amount + amt, 5000000)
+                  }))
                 }
-                className={`px-3 py-1 rounded-full text-xs font-medium transition ${
-                  formData.investment_amount === amt
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-background-secondary text-foreground-secondary hover:bg-card-hover'
-                }`}
+                className="px-3 py-1 rounded-full text-xs font-medium transition bg-background-secondary text-foreground-secondary hover:bg-card-hover hover:text-primary"
               >
-                ₹{formatAmount(amt)}
+                +₹{formatAmount(amt)}
               </button>
             ))}
+            <button
+              type="button"
+              onClick={() =>
+                setFormData((prev) => ({ ...prev, investment_amount: 0 }))
+              }
+              className="px-3 py-1 rounded-full text-xs font-medium transition bg-red-500/10 text-red-500 hover:bg-red-500/20 border border-red-500/20"
+            >
+              Clear
+            </button>
           </div>
         </div>
 

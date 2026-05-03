@@ -5,7 +5,7 @@
  * This is a static import of the top stocks configuration.
  */
 
-import topStocksConfig from '../../.data/top-stocks.json'
+import topStocksConfig from '../../data/top-stocks.json'
 
 export interface TopStock {
   ticker: string

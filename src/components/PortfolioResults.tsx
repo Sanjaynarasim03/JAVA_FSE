@@ -66,7 +66,10 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
   }
 
   const totalInvested = portfolio.allocations.reduce((s, a) => s + a.allocation_inr, 0)
-  const profitAmount = portfolio.total_expected_value_inr - totalInvested
+  const unallocatedCash = Number.isFinite(portfolio.unallocated_cash_inr)
+    ? (portfolio.unallocated_cash_inr as number)
+    : Math.max(0, portfolio.investment_amount_inr - totalInvested)
+  const profitAmount = portfolio.total_expected_value_inr - portfolio.investment_amount_inr
 
   /* Pie chart data */
   const pieData = portfolio.allocations.map((a) => ({
@@ -95,9 +98,9 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          {/* Invested */}
+          {/* Capital */}
           <div className="rounded-lg bg-background-secondary border border-border p-4">
-            <p className="text-xs text-foreground-muted mb-1">Invested</p>
+            <p className="text-xs text-foreground-muted mb-1">Capital</p>
             <p className="text-xl font-bold text-foreground font-mono">
               {formatCurrency(portfolio.investment_amount_inr)}
             </p>
@@ -134,6 +137,7 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
               {portfolio.risk_preference.charAt(0).toUpperCase() + portfolio.risk_preference.slice(1)} risk
               &middot; {portfolio.allocations.length} stock{portfolio.allocations.length > 1 ? 's' : ''}
               &middot; {formatDurationLong(portfolio.duration_months)}
+              &middot; Cash {formatCurrency(unallocatedCash)}
             </span>
             <span className="text-xs font-semibold text-success font-mono">
               +{formatCurrency(profitAmount)} projected
@@ -143,7 +147,7 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
             <div
               className="h-full bg-primary rounded-full transition-all"
               style={{
-                width: `${Math.min((totalInvested / portfolio.total_expected_value_inr) * 100, 100)}%`,
+                width: `${portfolio.total_expected_value_inr > 0 ? Math.min((totalInvested / portfolio.total_expected_value_inr) * 100, 100) : 0}%`,
               }}
             />
           </div>
@@ -184,6 +188,13 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
                     borderRadius: '8px',
                     color: '#F1F5F9',
                     fontSize: '12px',
+                  }}
+                  labelStyle={{
+                    color: '#FFFFFF',
+                    fontWeight: '600',
+                  }}
+                  itemStyle={{
+                    color: '#F1F5F9',
                   }}
                 />
               </PieChart>
@@ -228,6 +239,13 @@ export default function PortfolioResults({ portfolio }: PortfolioResultsProps) {
                   borderRadius: '8px',
                   color: '#F1F5F9',
                   fontSize: '12px',
+                }}
+                labelStyle={{
+                  color: '#FFFFFF',
+                  fontWeight: '600',
+                }}
+                itemStyle={{
+                  color: '#FFFFFF',
                 }}
               />
               <Bar dataKey="return" radius={[4, 4, 0, 0]}>

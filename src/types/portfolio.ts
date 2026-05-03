@@ -25,6 +25,7 @@ export interface PortfolioAllocation {
   risk_preference: 'low' | 'moderate' | 'high'
   allocations: StockAllocation[]
   total_expected_value_inr: number
+  unallocated_cash_inr?: number
   expected_growth_pct: number
   confidence: 'Low' | 'Medium' | 'High'
   notes: string

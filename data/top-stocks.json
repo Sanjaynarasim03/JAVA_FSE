@@ -1,117 +1,117 @@
 {
-  "lastUpdated": "2026-02-26T10:30:00.000Z",
+  "lastUpdated": "2026-03-27T10:30:00.000Z",
   "stocks": [
     {
       "ticker": "EICHERMOT.NS",
       "company": "Eicher Motors",
-      "price": 8190.0,
+      "price": 6811.5,
       "sector": "Automotive",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "ASHOKLEY.NS",
       "company": "Ashok Leyland",
-      "price": 211.92,
+      "price": 163.09,
       "sector": "Automotive",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "TVSMOTOR.NS",
       "company": "TVS Motor Company",
-      "price": 3954.2,
+      "price": 3445.2,
       "sector": "Automotive",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "SBIN.NS",
       "company": "State Bank of India",
-      "price": 1209.5,
+      "price": 1019.5,
       "sector": "Banking",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "COFORGE.NS",
       "company": "Coforge",
-      "price": 1200.4,
+      "price": 1144.7,
       "sector": "IT",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "INDIANB.NS",
       "company": "Indian Bank",
-      "price": 991.55,
+      "price": 871.75,
       "sector": "Banking",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "SETFNIFTY.NS",
       "company": "SET NIFTY",
-      "price": 272.79,
+      "price": 244.63,
       "sector": "Diversified",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "HDFCBANK.NS",
       "company": "HDFC Bank",
-      "price": 898.6,
+      "price": 756.2,
       "sector": "Banking",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "HCLTECH.NS",
       "company": "HCL Tech",
-      "price": 1373.5,
+      "price": 1364.4,
       "sector": "IT",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "TECHM.NS",
       "company": "Tech Mahindra",
-      "price": 1361.8,
+      "price": 1391.6,
       "sector": "IT",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "JKTYRE.NS",
       "company": "JK Tyre & Industries",
-      "price": 530.65,
+      "price": 398.4,
       "sector": "Automotive",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "WIPRO.NS",
       "company": "Wipro",
-      "price": 201.08,
+      "price": 191.6,
       "sector": "IT",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "TATAGOLD.NS",
-      "company": "TATAGOLD",
-      "price": 15.29,
+      "company": "Tata Gold Exchange Traded Fund",
+      "price": 13.79,
       "sector": "Commodities",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "SILVERBEES.NS",
       "company": "SILVERBEES",
-      "price": 246.06,
+      "price": 212.5,
       "sector": "Commodities",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "BPCL.NS",
       "company": "BPCL",
-      "price": 386.0,
+      "price": 282.7,
       "sector": "Energy",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     },
     {
       "ticker": "ITC.NS",
       "company": "ITC",
-      "price": 318.3,
+      "price": 294.7,
       "sector": "FMCG",
-      "updateDate": "2026-02-26T10:30:00.000Z"
+      "updateDate": "2026-03-27T10:30:00.000Z"
     }
   ]
 }

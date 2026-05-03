@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { generateAdvancedPortfolio, AdvancedInvestmentParams } from '@/lib/advancedPortfolioGenerator'
 import { fetchQuotes } from '@/lib/liveMarket'
 import { TOP_LIQUID_TICKERS } from '@/lib/marketData'
+import { getTopStockTickers } from '@/lib/topStocksData'
 
 /**
  * POST /api/advanced-portfolio
@@ -23,13 +24,25 @@ export async function POST(request: NextRequest) {
       rfr_annual_pct: body.rfr_annual_pct
     }
 
+    const autoModeTopTickers =
+      params.mode === 'auto' && (!params.preferred_tickers || params.preferred_tickers.length === 0)
+        ? getTopStockTickers()
+        : undefined
+
+    const resolvedParams: AdvancedInvestmentParams = {
+      ...params,
+      preferred_tickers: autoModeTopTickers ?? params.preferred_tickers,
+    }
+
     // Attempt to fetch live Yahoo Finance prices if not provided
-    let livePrices = params.latest_prices
+    let livePrices = resolvedParams.latest_prices
     
     if (!livePrices || Object.keys(livePrices).length === 0) {
       try {
-        // Get common Indian stock tickers
-        const tickersToFetch = TOP_LIQUID_TICKERS.slice(0, 20)
+        const tickersToFetch =
+          resolvedParams.preferred_tickers && resolvedParams.preferred_tickers.length > 0
+            ? resolvedParams.preferred_tickers
+            : TOP_LIQUID_TICKERS.slice(0, 20)
 
         livePrices = await fetchQuotes(tickersToFetch)
       } catch (error) {
@@ -40,7 +53,7 @@ export async function POST(request: NextRequest) {
 
     // Generate portfolio with live or fallback prices
     const portfolio = generateAdvancedPortfolio({
-      ...params,
+      ...resolvedParams,
       latest_prices: livePrices
     })
 
@@ -104,7 +117,7 @@ export async function GET() {
     method: 'POST',
     description: 'Advanced quantitative portfolio generator with ensemble modeling, risk metrics, and backtesting',
     request_schema: {
-      investment_amount_inr: 'number (2000-1000000)',
+      investment_amount_inr: 'number (10-1000000)',
       duration_months: 'number (3, 6, 12, 24, 36, 48, or 60)',
       risk_preference: 'string (low | moderate | high)',
       mode: 'string (auto | single | multiple)',

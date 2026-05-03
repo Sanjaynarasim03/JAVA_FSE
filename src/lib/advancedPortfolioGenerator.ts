@@ -85,8 +85,8 @@ export interface AdvancedPortfolioResponse {
 // CONSTANTS & CONFIGURATION
 // ============================================================================
 
-const MIN_INVESTMENT = 2000
-const MAX_INVESTMENT = 1000000
+const MIN_INVESTMENT = 10
+const MAX_INVESTMENT = 5000000
 const TRANSACTION_COST_BPS = 5 // 0.05%
 const DEFAULT_RFR = 6.5 // India 10Y G-Sec proxy
 
@@ -183,7 +183,20 @@ export function generateAdvancedPortfolio(
   })
 
   // Rank and select top tickers
-  const rankedTickers = scoredTickers
+  // For small investment amounts, prioritize very cheap stocks to maximize allocation diversity
+  const isSmallAmount = investment_amount_inr <= 500
+  const adjustedTickers = scoredTickers.map(ticker => {
+    // Boost ensemble score for cheap stocks when dealing with small amounts
+    if (isSmallAmount && ticker.currentPrice < 100) {
+      return {
+        ...ticker,
+        ensembleScore: ticker.ensembleScore * 1.5 // Apply 50% boost to cheap stocks
+      }
+    }
+    return ticker
+  })
+  
+  const rankedTickers = adjustedTickers
     .sort((a, b) => b.ensembleScore - a.ensembleScore)
 
   const [minStocks, maxStocks] = MODE_STOCK_RANGE[mode]
@@ -201,16 +214,24 @@ export function generateAdvancedPortfolio(
   )
 
   // Portfolio-level metrics
+  const actualAllocCount = allocations.length
   const totalInvested = allocations.reduce((sum, a) => sum + a.allocation_inr, 0)
-  const unallocatedCash = investment_amount_inr - totalInvested
+  const unallocatedCash = Math.max(0, investment_amount_inr - totalInvested)
   const transactionCost = (totalInvested * TRANSACTION_COST_BPS) / 10000
 
-  const totalExpectedValue = allocations.reduce((sum, a) => sum + a.predicted_value_inr, 0)
-  const expectedGrowthPct = ((totalExpectedValue - totalInvested) / totalInvested) * 100
+  const investedExpectedValue = allocations.reduce((sum, a) => sum + a.predicted_value_inr, 0)
+  const totalExpectedValue = investedExpectedValue + unallocatedCash
+  const expectedGrowthPct =
+    investment_amount_inr > 0
+      ? ((totalExpectedValue - investment_amount_inr) / investment_amount_inr) * 100
+      : 0
 
   // Annualized return (CAGR)
   const years = duration_months / 12
-  const cagr = (Math.pow(totalExpectedValue / totalInvested, 1 / years) - 1) * 100
+  const cagr =
+    investment_amount_inr > 0 && years > 0
+      ? (Math.pow(totalExpectedValue / investment_amount_inr, 1 / years) - 1) * 100
+      : 0
 
   // Portfolio volatility (weighted average)
   const portfolioVol = computePortfolioVolatility(allocations, totalInvested)
@@ -240,7 +261,7 @@ export function generateAdvancedPortfolio(
   // Generate notes
   const notes = generateNotes(
     risk_preference,
-    numStocks,
+    actualAllocCount,
     expectedGrowthPct,
     duration_months,
     sharpeRatio,
@@ -249,7 +270,7 @@ export function generateAdvancedPortfolio(
 
   return {
     status: 'ok',
-    message: `Successfully generated ${risk_preference} risk portfolio with ${numStocks} allocation(s) for ${duration_months}-month horizon.`,
+    message: `Successfully generated ${risk_preference} risk portfolio with ${actualAllocCount} allocation(s) for ${duration_months}-month horizon.`,
     investment_amount_inr,
     duration_months,
     risk_preference,
@@ -297,6 +318,8 @@ function computeEnsembleScores(
   riskPref: string,
   weights: any
 ) {
+  const beta = Number.isFinite(stockData?.beta) ? stockData.beta : 1.0
+
   // 1. Momentum score (simulated from recent performance indicators)
   const momentumScore = computeMomentumScore(stockData, riskPref)
 
@@ -304,8 +327,8 @@ function computeEnsembleScores(
   const fundamentalScore = computeFundamentalScore(stockData)
 
   // 3. Volatility score (inverse - lower vol = higher score)
-  const volatilityScore = computeVolatilityScore(stockData.beta, riskPref)
-  const volatilityPct = estimateVolatility(stockData.beta, riskPref)
+  const volatilityScore = computeVolatilityScore(beta, riskPref)
+  const volatilityPct = estimateVolatility(beta, riskPref)
 
   // 4. Regression prediction (lightweight linear proxy)
   const regressionScore = computeRegressionScore(stockData, tradingDays, riskPref)
@@ -321,13 +344,15 @@ function computeEnsembleScores(
     weights.regression * regressionScore +
     weights.macro * macroScore
 
+  const safeTotal = Number.isFinite(total) ? total : 50
+
   // Map ensemble score to predicted return
-  const predictedReturn = mapScoreToPredictedReturn(total, tradingDays, riskPref)
+  const predictedReturn = mapScoreToPredictedReturn(safeTotal, tradingDays, riskPref)
 
   return {
-    total,
-    predictedReturn,
-    volatility: volatilityPct
+    total: safeTotal,
+    predictedReturn: Number.isFinite(predictedReturn) ? predictedReturn : 0,
+    volatility: Number.isFinite(volatilityPct) ? volatilityPct : 18
   }
 }
 
@@ -394,10 +419,11 @@ function computeVolatilityScore(beta: number, riskPref: string): number {
 function computeRegressionScore(stockData: any, tradingDays: number, riskPref: string): number {
   // Lightweight regression proxy using fundamentals + momentum
   let score = 50
+  const beta = Number.isFinite(stockData?.beta) ? stockData.beta : 1.0
 
   // Combine PE and beta for a pseudo-regression
   const valueFactor = stockData.pe < 25 ? 15 : -5
-  const betaFactor = riskPref === 'high' ? stockData.beta * 10 : (2 - stockData.beta) * 10
+  const betaFactor = riskPref === 'high' ? beta * 10 : (2 - beta) * 10
 
   score += valueFactor + betaFactor
 
@@ -449,7 +475,8 @@ function mapScoreToPredictedReturn(score: number, tradingDays: number, riskPref:
 function estimateVolatility(beta: number, riskPref: string): number {
   // Annual volatility estimate from beta
   const marketVol = 18 // NSE Nifty annualized vol ~18%
-  let stockVol = beta * marketVol
+  const safeBeta = Number.isFinite(beta) ? beta : 1.0
+  let stockVol = safeBeta * marketVol
 
   // Risk preference adjustments
   if (riskPref === 'low') stockVol *= 0.85
@@ -470,17 +497,35 @@ function computeAllocations(
   riskPref: string
 ): AdvancedAllocation[] {
   const allocations: AdvancedAllocation[] = []
+  if (selectedTickers.length === 0) return allocations
+
+  const pricedTickers = selectedTickers.filter(
+    (ticker) => Number.isFinite(ticker.currentPrice) && ticker.currentPrice > 0
+  )
+  if (pricedTickers.length === 0) return allocations
+
+  const affordableTickers = pricedTickers.filter((ticker) => ticker.currentPrice <= investmentAmount)
+  const allocationUniverse =
+    affordableTickers.length > 0
+      ? affordableTickers
+      : [[...pricedTickers].sort((a, b) => a.currentPrice - b.currentPrice)[0]]
   
   // Score-weighted allocation
-  const totalScore = selectedTickers.reduce((sum, t) => sum + t.ensembleScore, 0)
+  const totalScore = allocationUniverse.reduce(
+    (sum, t) => sum + (Number.isFinite(t.ensembleScore) ? t.ensembleScore : 0),
+    0
+  )
+  const safeTotalScore = totalScore > 0 ? totalScore : allocationUniverse.length
   let remainingAmount = investmentAmount
 
-  selectedTickers.forEach((ticker, index) => {
-    const isLast = index === selectedTickers.length - 1
+  allocationUniverse.forEach((ticker, index) => {
+    const isLast = index === allocationUniverse.length - 1
     
     // Proportional allocation with cap
-    let allocationPct = (ticker.ensembleScore / totalScore) * 100
+    const score = Number.isFinite(ticker.ensembleScore) ? ticker.ensembleScore : 1
+    let allocationPct = (score / safeTotalScore) * 100
     allocationPct = Math.min(allocationPct, allocationCap * 100)
+    if (!Number.isFinite(allocationPct) || allocationPct < 0) allocationPct = 0
     
     let allocationInr = (investmentAmount * allocationPct) / 100
     
@@ -489,21 +534,27 @@ function computeAllocations(
       allocationPct = (allocationInr / investmentAmount) * 100
     }
 
-    const shares = Math.floor(allocationInr / ticker.currentPrice)
-    const actualAllocation = shares * ticker.currentPrice
-    remainingAmount -= actualAllocation
+    const currentPrice = Number.isFinite(ticker.currentPrice) && ticker.currentPrice > 0
+      ? ticker.currentPrice
+      : 0
+    const shares = currentPrice > 0 && allocationInr > 0 ? Math.floor(allocationInr / currentPrice) : 0
+    if (shares === 0) return
 
-    const predictedValue = actualAllocation * (1 + ticker.predictedReturn / 100)
+    const actualAllocation = shares * currentPrice
+    remainingAmount = Math.max(0, remainingAmount - actualAllocation)
+
+    const predictedReturn = Number.isFinite(ticker.predictedReturn) ? ticker.predictedReturn : 0
+    const predictedValue = actualAllocation * (1 + predictedReturn / 100)
 
     allocations.push({
-      rank: index + 1,
+      rank: allocations.length + 1,
       company: ticker.data.company,
       ticker: ticker.ticker,
       allocation_inr: Math.round(actualAllocation),
       allocation_pct: round2(allocationPct),
       shares,
-      entry_price_inr: round2(ticker.currentPrice),
-      predicted_return_pct: round2(ticker.predictedReturn),
+      entry_price_inr: round2(currentPrice),
+      predicted_return_pct: round2(predictedReturn),
       predicted_value_inr: Math.round(predictedValue),
       risk_level: ticker.data.risk,
       liquidity_flag: getLiquidityFlag(ticker.data.marketCap),
@@ -540,6 +591,8 @@ function generateRationale(stockData: any, predictedReturn: number, duration: nu
 
 function computePortfolioVolatility(allocations: AdvancedAllocation[], totalInvested: number): number {
   // Weighted average volatility (simplified - assumes zero correlation)
+  if (totalInvested <= 0) return 0
+
   let weightedVol = 0
 
   allocations.forEach(alloc => {

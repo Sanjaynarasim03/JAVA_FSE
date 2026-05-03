@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Header from '../components/Header'
 import InvestmentForm from '../components/InvestmentForm'
 import PortfolioResults from '../components/PortfolioResults'
-import { generatePortfolio } from '../lib/portfolioGenerator'
 import { BarChart3, AlertTriangle } from 'lucide-react'
 import type { InvestmentParams, PortfolioAllocation } from '../types/portfolio'
 
@@ -15,9 +14,50 @@ export default function Home() {
   const handleGeneratePortfolio = async (params: InvestmentParams) => {
     setLoading(true)
     try {
-      // Generate portfolio using only top stocks
-      const result = generatePortfolio(params)
-      setPortfolio(result)
+      const response = await fetch('/api/advanced-portfolio', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          investment_amount_inr: params.investment_amount,
+          duration_months: params.duration_months,
+          risk_preference: params.risk_preference,
+          mode: params.mode,
+          preferred_tickers: params.preferred_tickers,
+        }),
+      })
+
+      const apiResult = await response.json()
+
+      if (!response.ok || apiResult.status !== 'ok') {
+        throw new Error(apiResult?.message || 'Failed to generate portfolio')
+      }
+
+      const mappedResult: PortfolioAllocation = {
+        investment_amount_inr: apiResult.investment_amount_inr,
+        duration_months: apiResult.duration_months,
+        risk_preference: apiResult.risk_preference,
+        allocations: apiResult.allocations.map((allocation: any) => ({
+          rank: Number.isFinite(allocation.rank) ? allocation.rank : 0,
+          company: allocation.company,
+          ticker: allocation.ticker,
+          allocation_inr: Number.isFinite(allocation.allocation_inr) ? allocation.allocation_inr : 0,
+          shares: Number.isFinite(allocation.shares) ? allocation.shares : 0,
+          entry_price_inr: Number.isFinite(allocation.entry_price_inr) ? allocation.entry_price_inr : 0,
+          expected_return_pct: Number.isFinite(allocation.predicted_return_pct) ? allocation.predicted_return_pct : 0,
+          expected_value_inr: Number.isFinite(allocation.predicted_value_inr) ? allocation.predicted_value_inr : 0,
+          risk: allocation.risk_level,
+          rationale: allocation.rationale_short,
+        })),
+        total_expected_value_inr: apiResult.total_expected_value_inr,
+        unallocated_cash_inr: Number.isFinite(apiResult.unallocated_cash_inr) ? apiResult.unallocated_cash_inr : 0,
+        expected_growth_pct: apiResult.expected_growth_pct,
+        confidence: apiResult.model_metadata?.model_confidence_score ?? 'Medium',
+        notes: apiResult.notes,
+      }
+
+      setPortfolio(mappedResult)
     } catch (error) {
       console.error('Error generating portfolio:', error)
     } finally {
