@@ -53,6 +53,11 @@ def _startup() -> None:
 
 @app.middleware("http")
 async def jwt_middleware(request: Request, call_next):
+    # Allow CORS preflight requests
+    if request.method == "OPTIONS":
+        response = await call_next(request)
+        return response
+    
     path = request.url.path.rstrip("/") or "/"
     if path in PROTECTED_PATHS:
         auth_header = request.headers.get("Authorization", "")

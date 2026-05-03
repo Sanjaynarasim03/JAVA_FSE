@@ -9,7 +9,7 @@ import jwt
 
 from backend.storage import append_user_row, find_user_by_email
 
-SECRET_KEY = os.getenv("INTELLiINVEST_SECRET_KEY", "intelliinvest-dev-secret")
+SECRET_KEY = os.getenv("INTELLiINVEST_SECRET_KEY", "intelliinvest-dev-secret-key-2024-secure")
 ALGORITHM = os.getenv("INTELLiINVEST_JWT_ALGORITHM", "HS256")
 ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("INTELLiINVEST_ACCESS_TOKEN_EXPIRE_MINUTES", "480"))
 
