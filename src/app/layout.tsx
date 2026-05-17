@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import dynamic from 'next/dynamic'
+
+const AssistantWidget = dynamic(() => import('../components/chat/AssistantWidget'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'INTELLiINVEST - AI Financial Advisory Simulator',
@@ -32,6 +35,8 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-background text-foreground">
         {children}
+        {/* Assistant widget available on every page */}
+        <AssistantWidget />
       </body>
     </html>
   )

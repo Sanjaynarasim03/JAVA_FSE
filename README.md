@@ -215,6 +215,56 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Technical analysis indicators
 - [ ] News sentiment analysis integration
 
+## 🔊 INTELLiINVEST AI Chatbot (New)
+
+This repository now includes a premium, portfolio-aware AI assistant prototype with a Next.js frontend and FastAPI backend. It demonstrates streaming responses, conversational memory, portfolio context injection, explainable AI payloads, and interactive visual widgets.
+
+Key files:
+- Backend router: [backend/chat.py](backend/chat.py)
+- Chat history storage: [backend/storage.py](backend/storage.py) (chat_history.csv)
+- Frontend chat UI: [src/app/chat/page.tsx](src/app/chat/page.tsx) and [src/components/chat](src/components/chat)
+
+API endpoints (FastAPI):
+- `POST /chat/` — Streams analysis for a user message (text/event-stream). Accepts JSON `{ message, mode, session_id? }`.
+- `GET /chat/history` — Returns CSV-based chat history for the authenticated user.
+- `GET /chat/context` — Returns latest portfolio summary for context injection.
+- `POST /chat/analyze` — Lightweight XAI analysis endpoint returning factor contributions.
+
+Chat modes and UX:
+- Portfolio Assistant
+- Financial Tutor
+- Market Analyst
+- Risk Advisor
+- Performance Tracker
+
+Voice features:
+- Speech-to-text microphone input (Web Speech API)
+- Optional text-to-speech output for final assistant messages
+
+Security controls for chatbot APIs:
+- JWT-protected `/chat/*` endpoints
+- Input sanitization and max message length limits
+- Basic per-user rate limiting
+
+Notes:
+- The streaming endpoint uses chunked SSE frames with JSON payloads; the frontend demonstrates reading the stream and rendering incremental tokens, explanations, and visual payloads.
+- Chat history is stored in `data/chat_history.csv` with columns Email, UserMessage, BotResponse, Timestamp.
+- Authentication is handled via the existing JWT middleware — include an `Authorization: Bearer <token>` header for protected routes.
+
+Running the full stack locally:
+1. Start the backend API (FastAPI/uvicorn):
+```bash
+npm run backend:dev
+```
+2. Start the Next.js frontend:
+```bash
+npm run dev
+```
+
+This prototype focuses on modular architecture and integration points for advanced features (live LLM, XAI, real-time market feeds, voice). Replace the mock streaming logic in `backend/chat.py` with a real LLM or vector DB + retrieval pipeline to enable production-grade capabilities.
+
+---
+
 ---
 
 

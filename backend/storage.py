@@ -13,6 +13,8 @@ USERS_CSV = DATA_DIR / "users.csv"
 
 PORTFOLIO_HEADERS = ["Email", "Risk", "Investment", "Stocks", "ExpectedReturn", "Date"]
 USER_HEADERS = ["Email", "Name", "PasswordHash", "CreatedAt"]
+CHAT_HEADERS = ["Email", "UserMessage", "BotResponse", "Timestamp"]
+CHAT_CSV = DATA_DIR / "chat_history.csv"
 _LOCK = threading.Lock()
 
 
@@ -67,3 +69,13 @@ def serialize_stocks(stocks: List[Dict[str, object]]) -> str:
 def ensure_storage_ready() -> None:
     ensure_csv_file(PORTFOLIOS_CSV, PORTFOLIO_HEADERS)
     ensure_csv_file(USERS_CSV, USER_HEADERS)
+    ensure_csv_file(CHAT_CSV, CHAT_HEADERS)
+
+
+def append_chat_row(row: Dict[str, str]) -> None:
+    append_row(CHAT_CSV, CHAT_HEADERS, row)
+
+
+def get_chat_history_for_email(email: str) -> List[Dict[str, str]]:
+    normalized = email.strip().lower()
+    return [row for row in read_csv_rows(CHAT_CSV, CHAT_HEADERS) if row.get("Email", "").strip().lower() == normalized]

@@ -16,8 +16,12 @@ from backend.ramens import generate_ramens_portfolio
 from backend.schemas import GeneratePortfolioRequest, LoginRequest, PortfolioResponse, RegisterRequest, SavePortfolioRequest
 from backend.storage import append_portfolio_row, ensure_storage_ready, get_portfolios_for_email, serialize_stocks
 from backend.tracking import get_performance_summary, get_tracking_records, save_tracking_record, update_actual_return
+from backend.chat import router as chat_router
 
 app = FastAPI(title="INTELLiINVEST API", version="1.0.0")
+
+# Mount chat router
+app.include_router(chat_router, prefix="/chat")
 
 app.add_middleware(
     CORSMiddleware,
@@ -43,6 +47,11 @@ PROTECTED_PATHS = {
     "/alerts",
     "/alerts/create-price-drop",
     "/alerts/create-target",
+    "/chat",
+    "/chat/",
+    "/chat/history",
+    "/chat/context",
+    "/chat/analyze",
 }
 
 
