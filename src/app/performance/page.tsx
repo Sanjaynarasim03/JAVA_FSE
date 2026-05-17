@@ -86,54 +86,54 @@ export default function PerformanceTracking() {
 
   if (loading) {
     return (
-      <div>
+      <div style={{ backgroundColor: 'var(--background)' }}>
         <Header />
         <div className="container mx-auto px-4 py-12 text-center">
-          <p className="text-gray-600">Loading performance data...</p>
+          <p style={{ color: 'var(--foreground-secondary)' }}>Loading performance data...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'var(--background)' }}>
       <Header />
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8">Performance Tracking</h1>
+        <h1 className="text-4xl font-bold mb-8" style={{ color: 'var(--foreground)' }}>Performance Tracking</h1>
 
         {error && (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
-            <p className="text-red-800">{error}</p>
+          <div className="border rounded-lg p-4 mb-8" style={{ backgroundColor: 'var(--danger-muted)', borderColor: 'var(--danger)' }}>
+            <p style={{ color: 'var(--danger)' }}>{error}</p>
           </div>
         )}
 
         {/* Summary Cards */}
         {summary && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white rounded-lg shadow p-6">
-              <p className="text-gray-600 mb-2">Total Portfolios Tracked</p>
-              <p className="text-3xl font-bold text-blue-600">{summary.total_portfolios}</p>
-              <p className="text-sm text-gray-500 mt-2">
+            <div className="rounded-lg p-6 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+              <p className="mb-2" style={{ color: 'var(--foreground-secondary)' }}>Total Portfolios Tracked</p>
+              <p className="text-3xl font-bold" style={{ color: 'var(--info)' }}>{summary.total_portfolios}</p>
+              <p className="text-sm mt-2" style={{ color: 'var(--foreground-muted)' }}>
                 {summary.tracked_portfolios} with actual returns
               </p>
             </div>
 
-            <div className="bg-white rounded-lg shadow p-6">
-              <p className="text-gray-600 mb-2">Average Predicted Return</p>
-              <p className="text-3xl font-bold text-green-600">
+            <div className="rounded-lg p-6 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+              <p className="mb-2" style={{ color: 'var(--foreground-secondary)' }}>Average Predicted Return</p>
+              <p className="text-3xl font-bold" style={{ color: 'var(--success)' }}>
                 {summary.avg_predicted_return.toFixed(2)}%
               </p>
-              <p className="text-sm text-gray-500 mt-2">
+              <p className="text-sm mt-2" style={{ color: 'var(--foreground-muted)' }}>
                 Actual: {summary.avg_actual_return.toFixed(2)}%
               </p>
             </div>
 
-            <div className="bg-white rounded-lg shadow p-6">
-              <p className="text-gray-600 mb-2">Model Accuracy</p>
-              <p className="text-3xl font-bold text-purple-600">
+            <div className="rounded-lg p-6 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+              <p className="mb-2" style={{ color: 'var(--foreground-secondary)' }}>Model Accuracy</p>
+              <p className="text-3xl font-bold" style={{ color: 'var(--primary)' }}>
                 {summary.avg_accuracy.toFixed(2)}%
               </p>
-              <p className="text-sm text-gray-500 mt-2">
+              <p className="text-sm mt-2" style={{ color: 'var(--foreground-muted)' }}>
                 Range: {summary.accuracy_range.min.toFixed(1)}% -{' '}
                 {summary.accuracy_range.max.toFixed(1)}%
               </p>
@@ -143,19 +143,19 @@ export default function PerformanceTracking() {
 
         {/* Comparison Chart */}
         {records.length > 0 && (
-          <div className="bg-white rounded-lg shadow p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-6">Predicted vs Actual Returns</h2>
+          <div className="rounded-lg p-6 mb-12 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+            <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>Predicted vs Actual Returns</h2>
             <ResponsiveContainer width="100%" height={400}>
               <BarChart data={records}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="portfolio_id" />
-                <YAxis />
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                <XAxis dataKey="portfolio_id" stroke="var(--foreground-secondary)" />
+                <YAxis stroke="var(--foreground-secondary)" />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="predicted_return" fill="#3b82f6" name="Predicted %" />
+                <Bar dataKey="predicted_return" fill="var(--info)" name="Predicted %" />
                 <Bar
                   dataKey="actual_return"
-                  fill="#10b981"
+                  fill="var(--success)"
                   name="Actual %"
                 />
               </BarChart>
@@ -165,47 +165,47 @@ export default function PerformanceTracking() {
 
         {/* Detailed Table */}
         {records.length > 0 && (
-          <div className="bg-white rounded-lg shadow overflow-hidden">
+          <div className="rounded-lg overflow-hidden border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
             <table className="w-full">
               <thead>
-                <tr className="bg-gray-50 border-b">
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
+                <tr style={{ backgroundColor: 'var(--background-secondary)', borderColor: 'var(--border)' }} className="border-b">
+                  <th className="px-6 py-3 text-left text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
                     Portfolio ID
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
+                  <th className="px-6 py-3 text-left text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
                     Predicted Return
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
+                  <th className="px-6 py-3 text-left text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
                     Actual Return
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
+                  <th className="px-6 py-3 text-left text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
                     Accuracy
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-gray-900">
+                  <th className="px-6 py-3 text-left text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
                     Created
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {records.map((record, idx) => (
-                  <tr key={idx} className="border-b hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm font-mono text-gray-600">
+                  <tr key={idx} className="border-b hover:border-border-hover" style={{ borderColor: 'var(--border)' }}>
+                    <td className="px-6 py-4 text-sm font-mono" style={{ color: 'var(--foreground-secondary)' }}>
                       {record.portfolio_id.substring(0, 10)}...
                     </td>
-                    <td className="px-6 py-4 text-sm font-semibold text-green-600">
+                    <td className="px-6 py-4 text-sm font-semibold" style={{ color: 'var(--success)' }}>
                       {record.predicted_return.toFixed(2)}%
                     </td>
-                    <td className="px-6 py-4 text-sm font-semibold text-blue-600">
+                    <td className="px-6 py-4 text-sm font-semibold" style={{ color: 'var(--info)' }}>
                       {record.actual_return !== null
                         ? `${record.actual_return.toFixed(2)}%`
                         : 'Pending'}
                     </td>
-                    <td className="px-6 py-4 text-sm font-semibold text-purple-600">
+                    <td className="px-6 py-4 text-sm font-semibold" style={{ color: 'var(--primary)' }}>
                       {record.accuracy !== null
                         ? `${record.accuracy.toFixed(2)}%`
                         : 'N/A'}
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">
+                    <td className="px-6 py-4 text-sm" style={{ color: 'var(--foreground-muted)' }}>
                       {new Date(record.created_at).toLocaleDateString()}
                     </td>
                   </tr>
@@ -216,18 +216,18 @@ export default function PerformanceTracking() {
         )}
 
         {records.length === 0 && (
-          <div className="bg-gray-50 rounded-lg p-12 text-center">
-            <p className="text-gray-600 mb-4">No performance data yet</p>
-            <p className="text-sm text-gray-500">
+          <div className="rounded-lg p-12 text-center border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+            <p className="mb-4" style={{ color: 'var(--foreground-secondary)' }}>No performance data yet</p>
+            <p className="text-sm" style={{ color: 'var(--foreground-muted)' }}>
               Generate and save portfolios to start tracking their performance
             </p>
           </div>
         )}
 
         {/* Disclaimer */}
-        <div className="mt-12 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-          <h3 className="font-bold text-yellow-900 mb-2">⚠️ Disclaimer</h3>
-          <p className="text-sm text-yellow-800">
+        <div className="mt-12 rounded-lg p-6 border" style={{ backgroundColor: 'var(--warning-muted)', borderColor: 'var(--warning)' }}>
+          <h3 className="font-bold mb-2" style={{ color: 'var(--warning)' }}>⚠️ Disclaimer</h3>
+          <p className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>
             This is an AI-based simulation and NOT financial advice. Past performance is not
             indicative of future results. Please consult with a financial advisor before making
             investment decisions. Actual returns may differ significantly from predictions.

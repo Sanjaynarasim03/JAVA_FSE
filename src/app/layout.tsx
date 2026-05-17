@@ -1,8 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
-import dynamic from 'next/dynamic'
-
-const AssistantWidget = dynamic(() => import('../components/chat/AssistantWidget'), { ssr: false })
+import AssistantWidget from '../components/chat/AssistantWidget'
 
 export const metadata: Metadata = {
   title: 'INTELLiINVEST - AI Financial Advisory Simulator',

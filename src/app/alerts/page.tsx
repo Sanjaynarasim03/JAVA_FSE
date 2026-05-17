@@ -73,18 +73,18 @@ export default function Alerts() {
   const getStatusBadge = (status: string) => {
     if (status === 'ACTIVE')
       return (
-        <span className="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-semibold">
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--danger-muted)', color: 'var(--danger)' }}>
           Active
         </span>
       );
     if (status === 'RESOLVED')
       return (
-        <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--success-muted)', color: 'var(--success)' }}>
           Resolved
         </span>
       );
     return (
-      <span className="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-semibold">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--info-muted)', color: 'var(--info)' }}>
         {status}
       </span>
     );
@@ -92,44 +92,44 @@ export default function Alerts() {
 
   if (loading) {
     return (
-      <div>
+      <div style={{ backgroundColor: 'var(--background)' }}>
         <Header />
         <div className="container mx-auto px-4 py-12 text-center">
-          <p className="text-gray-600">Loading alerts...</p>
+          <p style={{ color: 'var(--foreground-secondary)' }}>Loading alerts...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'var(--background)' }}>
       <Header />
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8">Portfolio Alerts</h1>
+        <h1 className="text-4xl font-bold mb-8" style={{ color: 'var(--foreground)' }}>Portfolio Alerts</h1>
 
         {error && (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
-            <p className="text-red-800">{error}</p>
+          <div className="border rounded-lg p-4 mb-8" style={{ backgroundColor: 'var(--danger-muted)', borderColor: 'var(--danger)' }}>
+            <p style={{ color: 'var(--danger)' }}>{error}</p>
           </div>
         )}
 
         {/* Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-white rounded-lg shadow p-6">
-            <p className="text-gray-600 mb-2">Total Alerts</p>
-            <p className="text-3xl font-bold text-blue-600">{alerts.length}</p>
+          <div className="rounded-lg p-6 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+            <p className="mb-2" style={{ color: 'var(--foreground-secondary)' }}>Total Alerts</p>
+            <p className="text-3xl font-bold" style={{ color: 'var(--info)' }}>{alerts.length}</p>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
-            <p className="text-gray-600 mb-2">Active Alerts</p>
-            <p className="text-3xl font-bold text-red-600">{activeCount}</p>
-            <p className="text-sm text-gray-500 mt-2">Require action</p>
+          <div className="rounded-lg p-6 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+            <p className="mb-2" style={{ color: 'var(--foreground-secondary)' }}>Active Alerts</p>
+            <p className="text-3xl font-bold" style={{ color: 'var(--danger)' }}>{activeCount}</p>
+            <p className="text-sm mt-2" style={{ color: 'var(--foreground-muted)' }}>Require action</p>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
-            <p className="text-gray-600 mb-2">Resolved</p>
-            <p className="text-3xl font-bold text-green-600">{resolvedCount}</p>
-            <p className="text-sm text-gray-500 mt-2">Completed</p>
+          <div className="rounded-lg p-6 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+            <p className="mb-2" style={{ color: 'var(--foreground-secondary)' }}>Resolved</p>
+            <p className="text-3xl font-bold" style={{ color: 'var(--success)' }}>{resolvedCount}</p>
+            <p className="text-sm mt-2" style={{ color: 'var(--foreground-muted)' }}>Completed</p>
           </div>
         </div>
 
@@ -141,11 +141,18 @@ export default function Alerts() {
               onClick={() =>
                 setFilterStatus(status as 'ALL' | 'ACTIVE' | 'RESOLVED')
               }
-              className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+              className={`px-4 py-2 rounded-lg font-semibold transition-colors border ${
                 filterStatus === status
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                  ? 'border-primary'
+                  : 'border-border hover:border-border-hover'
               }`}
+              style={filterStatus === status ? {
+                backgroundColor: 'var(--primary)',
+                color: 'var(--primary-foreground)',
+              } : {
+                backgroundColor: 'var(--card)',
+                color: 'var(--foreground)',
+              }}
             >
               {status}
             </button>
@@ -158,32 +165,36 @@ export default function Alerts() {
             {filteredAlerts.map((alert) => (
               <div
                 key={alert.alert_id}
-                className={`border rounded-lg p-6 ${getAlertColor(alert.type)}`}
+                className="border rounded-lg p-6"
+                style={{
+                  backgroundColor: 'var(--card)',
+                  borderColor: alert.type === 'PRICE_DROP' ? 'var(--danger)' : 'var(--success)',
+                }}
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-4">
                     <div className="mt-1">{getAlertIcon(alert.type)}</div>
                     <div>
-                      <h3 className="font-bold text-lg mb-2">{alert.message}</h3>
+                      <h3 className="font-bold text-lg mb-2" style={{ color: 'var(--foreground)' }}>{alert.message}</h3>
                       <div className="grid grid-cols-2 gap-4 text-sm mb-3">
                         <div>
-                          <p className="text-gray-600">Ticker</p>
-                          <p className="font-mono font-semibold">{alert.ticker}</p>
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Ticker</p>
+                          <p className="font-mono font-semibold" style={{ color: 'var(--foreground)' }}>{alert.ticker}</p>
                         </div>
                         <div>
-                          <p className="text-gray-600">Type</p>
-                          <p className="font-semibold">{alert.type}</p>
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Type</p>
+                          <p className="font-semibold" style={{ color: 'var(--foreground)' }}>{alert.type}</p>
                         </div>
                         <div>
-                          <p className="text-gray-600">Trigger Value</p>
-                          <p className="font-semibold">{alert.trigger_value}</p>
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Trigger Value</p>
+                          <p className="font-semibold" style={{ color: 'var(--foreground)' }}>{alert.trigger_value}</p>
                         </div>
                         <div>
-                          <p className="text-gray-600">Current Value</p>
-                          <p className="font-semibold">{alert.current_value}</p>
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Current Value</p>
+                          <p className="font-semibold" style={{ color: 'var(--foreground)' }}>{alert.current_value}</p>
                         </div>
                       </div>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-xs" style={{ color: 'var(--foreground-muted)' }}>
                         Created: {new Date(alert.created_at).toLocaleString()}
                       </p>
                     </div>
@@ -195,10 +206,10 @@ export default function Alerts() {
             ))}
           </div>
         ) : (
-          <div className="bg-gray-50 rounded-lg p-12 text-center">
-            <AlertCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-            <p className="text-gray-600 mb-2">No alerts</p>
-            <p className="text-sm text-gray-500">
+          <div className="rounded-lg p-12 text-center border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+            <AlertCircle className="w-16 h-16 mx-auto mb-4" style={{ color: 'var(--foreground-muted)' }} />
+            <p className="mb-2" style={{ color: 'var(--foreground-secondary)' }}>No alerts</p>
+            <p className="text-sm" style={{ color: 'var(--foreground-muted)' }}>
               {filterStatus === 'ACTIVE'
                 ? 'No active alerts at this time'
                 : 'Check back later for portfolio alerts'}
@@ -207,9 +218,9 @@ export default function Alerts() {
         )}
 
         {/* Disclaimer */}
-        <div className="mt-12 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-          <h3 className="font-bold text-yellow-900 mb-2">⚠️ Disclaimer</h3>
-          <p className="text-sm text-yellow-800">
+        <div className="mt-12 rounded-lg p-6 border" style={{ backgroundColor: 'var(--warning-muted)', borderColor: 'var(--warning)' }}>
+          <h3 className="font-bold mb-2" style={{ color: 'var(--warning)' }}>⚠️ Disclaimer</h3>
+          <p className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>
             Alerts are based on real-time market data but may lag by a few minutes. This is an
             AI-based system and NOT a substitute for professional financial advice. Always verify
             price movements on official market sources before making decisions.

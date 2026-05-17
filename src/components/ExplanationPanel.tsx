@@ -36,25 +36,26 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
     : [];
 
   return (
-    <div className="bg-white rounded-lg border border-gray-200 p-6">
+    <div className="rounded-lg border p-6" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-start justify-between mb-3">
           <div>
-            <h3 className="text-2xl font-bold">{ticker}</h3>
-            <p className="text-gray-600">{company}</p>
+            <h3 className="text-2xl font-bold" style={{ color: 'var(--foreground)' }}>{ticker}</h3>
+            <p style={{ color: 'var(--foreground-secondary)' }}>{company}</p>
           </div>
           {confidence && (
             <div className="text-right">
-              <p className="text-sm text-gray-600">Confidence</p>
+              <p className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>Confidence</p>
               <p
-                className={`text-lg font-bold ${
-                  confidence === 'High'
-                    ? 'text-green-600'
+                className="text-lg font-bold"
+                style={{
+                  color: confidence === 'High'
+                    ? 'var(--success)'
                     : confidence === 'Medium'
-                      ? 'text-yellow-600'
-                      : 'text-red-600'
-                }`}
+                      ? 'var(--warning)'
+                      : 'var(--danger)'
+                }}
               >
                 {confidence}
               </p>
@@ -65,21 +66,21 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
         {/* Key Metrics */}
         <div className="grid grid-cols-3 gap-4">
           {score !== undefined && (
-            <div className="bg-blue-50 p-4 rounded">
-              <p className="text-sm text-gray-600">RAMENS Score</p>
-              <p className="text-2xl font-bold text-blue-600">{score.toFixed(1)}</p>
+            <div className="p-4 rounded border" style={{ backgroundColor: 'var(--background-secondary)', borderColor: 'var(--border)' }}>
+              <p className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>RAMENS Score</p>
+              <p className="text-2xl font-bold" style={{ color: 'var(--info)' }}>{score.toFixed(1)}</p>
             </div>
           )}
           {allocation !== undefined && (
-            <div className="bg-green-50 p-4 rounded">
-              <p className="text-sm text-gray-600">Allocation</p>
-              <p className="text-2xl font-bold text-green-600">{allocation.toFixed(1)}%</p>
+            <div className="p-4 rounded border" style={{ backgroundColor: 'var(--background-secondary)', borderColor: 'var(--border)' }}>
+              <p className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>Allocation</p>
+              <p className="text-2xl font-bold" style={{ color: 'var(--success)' }}>{allocation.toFixed(1)}%</p>
             </div>
           )}
           {expectedReturn !== undefined && (
-            <div className="bg-purple-50 p-4 rounded">
-              <p className="text-sm text-gray-600">Expected Return</p>
-              <p className="text-2xl font-bold text-purple-600">
+            <div className="p-4 rounded border" style={{ backgroundColor: 'var(--background-secondary)', borderColor: 'var(--border)' }}>
+              <p className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>Expected Return</p>
+              <p className="text-2xl font-bold" style={{ color: 'var(--primary)' }}>
                 {expectedReturn.toFixed(2)}%
               </p>
             </div>
@@ -88,31 +89,31 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
       </div>
 
       {/* Rationale */}
-      <div className="mb-6 pb-6 border-b">
-        <h4 className="font-bold text-lg mb-3">🎯 Selection Rationale</h4>
-        <p className="text-gray-700 leading-relaxed">{rationale}</p>
+      <div className="mb-6 pb-6" style={{ borderColor: 'var(--border)', borderBottomWidth: '1px' }}>
+        <h4 className="font-bold text-lg mb-3" style={{ color: 'var(--foreground)' }}>🎯 Selection Rationale</h4>
+        <p className="leading-relaxed" style={{ color: 'var(--foreground-secondary)' }}>{rationale}</p>
       </div>
 
       {/* Factor Breakdown */}
       {chartData.length > 0 && (
         <div>
-          <h4 className="font-bold text-lg mb-4">📊 Factor Contribution Breakdown</h4>
+          <h4 className="font-bold text-lg mb-4" style={{ color: 'var(--foreground)' }}>📊 Factor Contribution Breakdown</h4>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={chartData}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="factor" angle={-45} textAnchor="end" height={100} />
-              <YAxis />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+              <XAxis dataKey="factor" angle={-45} textAnchor="end" height={100} stroke="var(--foreground-secondary)" />
+              <YAxis stroke="var(--foreground-secondary)" />
               <Tooltip formatter={(value: any) => `${(value as number).toFixed(1)}%`} />
-              <Bar dataKey="contribution" fill="#3b82f6" />
+              <Bar dataKey="contribution" fill="var(--info)" />
             </BarChart>
           </ResponsiveContainer>
 
           {/* Factor Legend */}
-          <div className="mt-6 grid grid-cols-2 gap-4 bg-gray-50 p-4 rounded">
+          <div className="mt-6 grid grid-cols-2 gap-4 p-4 rounded border" style={{ backgroundColor: 'var(--background-secondary)', borderColor: 'var(--border)' }}>
             {chartData.map((item) => (
               <div key={item.factor} className="flex items-center justify-between">
-                <span className="text-sm text-gray-700">{item.factor}</span>
-                <span className="font-semibold text-gray-900">
+                <span className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>{item.factor}</span>
+                <span className="font-semibold" style={{ color: 'var(--foreground)' }}>
                   {item.contribution.toFixed(1)}%
                 </span>
               </div>
@@ -122,15 +123,15 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
       )}
 
       {/* Key Insights */}
-      <div className="mt-6 bg-blue-50 border border-blue-200 rounded p-4">
-        <h5 className="font-bold text-blue-900 mb-2">💡 Key Insights</h5>
-        <ul className="text-sm text-blue-800 space-y-1">
+      <div className="mt-6 rounded p-4 border" style={{ backgroundColor: 'var(--info-muted)', borderColor: 'var(--info)' }}>
+        <h5 className="font-bold mb-2" style={{ color: 'var(--info)' }}>💡 Key Insights</h5>
+        <ul className="text-sm space-y-1" style={{ color: 'var(--foreground-secondary)' }}>
           <li>
             • This stock was selected by the RAMENS algorithm for multi-factor alignment
           </li>
           <li>• Factors include momentum, fundamentals, beta, blend, and macro outlook</li>
           <li>
-            • Allocation size reflects the stock&apos;s risk-adjusted expected contribution
+            • Allocation size reflects the stock's risk-adjusted expected contribution
           </li>
         </ul>
       </div>

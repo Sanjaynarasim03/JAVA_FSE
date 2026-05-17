@@ -119,24 +119,34 @@ export default function ModelComparison() {
     : [];
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'var(--background)' }}>
       <Header />
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-2">Model Comparison</h1>
-        <p className="text-gray-600 mb-8">
+        <h1 className="text-4xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Model Comparison</h1>
+        <p className="mb-8" style={{ color: 'var(--foreground-secondary)' }}>
           Compare CAPM, Markowitz, and RAMENS portfolio optimization approaches
         </p>
 
         {error && (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
-            <p className="text-red-800">{error}</p>
+          <div className="border rounded-lg p-4 mb-8" style={{ backgroundColor: 'var(--danger-muted)', borderColor: 'var(--danger)' }}>
+            <p style={{ color: 'var(--danger)' }}>{error}</p>
           </div>
         )}
 
         <button
           onClick={handleCompare}
           disabled={loading}
-          className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 mb-8"
+          className="px-6 py-3 rounded-lg font-semibold mb-8 border transition-colors"
+          style={!loading ? {
+            backgroundColor: 'var(--primary)',
+            color: 'var(--primary-foreground)',
+            borderColor: 'var(--primary)',
+          } : {
+            backgroundColor: 'var(--primary)',
+            color: 'var(--primary-foreground)',
+            borderColor: 'var(--primary)',
+            opacity: 0.5,
+          }}
         >
           {loading ? 'Comparing...' : 'Compare Models'}
         </button>
@@ -145,17 +155,17 @@ export default function ModelComparison() {
           <>
             {/* Recommendation */}
             {comparison.recommendation && (
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-8 mb-12">
+              <div className="border rounded-lg p-8 mb-12" style={{ backgroundColor: 'var(--primary-muted)', borderColor: 'var(--primary)' }}>
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: 'var(--primary)' }} />
                   <div>
-                    <h2 className="text-2xl font-bold text-blue-900 mb-4">
+                    <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)' }}>
                       Recommendation: {comparison.recommendation.overall_recommendation}
                     </h2>
                     <ul className="space-y-2">
                       {comparison.recommendation.reasoning.map((reason, i) => (
-                        <li key={i} className="text-blue-800 flex gap-2">
-                          <span className="text-green-600">✓</span>
+                        <li key={i} className="flex gap-2" style={{ color: 'var(--foreground)' }}>
+                          <span style={{ color: 'var(--primary)' }}>✓</span>
                           {reason}
                         </li>
                       ))}
@@ -167,13 +177,13 @@ export default function ModelComparison() {
 
             {/* Metrics Comparison Chart */}
             {chartData.length > 0 && (
-              <div className="bg-white rounded-lg shadow p-6 mb-12">
-                <h2 className="text-2xl font-bold mb-6">Metrics Comparison</h2>
+              <div className="rounded-lg p-6 mb-12 border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+                <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>Metrics Comparison</h2>
                 <ResponsiveContainer width="100%" height={400}>
                   <BarChart data={chartData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                    <XAxis dataKey="name" stroke="var(--foreground-secondary)" />
+                    <YAxis stroke="var(--foreground-secondary)" />
                     <Tooltip />
                     <Legend />
                     {Object.keys(chartData[0])
@@ -184,10 +194,10 @@ export default function ModelComparison() {
                           dataKey={key}
                           fill={
                             key === 'CAPM'
-                              ? '#ef4444'
+                              ? 'var(--danger)'
                               : key === 'Markowitz'
-                                ? '#f59e0b'
-                                : '#10b981'
+                                ? 'var(--warning)'
+                                : 'var(--success)'
                           }
                         />
                       ))}
@@ -202,43 +212,43 @@ export default function ModelComparison() {
                 (model) => (
                   <div
                     key={model.model}
-                    className={`border-2 rounded-lg p-6 ${
-                      model.model === 'RAMENS'
-                        ? 'border-green-500 bg-green-50'
-                        : 'border-gray-300 bg-white'
-                    }`}
+                    className="border-2 rounded-lg p-6"
+                    style={{
+                      backgroundColor: 'var(--card)',
+                      borderColor: model.model === 'RAMENS' ? 'var(--primary)' : 'var(--border)',
+                    }}
                   >
-                    <h3 className="text-xl font-bold mb-4">{model.model}</h3>
+                    <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>{model.model}</h3>
 
                     <div className="mb-6 space-y-2">
                       {model.expected_return !== undefined && (
                         <div>
-                          <p className="text-gray-600">Expected Return</p>
-                          <p className="text-2xl font-bold text-green-600">
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Expected Return</p>
+                          <p className="text-2xl font-bold" style={{ color: 'var(--success)' }}>
                             {model.expected_return.toFixed(2)}%
                           </p>
                         </div>
                       )}
                       {model.portfolio_return !== undefined && (
                         <div>
-                          <p className="text-gray-600">Portfolio Return</p>
-                          <p className="text-2xl font-bold text-green-600">
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Portfolio Return</p>
+                          <p className="text-2xl font-bold" style={{ color: 'var(--success)' }}>
                             {model.portfolio_return.toFixed(2)}%
                           </p>
                         </div>
                       )}
                       {model.portfolio_volatility !== undefined && (
                         <div>
-                          <p className="text-gray-600">Volatility</p>
-                          <p className="text-2xl font-bold text-orange-600">
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Volatility</p>
+                          <p className="text-2xl font-bold" style={{ color: 'var(--warning)' }}>
                             {model.portfolio_volatility.toFixed(2)}%
                           </p>
                         </div>
                       )}
                       {model.sharpe_ratio !== undefined && (
                         <div>
-                          <p className="text-gray-600">Sharpe Ratio</p>
-                          <p className="text-2xl font-bold text-blue-600">
+                          <p style={{ color: 'var(--foreground-secondary)' }}>Sharpe Ratio</p>
+                          <p className="text-2xl font-bold" style={{ color: 'var(--info)' }}>
                             {model.sharpe_ratio.toFixed(2)}
                           </p>
                         </div>
@@ -246,10 +256,10 @@ export default function ModelComparison() {
                     </div>
 
                     <div className="mb-4">
-                      <p className="font-semibold text-green-700 mb-2">Pros:</p>
+                      <p className="font-semibold mb-2" style={{ color: 'var(--success)' }}>Pros:</p>
                       <ul className="text-sm space-y-1">
                         {model.pros.map((pro, i) => (
-                          <li key={i} className="text-green-600">
+                          <li key={i} style={{ color: 'var(--success)' }}>
                             ✓ {pro}
                           </li>
                         ))}
@@ -257,10 +267,10 @@ export default function ModelComparison() {
                     </div>
 
                     <div>
-                      <p className="font-semibold text-red-700 mb-2">Cons:</p>
+                      <p className="font-semibold mb-2" style={{ color: 'var(--danger)' }}>Cons:</p>
                       <ul className="text-sm space-y-1">
                         {model.cons.map((con, i) => (
-                          <li key={i} className="text-red-600">
+                          <li key={i} style={{ color: 'var(--danger)' }}>
                             ✗ {con}
                           </li>
                         ))}
@@ -272,14 +282,14 @@ export default function ModelComparison() {
             </div>
 
             {/* Formula Section */}
-            <div className="bg-gray-50 rounded-lg p-8 mb-12">
-              <h2 className="text-2xl font-bold mb-6">Model Formulas</h2>
+            <div className="rounded-lg p-8 mb-12 border" style={{ backgroundColor: 'var(--background-secondary)', borderColor: 'var(--border)' }}>
+              <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>Model Formulas</h2>
               <div className="space-y-4">
                 {[comparison.capm, comparison.markowitz, comparison.ramens].map(
                   (model) => (
-                    <div key={model.model} className="bg-white p-4 rounded border">
-                      <p className="font-semibold mb-2">{model.model}</p>
-                      <code className="text-sm text-gray-700">
+                    <div key={model.model} className="p-4 rounded border" style={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)' }}>
+                      <p className="font-semibold mb-2" style={{ color: 'var(--foreground)' }}>{model.model}</p>
+                      <code className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>
                         {model.formula}
                       </code>
                     </div>
@@ -291,9 +301,9 @@ export default function ModelComparison() {
         )}
 
         {/* Disclaimer */}
-        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-          <h3 className="font-bold text-yellow-900 mb-2">⚠️ Disclaimer</h3>
-          <p className="text-sm text-yellow-800">
+        <div className="rounded-lg p-6 border" style={{ backgroundColor: 'var(--warning-muted)', borderColor: 'var(--warning)' }}>
+          <h3 className="font-bold mb-2" style={{ color: 'var(--warning)' }}>⚠️ Disclaimer</h3>
+          <p className="text-sm" style={{ color: 'var(--foreground-secondary)' }}>
             This comparison is for educational purposes only. RAMENS is recommended for its
             explainability and multi-factor approach, but all models have limitations. Past
             performance is not indicative of future results. Consult a financial advisor before

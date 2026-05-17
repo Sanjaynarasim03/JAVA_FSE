@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Activity, LogOut, TrendingUp } from 'lucide-react'
+import { Activity, LogOut, TrendingUp, Moon, Sun } from 'lucide-react'
 import { clearAuthSession, readAuthSession } from '../lib/auth'
 
 interface HeaderProps {
@@ -25,11 +25,17 @@ export default function Header({ usingLiveData = false, section }: HeaderProps) 
   const pathname = usePathname()
   const router = useRouter()
   const [email, setEmail] = useState<string | null>(null)
+  const [darkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
     const session = readAuthSession()
     setEmail(session?.email ?? null)
   }, [pathname])
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+    // In a real app, you'd save this preference to localStorage or a database
+  }
 
   const handleLogout = () => {
     clearAuthSession()
@@ -125,6 +131,15 @@ export default function Header({ usingLiveData = false, section }: HeaderProps) 
               <span className="text-xs font-medium text-warning">RAMENS</span>
             </div>
           )}
+
+          <button
+            onClick={toggleDarkMode}
+            className="rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-foreground-secondary transition hover:bg-card-hover hover:text-foreground flex items-center gap-2"
+            title={`Switch to ${darkMode ? 'Light' : 'Dark'} Mode`}
+          >
+            {darkMode ? <Moon className="w-3.5 h-3.5" /> : <Sun className="w-3.5 h-3.5" />}
+            <span className="hidden sm:inline">{darkMode ? 'Dark' : 'Light'}</span>
+          </button>
 
           <span className="hidden xl:inline text-xs text-foreground-muted font-mono">
             JWT secured
