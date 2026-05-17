@@ -1,2 +1,4 @@
 Email,Name,PasswordHash,CreatedAt
 nsanjay2003@gmail.com,Sanjay Narasimhan,$2b$12$8HdYm9OL9ndf8ykcQCzTEel0yWqxbmeik80UlfnC3d9qtNsxeownS,2026-05-03T11:48:35.699001+00:00
+test@example.com,Test User,$2b$12$kiORps0HKoKveWQQMbxKuObvMyJBpArcNwlHIA6mwnM9GyCZwAgVq,2026-05-03T11:51:05.521760+00:00
+sanjay@example.com,Sanjay Narasimhan,$2b$12$CS83BFW4V2bbEykW28JzGOn43L2czBhRYNtt/sXgKF1cdlWRBxPfC,2026-05-03T11:52:47.341673+00:00

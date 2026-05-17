@@ -15,6 +15,7 @@ const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/dashboard', label: 'Dashboard' },
   { href: '/generator', label: 'Generator' },
+  { href: '/chat', label: 'Chat' },
   { href: '/history', label: 'History' },
   { href: '/performance', label: 'Performance' },
   { href: '/alerts', label: 'Alerts' },

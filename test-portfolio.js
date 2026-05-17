@@ -1,12 +1,12 @@
 // Test the AI Financial Advisor with sample inputs
-import { generatePortfolio } from '../src/lib/portfolioGenerator'
+import { generatePortfolio } from './src/lib/portfolioGenerator'
 
 // User inputs from example
 const testInputs = {
   investment_amount: 1000,
   duration_months: 6,
-  risk_preference: 'moderate' as const,
-  mode: 'auto' as const,
+  risk_preference: 'moderate',
+  mode: 'auto',
   preferred_tickers: []
 }
 
@@ -26,7 +26,7 @@ try {
   console.log('\nAllocations:')
   
   portfolio.allocations.forEach((allocation, index) => {
-    const formatCurrency = (amount: number) => `₹${amount.toLocaleString()}`
+    const formatCurrency = (amount) => `₹${amount.toLocaleString()}`
     
     console.log(`${allocation.rank}. ${allocation.company} — ${allocation.ticker} — ${formatCurrency(allocation.allocation_inr)} — shares: ${allocation.shares} — entry_price: ${formatCurrency(allocation.entry_price_inr)} — expected_return: +${allocation.expected_return_pct}% → expected_value: ${formatCurrency(allocation.expected_value_inr)} — Risk: ${allocation.risk} — Rationale: ${allocation.rationale}`)
   })

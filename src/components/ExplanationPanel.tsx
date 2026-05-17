@@ -131,7 +131,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
           </li>
           <li>• Factors include momentum, fundamentals, beta, blend, and macro outlook</li>
           <li>
-            • Allocation size reflects the stock's risk-adjusted expected contribution
+            • Allocation size reflects the stock&apos;s risk-adjusted expected contribution
           </li>
         </ul>
       </div>

@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
-import AssistantWidget from '../components/chat/AssistantWidget'
 
 export const metadata: Metadata = {
   title: 'INTELLiINVEST - AI Financial Advisory Simulator',
@@ -33,8 +32,6 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-background text-foreground">
         {children}
-        {/* Assistant widget available on every page */}
-        <AssistantWidget />
       </body>
     </html>
   )
