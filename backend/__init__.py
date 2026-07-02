@@ -1,1 +1,0 @@
-"""INTELLiINVEST FastAPI backend package."""
